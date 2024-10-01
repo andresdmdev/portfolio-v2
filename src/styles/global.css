@@ -1,0 +1,23 @@
+@import url("./variables.css");
+
+html {
+    background-color: var(--main-bg-color);
+    font-family: sans-serif;
+}
+    
+body {
+    margin: 48px auto;
+    width: 100%;
+    max-width: 87.5ch;
+}
+    
+* {
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 636px) {
+    body {
+        width: 87%;
+        margin: 26px auto;
+    }
+}
