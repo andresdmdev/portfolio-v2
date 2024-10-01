@@ -1,8 +1,13 @@
 @import url("./variables.css");
 
 html {
-    background-color: var(--main-bg-color);
+    background-color: #77bef8b0;
     font-family: sans-serif;
+}
+
+html.dark {
+    background-color: var(--main-bg-color);
+    color: var(--white-color);
 }
     
 body {
