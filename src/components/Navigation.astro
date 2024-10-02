@@ -1,8 +1,13 @@
 ---
+import { getLangFromUrl, useTranslations, formatDefautlBaseLanguage } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const baseLanguage = formatDefautlBaseLanguage(lang);
 ---
 
 <div class="nav-links">
-    <a href="/">Home</a>
-    <a href="#Experience">Experience</a>
-    <a href="#Projects">Projects</a>
+    <a href={`/${baseLanguage}`}>{t('nav.home')}</a>
+    <a href={`/${baseLanguage}#Experience`}>{t('nav.experience')}</a>
+    <a href={`/${baseLanguage}#Projects`}>{t('nav.projects')}</a>
 </div>
