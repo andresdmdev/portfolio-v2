@@ -17,6 +17,8 @@ export const languages = {
       "profile.tag": "Open to work",
       "profile.cv": "Open CV",
       "profile.email": "andresdmf55@gmail.com",
+      "profile.icon.linkedin": 'https://www.linkedin.com/in/andresmarquezdev/',
+      "profile.icon.github": 'https://github.com/andresdmdev',
     },
     es: {
       "nav.home": "Inicio",
@@ -29,5 +31,7 @@ export const languages = {
       "profile.tag": "Disponible para trabajar",
       "profile.cv": "Abrir CV",
       "profile.email": "andresdmf55@gmail.com",
+      "profile.icon.linkedin": 'https://www.linkedin.com/in/andresmarquezdev/',
+      "profile.icon.github": 'https://github.com/andresdmdev',
     },
   } as const;

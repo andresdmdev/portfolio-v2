@@ -12,11 +12,9 @@
     align-items: center;
 }
 
-.img-container {
+.img-profile {
     width: 50px;
-    height: 50px;
-    background-color: var(--white-color);
-    border-radius: 50%;
+    object-fit: cover;
 }
 
 h1 {
@@ -85,7 +83,27 @@ h1 {
     gap: 10px;
 }
 
-@media screen and (min-width: 600px) {
+.icon-container {
+    width: 30px;
+    cursor: pointer;
+    transition: color 600ms ease-in-out;
+}
+
+.icon-container :hover {
+    width: 30px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.icon {
+    fill: var(--secondary-color);
+}
+
+.dark .icon {
+    fill: var(--dark-secondary-color);
+}
+
+@media screen and (min-width: 636px) {
     .profile {
         margin-top: 132px;
     }
