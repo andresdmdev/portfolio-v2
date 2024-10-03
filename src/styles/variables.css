@@ -3,8 +3,10 @@
     --secondary-color: #181A23;
     --ternary-color: #F99417;
     --primary-bg-color: #181A23;
+    --secondary-bg-color: rgba(24,26,35,0.1);
     --white-color: #F5F5F5;
     --dark-gold-color: #FFB534;
     --dark-primary-color: #181A23;
     --dark-secondary-color: #77BEF8;
+    --dark-secondary-bg-color: rgba(119,190,248,0.16);
 }

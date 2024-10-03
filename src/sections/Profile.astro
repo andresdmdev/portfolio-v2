@@ -1,6 +1,7 @@
 ---
 import "../styles/profile.css";
 import { getLangFromUrl, getTranslation } from "../i18n/utils";
+import OpenCV from "../components/OpenCV.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = getTranslation(lang);
@@ -10,7 +11,7 @@ const t = getTranslation(lang);
         <div>
             <img class="img-profile" src="./images/profile.png" alt="profile" sizes="(max-width: 635px) 50px, (min-width: 636px) 100px" />
         </div>
-        <div>
+        <div class="profile-tag">
             <span>{t("profile.tag")}</span>
         </div>
     </div>
@@ -30,9 +31,7 @@ const t = getTranslation(lang);
             </a>
         </div>
         <div class="profile-contact-section">
-            <div>
-                <span>{t("profile.cv")}</span>
-            </div>
+            <OpenCV text={t("profile.cv")} />
             <div>
                 <span>{t("profile.email")}</span>
             </div>
