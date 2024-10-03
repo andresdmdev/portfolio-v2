@@ -1,20 +1,38 @@
 ---
+import "../styles/profile.css";
+import { getLangFromUrl, getTranslation } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = getTranslation(lang);
+
 ---
-<section>
-    <div>
-        <div></div>
-        <span></span>
+<section class="profile">
+    <div class="profile-img-section">
+        <div class="img-container">
+            <img class="img-profile" src="" alt="" srcset="" />
+        </div>
+        <div>
+            <span>{t("profile.tag")}</span>
+        </div>
     </div>
-    <h1></h1>
-    <div>
-        <h2></h2>
+    <h1>{t("profile.gretting")}</h1>
+    <div class="profile-description-section">
+        <span class="first">{t("profile.description-1")}</span>
+        <span class="second">{t("profile.description-2")}</span>
+        <span class="third">{t("profile.description-3")}</span>
     </div>
-    <div>
-        <div></div>
-        <div></div>
-    </div>
-    <div>
-        <div></div>
-        <div></div>
+    <div class="profile-contact-container">
+        <div class="profile-social-section">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="profile-contact-section">
+            <div>
+                <span>{t("profile.cv")}</span>
+            </div>
+            <div>
+                <span>{t("profile.email")}</span>
+            </div>
+        </div>
     </div>
 </section>

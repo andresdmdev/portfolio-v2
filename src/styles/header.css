@@ -14,7 +14,7 @@ nav {
     width: 28px;
     height: 2px;
     margin-bottom: 8px;
-    background-color: var(--main-color);
+    background-color: var(--primary-color);
 }
 
 .last-line {
@@ -22,7 +22,7 @@ nav {
     width: 28px;
     height: 2px;
     margin-bottom: 0px;
-    background-color: var(--main-color);
+    background-color: var(--primary-color);
 }
 
 .nav-links {
@@ -41,12 +41,12 @@ nav {
     text-decoration: none;
     font-size: 1rem;
     font-weight: bold;
-    color: var(--dark-white-color);
+    color: var(--dark-primary-color);
 }
 
 .nav-links a:hover,
 .nav-links a:focus {
-    color: var(--main-color);
+    color: var(--primary-color);
 }
 
 .dark .nav-links a {

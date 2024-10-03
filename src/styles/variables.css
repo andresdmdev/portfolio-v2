@@ -1,6 +1,9 @@
 :root {
-    --main-color: #77BEF8;
-    --main-bg-color: #181A23;
+    --primary-color: #77BEF8;
+    --secondary-color: #181A23;
+    --ternary-color: #F99417;
+    --primary-bg-color: #181A23;
     --white-color: #F5F5F5;
-    --dark-white-color: #181A23;
+    --dark-gold-color: #FFB534;
+    --dark-primary-color: #181A23;
 }
