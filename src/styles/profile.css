@@ -67,13 +67,6 @@ h1 {
     margin-top: 20px;
 }
 
-.profile-social-section div {
-    width: 30px;
-    height: 30px;
-    background-color: var(--white-color);
-    border-radius: 50%;
-}
-
 .profile-contact-section {
     display: flex;
     flex-direction: row;
@@ -84,13 +77,12 @@ h1 {
 }
 
 .icon-container {
-    width: 30px;
+    width: 38px;
     cursor: pointer;
     transition: color 600ms ease-in-out;
 }
 
 .icon-container :hover {
-    width: 30px;
     cursor: pointer;
     opacity: 0.8;
 }
@@ -105,14 +97,17 @@ h1 {
 
 .profile-tag {
     background-color: var(--secondary-bg-color);
-    padding: 4px 8px;
+    padding: 6px 8px;
     border-radius: 6px;
+    display: flex;
+    align-content: center;
 }
 
 .profile-tag span {
     color: var(--secondary-color);
     font-size: 12px;
     font-weight: 800;
+    line-height: 12px;
 }
 
 .dark .profile-tag {
@@ -132,6 +127,7 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .cv-text {
@@ -143,10 +139,11 @@ h1 {
 }
 
 .cv-icon {
-    width: 30px;
+    width: 32px;
     height: 32px;
     background-color: var(--secondary-color);
-    border-radius: 10px;
+    border-radius: 12px 0px 0px 12px;
+    border: solid var(--secondary-color) 2px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,8 +151,8 @@ h1 {
 
 .cv-icon .link {
     fill: var(--primary-color);
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     margin-left: 2px;
 }
 
@@ -169,6 +166,7 @@ h1 {
 
 .dark .cv-icon {
     background-color: var(--dark-secondary-color);
+    border: solid var(--dark-secondary-color) 2px;
 }
 
 .dark .cv-icon .link {
