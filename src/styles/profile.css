@@ -152,14 +152,11 @@ h1 {
     align-items: center;
 }
 
-.cv-icon .link-container {
-    width: 15px;
-    height: 15px;
-    margin-left: 3px;
-}
-
 .cv-icon .link {
     fill: var(--primary-color);
+    width: 20px;
+    height: 20px;
+    margin-left: 3px;
 }
 
 .dark .profile-cv {
