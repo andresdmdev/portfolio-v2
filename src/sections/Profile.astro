@@ -2,6 +2,7 @@
 import "../styles/profile.css";
 import { getLangFromUrl, getTranslation } from "../i18n/utils";
 import OpenCV from "../components/OpenCV.astro";
+import Email from "../components/Email.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = getTranslation(lang);
@@ -32,9 +33,7 @@ const t = getTranslation(lang);
         </div>
         <div class="profile-contact-section">
             <OpenCV text={t("profile.cv")} />
-            <div>
-                <span>{t("profile.email")}</span>
-            </div>
+            <Email text={t("profile.email")} />
         </div>
     </div>
 </section>

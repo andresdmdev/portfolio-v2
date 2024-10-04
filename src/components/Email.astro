@@ -1,0 +1,106 @@
+---
+
+import "..//styles/variables.css"
+
+interface Props {
+    text: string
+}
+
+const { text } = Astro.props;
+---
+
+<div class="profile-email">
+    <div class="first-container">
+        <span class="email-text">{text}</span>
+        <span class="first-email-icon">
+            <box-icon name='paper-plane' class="link" animation='tada-hover'></box-icon>
+        </span>
+    </div>
+    <span class="second-email-icon">
+        <box-icon class="link" name='copy-alt' animation='tada-hover'></box-icon>
+    </span>
+</div>
+
+
+<style>
+    .profile-email {
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+    }
+
+    .first-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: solid var(--secondary-color);
+        border-radius: 12px 0 0 12px;
+    }
+
+    :global(.dark) .first-container {
+        border: solid var(--dark-secondary-color);
+    }
+
+    .email-text {
+        padding: 0 12px;
+        line-height: 32px;
+        color: var(--secondary-color);
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    :global(.dark) .email-text {
+        color: var(--white-color);
+    }
+
+    .first-email-icon {
+        width: 30px;
+        height: 32px;
+        background-color: var(--secondary-color);
+        border-radius: 10px 0 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;s
+    }
+
+    :global(.dark) .first-email-icon {
+        background-color: var(--dark-secondary-color);
+    }
+
+    .first-email-icon .link {
+        fill: var(--primary-color);
+        width: 20px;
+        height: 20px;
+        margin-left: 2px;
+    }
+
+    :global(.dark) .first-email-icon .link {
+        fill: var(--dark-primary-color);
+    }
+
+    .second-email-icon {
+        width: 32px;
+        background-color: var(--secondary-color);
+        border-radius: 0 10px 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid var(--secondary-color);
+    }
+
+    :global(.dark) .second-email-icon {
+        background-color: var(--dark-secondary-color);
+        border: solid var(--dark-secondary-color);
+    }
+
+    .second-email-icon .link {
+        fill: var(--primary-color);
+        width: 20px;
+        height: 20px;
+    }
+
+    :global(.dark) .second-email-icon .link {
+        fill: var(--dark-primary-color);
+    }
+
+</style>

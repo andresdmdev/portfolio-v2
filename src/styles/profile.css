@@ -64,7 +64,7 @@ h1 {
     gap: 30px;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .profile-social-section div {
@@ -146,7 +146,7 @@ h1 {
     width: 30px;
     height: 32px;
     background-color: var(--secondary-color);
-    border-radius: 9px 0 0 9px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,7 +156,7 @@ h1 {
     fill: var(--primary-color);
     width: 20px;
     height: 20px;
-    margin-left: 3px;
+    margin-left: 2px;
 }
 
 .dark .profile-cv {
@@ -200,4 +200,11 @@ h1 {
         margin-top: 24px;
         gap: 30px;
     }    
+}
+
+@media screen and (max-width: 375px) {
+    .profile-contact-section {
+        gap: 25px;
+        flex-direction: column;
+    }
 }
