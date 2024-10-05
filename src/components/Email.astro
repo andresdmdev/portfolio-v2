@@ -1,7 +1,4 @@
 ---
-
-import "..//styles/variables.css"
-
 interface Props {
     text: string
 }
@@ -35,6 +32,8 @@ const { text } = Astro.props;
         align-items: center;
         border: solid var(--secondary-color);
         border-radius: 12px 0 0 12px;
+        overflow: hidden;
+        box-sizing: border-box;
     }
 
     :global(.dark) .first-container {
@@ -42,7 +41,7 @@ const { text } = Astro.props;
     }
 
     .email-text {
-        padding: 0 12px;
+        padding: 0 10px;
         line-height: 32px;
         color: var(--secondary-color);
         font-size: 12px;
@@ -57,10 +56,10 @@ const { text } = Astro.props;
         width: 32px;
         height: 32px;
         background-color: var(--secondary-color);
-        border-radius: 10px 0 0 10px;
         display: flex;
         justify-content: center;
         align-items: center;s
+        border-right: solid 10px;
     }
 
     :global(.dark) .first-email-icon {

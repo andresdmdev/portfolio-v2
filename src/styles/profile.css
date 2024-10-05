@@ -118,61 +118,6 @@ h1 {
     color: var(--dark-secondary-color);
 }
 
-.profile-cv {
-    border-radius: 12px;
-    border-color: var(--secondary-color);
-    border-style: solid;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    cursor: pointer;
-    overflow: hidden;
-}
-
-.cv-text {
-    padding: 0 12px;
-    line-height: 32px;
-    color: var(--secondary-color);
-    font-size: 12px;
-    font-weight: 600;
-}
-
-.cv-icon {
-    width: 32px;
-    height: 32px;
-    background-color: var(--secondary-color);
-    border-radius: 12px 0px 0px 12px;
-    border: solid var(--secondary-color) 2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.cv-icon .link {
-    fill: var(--primary-color);
-    width: 24px;
-    height: 24px;
-    margin-left: 2px;
-}
-
-.dark .profile-cv {
-    border-color: var(--dark-secondary-color);
-}
-
-.dark .cv-text {
-    color: var(--white-color);
-}
-
-.dark .cv-icon {
-    background-color: var(--dark-secondary-color);
-    border: solid var(--dark-secondary-color) 2px;
-}
-
-.dark .cv-icon .link {
-    fill: var(--dark-primary-color);
-}
-
 @media screen and (min-width: 636px) {
     .profile {
         margin-top: 132px;
