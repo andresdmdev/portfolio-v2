@@ -6,25 +6,6 @@ interface Props {
     job: Job
 }
 
-/* export interface Job {
-    jobTitle: string,
-    company: string,
-    startDate: string,
-    endDate: string,
-    shortDescription: string,
-    longDescription: string,
-    linkedin: SocialIcon,
-    webPage: SocialIcon,
-    bullets: string[],
-    isCurrentJob: string,
-    isFirstJob: string
-}
-
-interface SocialIcon {
-    logo: string,
-    url: string
-} */
-
 const { job } = Astro.props
 ---
 
@@ -38,10 +19,20 @@ const { job } = Astro.props
             }
         </span>
         <div class="job-description">
-            <span>{job.startDate} - {job.endDate}</span>
+            <span class="job-date">{job.startDate} - {job.endDate}</span>
             <h3>{job.jobTitle}</h3>
-            <h5>{job.company}</h5>
-            <span>{job.shortDescription}</span>
+            <div class="job-company">
+                <h5>{job.company}</h5>
+                <a class="job-social" href={job.linkedin.url} target="_blank">
+                    <svg width="15" height="15" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                        <path class="job-icon" d="M6.71652 29.75H0.495536V9.88789H6.71652V29.75ZM3.60268 7.17852C1.61384 7.17852 0 5.54492 0 3.57266C0 2.62513 0.379567 1.71641 1.0552 1.04641C1.73083 0.376404 2.64719 0 3.60268 0C4.55817 0 5.47452 0.376404 6.15016 1.04641C6.82579 1.71641 7.20536 2.62513 7.20536 3.57266C7.20536 5.54492 5.59152 7.17852 3.60268 7.17852ZM29.9933 29.75H23.7857V20.0812C23.7857 17.777 23.7388 14.8219 20.5513 14.8219C17.317 14.8219 16.8214 17.3254 16.8214 19.9152V29.75H10.6071V9.88789H16.5737V12.5973H16.6607C17.4911 11.0367 19.5201 9.38984 22.5469 9.38984C28.8415 9.38984 30 13.5004 30 18.8395V29.75H29.9933Z"/>
+                    </svg>
+                </a>
+                <a class="job-social" href={job.webPage.url} target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 22 22" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path class="job-icon" d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zM4 12c0-.899.156-1.762.431-2.569L6 11l2 2v2l2 2 1 1v1.931C7.061 19.436 4 16.072 4 12zm14.33 4.873C17.677 16.347 16.687 16 16 16v-1a2 2 0 0 0-2-2h-4v-3a2 2 0 0 0 2-2V7h1a2 2 0 0 0 2-2v-.411C17.928 5.778 20 8.65 20 12a7.947 7.947 0 0 1-1.67 4.873z"></path></svg>
+                </a>
+            </div>
+            <p class="job-short-description">{job.shortDescription}</p>
             <ul class="bullets">
                 {
                     job.bullets.map(bullet => {
@@ -58,12 +49,27 @@ const { job } = Astro.props
 
 <style>
     h3 {
+        font-size: 20px;
+        line-height: 22px;
+        color: var(--ternary-color);
+        font-weight: bolder;
+        margin: 0 0 10px 0;
+    }
+
+    :global(.dark) h3 {
         color: var(--dark-gold-color);
-        margin: 0;
     }
 
     h5 {
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: bold;
         margin: 0;
+        color: var(--secondary-color);
+    }
+
+    :global(.dark) h5 {
+        color: var(--dark-cuaternary-color);
     }
 
     .job-container {
@@ -77,33 +83,48 @@ const { job } = Astro.props
         flex-direction: column;
         width: 1px;
         margin: 0 0 0 12px;
-        background-color: #D0D0D2;
+        background-color: var(--ternary-bg-color);
+        top: 5px;
+    }
+
+    :global(.dark) .time-line-container {
+        background-color: var(--dark-ternary-color);
     }
 
     .time-bullet {
         position: absolute;
         width: 9px;
         height: 9px;
-        background-color: var(--primary-color);
+        background-color: var(--ternary-color);
         border-radius: 50%;
         z-index: 1;
-        top: 0px;
+        top: 0;
         left: -4px;
+    }
+
+    :global(.dark) .time-bullet {
+        background-color: var(--primary-color);
     }
 
     .time-bullet-past {
         position: absolute;
         width: 9px;
         height: 9px;
-        background-color: #D0D0D2;
+        background-color: var(--gray-color);
         border-radius: 50%;
         z-index: 1;
         top: 0px;
         left: -4px;
     }
 
+    :global(.dark) .time-bullet-past {
+        background-color: var(--dark-ternary-color);
+    }
+
     .job-description {
-        margin-left: 34px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 24px;
     }
 
     .bullets {
@@ -111,11 +132,96 @@ const { job } = Astro.props
     }
 
     .school {
-        fill: var(--primary-color);
+        fill: var(--secondary-color);
         width: 21px;
         height: 21px;
-        margin: -3px 0 0 2px;
+        margin: 2px 0 0 2px;
         z-index: 2;
         overflow: hidden;
+    }
+
+    :global(.dark) .school {
+        fill: var(--primary-color);
+    }
+
+    .job-date {
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 400;
+        color: var(--secondary-color);
+        margin: 3px 0 10px 0;
+    }
+
+    :global(.dark) .job-date {
+        color: var(--dark-font-secondary-color);
+    }
+
+    .job-company {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        align-items: center;
+        margin: 0 0 20px 0;
+    }
+    .job-social {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .job-icon {
+        fill: var(--secondary-color);
+    }
+
+    :global(.dark) .job-icon {
+        fill: var(--dark-secondary-color);
+    }
+
+    .job-icon:hover {
+        opacity: 0.8;
+    }
+
+    .job-short-description {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        color: var(--secondary-color);
+    }
+
+    :global(.dark) .job-short-description {
+        color: var(--dark-cuaternary-color);
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 6px;
+        margin: 5px 0 0 0;
+    }
+
+    ul li {
+        position: relative;
+        padding-left: 15px;
+        margin: 0;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+    }
+
+    ul li::before {
+        content: '';
+        background-image: url('../../images/check-circule.svg');
+        background-size: 10px 10px;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 10px;
+    }
+
+    :global(.dark) ul li::before {
+        background-image: url('../../images/check-circule-dark.svg');
     }
 </style>
