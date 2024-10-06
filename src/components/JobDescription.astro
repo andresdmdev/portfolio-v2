@@ -185,7 +185,7 @@ const { job } = Astro.props
         margin: 0;
         font-size: 14px;
         font-weight: 500;
-        line-height: 18px;
+        line-height: 20px;
         color: var(--secondary-color);
     }
 
@@ -202,23 +202,23 @@ const { job } = Astro.props
     ul li {
         position: relative;
         padding-left: 15px;
-        margin: 0;
+        margin: 0 0 3px 0;
         font-size: 14px;
         font-weight: 500;
-        line-height: 18px;
+        line-height: 20px;
     }
 
     ul li::before {
         content: '';
         background-image: url('../../images/check-circule.svg');
-        background-size: 10px 10px;
+        background-size: 12px 12px;
         background-repeat: no-repeat;
         position: absolute;
         left: 0;
         top: 50%;
         transform: translateY(-50%);
-        width: 10px;
-        height: 10px;
+        width: 12px;
+        height: 12px;
     }
 
     :global(.dark) ul li::before {
