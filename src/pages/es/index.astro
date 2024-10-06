@@ -1,10 +1,14 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import Experience from "../../sections/Experience.astro";
 import Header from "../../sections/Header.astro";
 import Profile from "../../sections/Profile.astro";
 ---
 
 <BaseLayout pageTitle="Andres Marquez">
 	<Header />
-	<Profile />
+	<main>
+		<Profile />
+		<Experience />
+	</main>
 </BaseLayout>

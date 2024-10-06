@@ -11,7 +11,57 @@
       "profile.cv": "Open CV",
       "profile.email": "andresdmf55@gmail.com",
       "profile.icon.linkedin": "https://www.linkedin.com/in/andresmarquezdev/",
-      "profile.icon.github": "https://github.com/andresdmdev"
+      "profile.icon.github": "https://github.com/andresdmdev",
+      "experience.title": "Experience",
+      "experience.logo": "<box-icon name='briefcase' type='solid' animation='tada-hover'></box-icon>",
+      "experience.jobs": [
+        {
+          "jobTitle": "Software Engineer Junior",
+          "company": "Tienda Pago",
+          "startDate": "Oct. 2023",
+          "endDate": "Current",
+          "shortDescription": "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de apl icaciones web. Mejora de un 30% en la entrega de software.",
+          "longDescription": "",
+          "linkedin": {
+            "logo": "",
+            "url": ""
+          },
+          "webPage": {
+            "logo": "",
+            "url": ""
+          },
+          "bullets": [
+            "Migration of call services",
+            "Handling messages via Azure Service Bus",
+            "Use of Service Bus and HTTP trigger functions"
+          ],
+          "isCurrentJob": true,
+          "isFirstJob": false
+        },
+        {
+          "jobTitle": "Software Engineer Junior",
+          "company": "Tienda Pago",
+          "startDate": "Oct. 2023",
+          "endDate": "Current",
+          "shortDescription": "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de apl icaciones web. Mejora de un 30% en la entrega de software.",
+          "longDescription": "",
+          "linkedin": {
+            "logo": "",
+            "url": ""
+          },
+          "webPage": {
+            "logo": "",
+            "url": ""
+          },
+          "bullets": [
+            "Migration of call services",
+            "Handling messages via Azure Service Bus",
+            "Use of Service Bus and HTTP trigger functions"
+          ],
+          "isCurrentJob": false,
+          "isFirstJob": true
+        }
+      ]
     },
     "es": {
       "nav.home": "Inicio",
@@ -25,6 +75,31 @@
       "profile.cv": "Abrir CV",
       "profile.email": "andresdmf55@gmail.com",
       "profile.icon.linkedin": "https://www.linkedin.com/in/andresmarquezdev/",
-      "profile.icon.github": "https://github.com/andresdmdev"
+      "profile.icon.github": "https://github.com/andresdmdev",
+      "experience.title": "Experiencia Laboral",
+      "experience.logo": "<box-icon name='briefcase' type='solid' animation='tada-hover'></box-icon>",
+      "experience.jobs": [
+        {
+          "jobTitle": "Software Engineer Junior",
+          "company": "Tienda Pago",
+          "startDate": "",
+          "endDate": "",
+          "shortDescription": "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de apl icaciones web. Mejora de un 30% en la entrega de software.",
+          "longDescription": "",
+          "linkedin": {
+            "logo": "",
+            "url": ""
+          },
+          "webPage": {
+            "logo": "",
+            "url": ""
+          },
+          "bullets": [
+            "Migracion del servicios de llamadas",
+            "Manejo de mensajes por medio del service bus de azure",
+            "Uso de funciones de tipo service bus y http trigger"
+          ]
+        }
+      ]
     }
 }

@@ -1,0 +1,121 @@
+---
+import "../interfaces/jobDescription";
+import type { Job } from "../interfaces/jobDescription";
+
+interface Props {
+    job: Job
+}
+
+/* export interface Job {
+    jobTitle: string,
+    company: string,
+    startDate: string,
+    endDate: string,
+    shortDescription: string,
+    longDescription: string,
+    linkedin: SocialIcon,
+    webPage: SocialIcon,
+    bullets: string[],
+    isCurrentJob: string,
+    isFirstJob: string
+}
+
+interface SocialIcon {
+    logo: string,
+    url: string
+} */
+
+const { job } = Astro.props
+---
+
+<div>
+    <div class="job-container">
+        <span class="time-line-container">
+            {
+                job.isCurrentJob ? 
+                    <span class="time-bullet"></span> :
+                    <span class="time-bullet-past"></span>
+            }
+        </span>
+        <div class="job-description">
+            <span>{job.startDate} - {job.endDate}</span>
+            <h3>{job.jobTitle}</h3>
+            <h5>{job.company}</h5>
+            <span>{job.shortDescription}</span>
+            <ul class="bullets">
+                {
+                    job.bullets.map(bullet => {
+                        return <li>{bullet}</li>;
+                    })
+                }
+            </ul>
+        </div>
+    </div>
+    {
+        job.isFirstJob && <box-icon class="school" type='solid' name='school' animation='tada-hover'></box-icon>
+    }
+</div>
+
+<style>
+    h3 {
+        color: var(--dark-gold-color);
+        margin: 0;
+    }
+
+    h5 {
+        margin: 0;
+    }
+
+    .job-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .time-line-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 1px;
+        margin: 0 0 0 12px;
+        background-color: #D0D0D2;
+    }
+
+    .time-bullet {
+        position: absolute;
+        width: 9px;
+        height: 9px;
+        background-color: var(--primary-color);
+        border-radius: 50%;
+        z-index: 1;
+        top: 0px;
+        left: -4px;
+    }
+
+    .time-bullet-past {
+        position: absolute;
+        width: 9px;
+        height: 9px;
+        background-color: #D0D0D2;
+        border-radius: 50%;
+        z-index: 1;
+        top: 0px;
+        left: -4px;
+    }
+
+    .job-description {
+        margin-left: 34px;
+    }
+
+    .bullets {
+        margin-bottom: 50px;
+    }
+
+    .school {
+        fill: var(--primary-color);
+        width: 21px;
+        height: 21px;
+        margin: -3px 0 0 2px;
+        z-index: 2;
+        overflow: hidden;
+    }
+</style>

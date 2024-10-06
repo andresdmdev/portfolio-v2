@@ -24,16 +24,16 @@ const t = getTranslation(lang);
     </div>
     <div class="profile-contact-container">
         <div class="profile-social-section">
-            <a class="icon-container" href={t("profile.icon.linkedin")} target="_blank" >
+            <a class="icon-container" href={t("profile.icon.linkedin") as string} target="_blank" >
                 <box-icon type='logo' name='linkedin' animation='flashing-hover' class="icon"></box-icon>
             </a>
-            <a class="icon-container" href={t("profile.icon.github")} target="_blank" >
+            <a class="icon-container" href={t("profile.icon.github") as string} target="_blank" >
                 <box-icon name='github' type='logo' animation='flashing-hover' class="icon" ></box-icon>
             </a>
         </div>
         <div class="profile-contact-section">
-            <OpenCV text={t("profile.cv")} />
-            <Email text={t("profile.email")} />
+            <OpenCV text={t("profile.cv") as string} />
+            <Email text={t("profile.email") as string} />
         </div>
     </div>
 </section>
