@@ -1,0 +1,25 @@
+---
+import type { Image } from "../interfaces/projectItem";
+
+interface Props {
+    items: Image[]
+}
+
+const { items } = Astro.props;
+---
+
+<div class="images-container">
+    <img src={`../../images/${items[0].image}`} alt="project_images">
+</div>
+
+<style>
+    .images-container {
+        margin: 25px 0 25px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    img {
+        max-width: 300px;
+    }
+</style>

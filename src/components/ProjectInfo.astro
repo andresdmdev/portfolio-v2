@@ -1,0 +1,70 @@
+---
+import type { ProjectItem } from '../interfaces/projectItem'
+import Carrousel from './Carrousel.astro';
+import ProjectLInks from './ProjectLInks.astro';
+import TechnologyItem from './TechnologyItem.astro';
+
+interface Props {
+    project: ProjectItem
+}
+
+const { project } = Astro.props;
+---
+
+<div class="project-item">
+    <h3>{project.title}</h3>
+    <p>{project.description}</p>
+    <div class="techology-container">
+        {project.technologies.map(tech => <TechnologyItem techItem={tech} />)}
+    </div>
+    <Carrousel items={project.images} />
+    <div class="links-container">
+        {project.links.map(link => <ProjectLInks linkItem={link} />)}
+    </div>
+</div>
+
+<style>
+    .project-item {
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 600;
+        margin: 0 0 21px 0;
+        color: var(--ternary-color);
+    }
+
+    :global(.dark) h3 {
+        color: var(--dark-gold-color);
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        margin-bottom: 15px;
+        color: var(--secondary-color);
+    }
+
+    :global(.dark) p {
+        color: var(--dark-cuaternary-color);
+    }
+
+    .techology-container {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 12px;
+    }
+
+    .links-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 12px;
+    }
+</style>

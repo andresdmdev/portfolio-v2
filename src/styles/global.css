@@ -3,6 +3,7 @@
 html {
     background-color: #77bef8b0;
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 
 html.dark {
