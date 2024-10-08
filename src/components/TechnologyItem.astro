@@ -10,7 +10,7 @@ const { techItem } = Astro.props;
 
 <div class="technology-item" style={`background: ${techItem.backgroundColor};`}>
     <span class="technology-logo" set:html={techItem.logo}></span>
-    <span>{techItem.technology}</span>
+    <span class="technology-name">{techItem.technology}</span>
 </div>
 
 <style>
@@ -28,5 +28,15 @@ const { techItem } = Astro.props;
         align-items: center;
         margin: 0;
         padding: 0;
+    }
+
+    .technology-name {
+        font-size: 10px;
+        font-weight: bold;
+        line-height: 24px;
+    }
+
+    @media screen and (min-width: 636px) {
+        
     }
 </style>

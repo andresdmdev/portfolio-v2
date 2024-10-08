@@ -7,7 +7,7 @@ interface Props {
 
 const { items } = Astro.props;
 ---
-
+<!-- TODO - Hacer galeria -->
 <div class="images-container">
     <img src={`../../images/${items[0].image}`} alt="project_images">
 </div>
@@ -20,6 +20,12 @@ const { items } = Astro.props;
     }
 
     img {
-        max-width: 300px;
+        max-width: 250px;
+    }
+
+    @media screen and (min-width: 636px) {
+        img {
+            max-width: 400px;
+        }
     }
 </style>

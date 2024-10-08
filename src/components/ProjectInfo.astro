@@ -67,4 +67,28 @@ const { project } = Astro.props;
         flex-direction: row;
         gap: 12px;
     }
+
+    @media screen and (min-width: 636px) {
+        h3 {
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: 400;
+            margin-bottom: 18px;
+        }
+
+        .techology-container {
+            justify-content: flex-start;
+            margin-left: 12px;
+        }
+
+        .links-container {
+            justify-content: flex-start;
+            margin-left: 12px;
+        }
+    }
 </style>

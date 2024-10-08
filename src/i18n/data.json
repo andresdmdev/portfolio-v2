@@ -96,40 +96,6 @@
               "icon": "<box-icon name='github' type='logo' animation='tada-hover'></box-icon>"
             }
           ]
-        },
-        {
-          "title": "Project 2",
-          "description": "Created from scratch with Next.js and Tailwind CSS. It's a library with SVG logos from the most popular brands. Optimized for SEO and performance.",
-          "images": [
-            {
-              "image": "profile.png",
-              "altText": "Profile image"
-            }
-          ],
-          "technologies": [
-            {
-              "technology": "Angular",
-              "logo": "",
-              "backgroundColor": ""
-            },
-            {
-              "technology": "Tailwind.CSS",
-              "logo": "",
-              "backgroundColor": ""
-            }
-          ],
-          "links": [
-            {
-              "name": "Demo",
-              "url": "",
-              "icon": ""
-            },
-            {
-              "name": "GitHub",
-              "url": "",
-              "icon": ""
-            }
-          ]
         }
       ]
     },
