@@ -1,0 +1,50 @@
+---
+import TitleSection from "../components/TitleSection.astro";
+import { getLangFromUrl, getTranslation } from "../i18n/utils";
+import type { Stackitem } from "../interfaces/stackItem";
+
+const lang = getLangFromUrl(Astro.url);
+
+const t = getTranslation(lang);
+
+const stackList = t("stack.tools") as Stackitem[]
+---
+
+<section>
+    <TitleSection title={t("stack.title") as string} logo={t("stack.logo") as string} />
+
+    <div class="stack-container">
+        {
+            stackList.length > 0 && stackList.map(stack => {
+                return <img src={`../../images/${stack.logo}`} alt={stack.name} />
+            })
+        }
+    </div>
+</section>
+
+<style>
+    .stack-container {
+        margin-top: 25px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        align-items: center;
+        gap: 20px 0px;
+    }
+
+    img {
+        width: 40px;
+    }
+
+    @media screen and (min-width: 636px) {
+        .stack-container {
+            margin-top: 40px;
+            grid-template-columns: repeat(9, 1fr);
+            gap: 30px 5px;
+        }
+
+        img {
+            width: 50px;
+        }
+    }
+</style>

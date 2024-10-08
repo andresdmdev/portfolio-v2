@@ -97,6 +97,94 @@
             }
           ]
         }
+      ],
+      "stack.title": "Technologies and tools",
+      "stack.logo": "<box-icon name='hot' type='solid' animation='tada-hover'></box-icon>",
+      "stack.tools": [
+        {
+          "name": "C#",
+          "logo": "c-sharp.avif"
+        },
+        {
+          "name": "Netcore",
+          "logo": "netcore.avif"
+        },
+        {
+          "name": "TypeScript",
+          "logo": "typescript.avif"
+        },
+        {
+          "name": "JavaScript",
+          "logo": "javascript.avif"
+        },
+        {
+          "name": "Python",
+          "logo": "python.avif"
+        },
+        {
+          "name": "React",
+          "logo": "reactjs.avif"
+        },
+        {
+          "name": "Angular",
+          "logo": "angular.avif"
+        },
+        {
+          "name": "SQL Server",
+          "logo": "sql-server.avif"
+        },
+        {
+          "name": "MySql",
+          "logo": "mysql.avif"
+        },
+        {
+          "name": "NodeJS",
+          "logo": "node.avif"
+        },
+        {
+          "name": "ExpressJs",
+          "logo": "express.avif"
+        },
+        {
+          "name": "Html",
+          "logo": "html.avif"
+        },
+        {
+          "name": "CSS",
+          "logo": "css.avif"
+        },
+        {
+          "name": "TailWindCSS",
+          "logo": "tailwind.avif"
+        },
+        {
+          "name": "Sass",
+          "logo": "sass.avif"
+        },
+        {
+          "name": "Jest",
+          "logo": "jest.avif"
+        },
+        {
+          "name": "Git",
+          "logo": "git.avif"
+        },
+        {
+          "name": "GitHub",
+          "logo": "github.avif"
+        },
+        {
+          "name": "Azure",
+          "logo": "azure.avif"
+        },
+        {
+          "name": "Atlassian",
+          "logo": "atlassian.avif"
+        },
+        {
+          "name": "DataDog",
+          "logo": "datadog.avif"
+        }
       ]
     },
     "es": {
@@ -207,6 +295,94 @@
               "icon": ""
             }
           ]
+        }
+      ],
+      "stack.title": "Technologies and tools",
+      "stack.logo": "<box-icon name='hot' type='solid' animation='tada-hover'></box-icon>",
+      "stack.tools": [
+        {
+          "name": "C#",
+          "logo": "c-sharp.avif"
+        },
+        {
+          "name": "Netcore",
+          "logo": "netcore.avif"
+        },
+        {
+          "name": "TypeScript",
+          "logo": "typescript.avif"
+        },
+        {
+          "name": "JavaScript",
+          "logo": "javascript.avif"
+        },
+        {
+          "name": "Python",
+          "logo": "python.avif"
+        },
+        {
+          "name": "React",
+          "logo": "reactjs.avif"
+        },
+        {
+          "name": "Angular",
+          "logo": "angular.avif"
+        },
+        {
+          "name": "SQL Server",
+          "logo": "sql-server.avif"
+        },
+        {
+          "name": "MySql",
+          "logo": "mysql.avif"
+        },
+        {
+          "name": "NodeJS",
+          "logo": "node.avif"
+        },
+        {
+          "name": "ExpressJs",
+          "logo": "express.avif"
+        },
+        {
+          "name": "Html",
+          "logo": "html.avif"
+        },
+        {
+          "name": "CSS",
+          "logo": "css.avif"
+        },
+        {
+          "name": "TailWindCSS",
+          "logo": "tailwind.avif"
+        },
+        {
+          "name": "Sass",
+          "logo": "sass.avif"
+        },
+        {
+          "name": "Jest",
+          "logo": "jest.avif"
+        },
+        {
+          "name": "Git",
+          "logo": "git.avif"
+        },
+        {
+          "name": "GitHub",
+          "logo": "github.avif"
+        },
+        {
+          "name": "Azure",
+          "logo": "azure.avif"
+        },
+        {
+          "name": "Atlassian",
+          "logo": "atlassian.avif"
+        },
+        {
+          "name": "DataDog",
+          "logo": "datadog.avif"
         }
       ]
     }
