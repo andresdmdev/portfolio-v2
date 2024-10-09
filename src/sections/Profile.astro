@@ -1,0 +1,39 @@
+---
+import "../styles/profile.css";
+import { getLangFromUrl, getTranslation } from "../i18n/utils";
+import OpenCV from "../components/OpenCV.astro";
+import Email from "../components/Email.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const t = getTranslation(lang);
+---
+<section class="profile">
+    <div class="profile-img-section">
+        <div>
+            <img class="img-profile" src="./images/profile.png" alt="profile" sizes="(max-width: 635px) 50px, (min-width: 636px) 100px" />
+        </div>
+        <div class="profile-tag">
+            <span>{t("profile.tag")}</span>
+        </div>
+    </div>
+    <h1>{t("profile.gretting")}</h1>
+    <div class="profile-description-section">
+        <span class="first">{t("profile.description-1")}</span>
+        <span class="second">{t("profile.description-2")}</span>
+        <span class="third">{t("profile.description-3")}</span>
+    </div>
+    <div class="profile-contact-container">
+        <div class="profile-social-section">
+            <a class="icon-container" href={t("profile.icon.linkedin") as string} target="_blank" >
+                <box-icon type='logo' name='linkedin' animation='flashing-hover' class="icon"></box-icon>
+            </a>
+            <a class="icon-container" href={t("profile.icon.github") as string} target="_blank" >
+                <box-icon name='github' type='logo' animation='flashing-hover' class="icon" ></box-icon>
+            </a>
+        </div>
+        <div class="profile-contact-section">
+            <OpenCV text={t("profile.cv") as string} />
+            <Email text={t("profile.email") as string} />
+        </div>
+    </div>
+</section>

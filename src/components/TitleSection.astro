@@ -1,0 +1,55 @@
+---
+
+interface Props {
+    title: string,
+    logo: string
+}
+
+const { title, logo } = Astro.props;
+---
+
+<div class="title-section">
+    <div set:html={logo} class="logo"></div>
+    <h2>{title}</h2>
+</div>
+
+<style>
+    h2 {
+        margin: 0;
+    }
+
+    .title-section {
+        margin: 70px 0 20px 0;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        fill: var(--secondary-color);
+        width: 25px;
+        height: 25px;
+    }
+
+    :global(.dark) .logo {
+        fill: var(--dark-secondary-color);
+    }
+
+    @media screen and (min-width: 636px) {
+        h2 {
+            font-size: 30px;
+            line-height: 32px;
+            font-weight: 600;
+        }
+
+        .logo {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+</style>
