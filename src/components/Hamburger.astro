@@ -22,7 +22,11 @@
         width: 28px;
         height: 2px;
         margin-bottom: 8px;
-        background-color: var(--primary-color);
+        background-color: var(--secondary-color);
+    }
+
+    :global(.dark) .hamburger .line {
+        background-color: var(--dark-secondary-color);
     }
 
     .last-line {
@@ -30,7 +34,11 @@
         width: 28px;
         height: 2px;
         margin-bottom: 0px;
-        background-color: var(--primary-color);
+        background-color: var(--secondary-color);
+    }
+
+    :global(.dark) .hamburger .last-line {
+        background-color: var(--dark-secondary-color);
     }
 
     @media screen and (min-width: 636px) {
