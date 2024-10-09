@@ -6,3 +6,36 @@
     <span class="line"></span>
     <span class="last-line"></span>
 </div>
+
+<style>
+    .hamburger {
+        cursor: pointer;
+        z-index: 3;
+    }
+
+    .hamburger-toogle {
+        position: fixed;
+    }
+
+    .hamburger .line {
+        display: block;
+        width: 28px;
+        height: 2px;
+        margin-bottom: 8px;
+        background-color: var(--primary-color);
+    }
+
+    .last-line {
+        display: block;
+        width: 28px;
+        height: 2px;
+        margin-bottom: 0px;
+        background-color: var(--primary-color);
+    }
+
+    @media screen and (min-width: 636px) {
+        .hamburger {
+            display: none;
+        }
+    }
+</style>
