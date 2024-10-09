@@ -5,9 +5,64 @@ const lang = getLangFromUrl(Astro.url);
 const t = getTranslation(lang);
 const baseLanguage = formatDefautlBaseLanguage(lang);
 ---
-
 <div class="nav-links">
-    <a href={`/${baseLanguage}`}>{t('nav.home')}</a>
-    <a href={`/${baseLanguage}#Experience`}>{t('nav.experience')}</a>
-    <a href={`/${baseLanguage}#Projects`}>{t('nav.projects')}</a>
+    <a class="nav-link" href={`/${baseLanguage}#`}>{t('nav.home')}</a>
+    <a class="nav-link" href={`/${baseLanguage}#Experience`}>{t('nav.experience')}</a>
+    <a class="nav-link" href={`/${baseLanguage}#Projects`}>{t('nav.projects')}</a>
+    <a class="nav-link" href={`/${baseLanguage}#Tools`}>{t('nav.tools')}</a>
+    <a class="nav-link" href={`/${baseLanguage}#Education`}>{t('nav.education')}</a>
 </div>
+
+<style>
+    .nav-links {
+        background-color: var(--primary-bg-color);
+        position: fixed;
+        width: 100vw;
+        height: 700px;
+        padding-top: 22rem;
+        left: 0;
+        display: none;
+        margin: 0;
+        z-index: 2;
+    }
+
+    .nav-links a {
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: bold;
+        color: var(--dark-primary-color);
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus {
+        color: var(--primary-color);
+    }
+
+    :global(.dark) .nav-links a {
+        color: var(--white-color);
+    }
+
+    .expanded {
+        display: unset;
+    }
+
+    @media screen and (min-width: 636px) {
+        .nav-links {
+            margin-left: 5em;
+            display: block;
+            position: static;
+            width: auto;
+            background: none;
+            height: auto;
+            padding-top: 0rem;
+        }
+        
+        .nav-links a {
+            display: inline-block;
+            padding: 5px 13px;
+        }
+    }
+</style>
