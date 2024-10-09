@@ -185,6 +185,42 @@
           "name": "DataDog",
           "logo": "datadog.avif"
         }
+      ],
+      "education.title": "Education",
+      "education.logo": "<box-icon type='solid' name='bank' animation='tada-hover'></box-icon>",
+      "education.diplomas": [
+        {
+          "name": "Bachelor of Technology",
+          "icon": "<box-icon name='badge-check' animation='tada-hover'></box-icon>",
+          "school": "Universidad 'AJS' Mérida",
+          "type": "Course",
+          "dateTime": "20/06/2021",
+          "dateTimeUI": "Jun. 2021"
+        },
+        {
+          "name": "Bachelor of Technology",
+          "icon": "<box-icon name='badge-check' animation='tada-hover'></box-icon>",
+          "school": "Universidad 'AJS' Mérida",
+          "type": "Course",
+          "dateTime": "20/06/2021",
+          "dateTimeUI": "Jun. 2021"
+        },
+        {
+          "name": "Bachelor of Technology",
+          "icon": "<box-icon name='badge-check' animation='tada-hover'></box-icon>",
+          "school": "Universidad 'AJS' Mérida",
+          "type": "Course",
+          "dateTime": "20/06/2021",
+          "dateTimeUI": "Jun. 2021"
+        },
+        {
+          "name": "Bachelor of Technology",
+          "icon": "<box-icon name='badge-check' animation='tada-hover'></box-icon>",
+          "school": "Universidad 'AJS' Mérida",
+          "type": "Course",
+          "dateTime": "20/06/2021",
+          "dateTimeUI": "Jun. 2021"
+        }
       ]
     },
     "es": {
@@ -383,6 +419,18 @@
         {
           "name": "DataDog",
           "logo": "datadog.avif"
+        }
+      ],
+      "education.title": "Education",
+      "education.logo": "<box-icon type='solid' name='bank' animation='tada-hover'></box-icon>",
+      "education.diplomas": [
+        {
+          "name": "Bachelor of Technology",
+          "icon": "<box-icon type='solid' name='badge-check'></box-icon>",
+          "school": "Universidad 'AJS' Mérida",
+          "type": "Course",
+          "dateTime": "20/06/2021",
+          "dateTimeUI": "Jun. 2021"
         }
       ]
     }
