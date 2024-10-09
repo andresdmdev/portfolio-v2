@@ -10,7 +10,7 @@ const t = getTranslation(lang);
 const projectItem = t("project.items") as ProjectItem[];
 ---
 
-<section class="proyect-section">
+<section id="Projects" class="proyect-section">
     <TitleSection title={t("project.title") as string} logo={t("project.logo") as string} />
 
     {projectItem.map(p => <ProjectInfo project={p} />)}

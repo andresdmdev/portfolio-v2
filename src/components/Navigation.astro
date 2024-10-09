@@ -6,11 +6,11 @@ const t = getTranslation(lang);
 const baseLanguage = formatDefautlBaseLanguage(lang);
 ---
 <div class="nav-links">
-    <a href={`/${baseLanguage}`}>{t('nav.home')}</a>
-    <a href={`/${baseLanguage}#Experience`}>{t('nav.experience')}</a>
-    <a href={`/${baseLanguage}#Projects`}>{t('nav.projects')}</a>
-    <a href={`/${baseLanguage}#Tools`}>{t('nav.tools')}</a>
-    <a href={`/${baseLanguage}#Education`}>{t('nav.education')}</a>
+    <a class="nav-link" href={`/${baseLanguage}#`}>{t('nav.home')}</a>
+    <a class="nav-link" href={`/${baseLanguage}#Experience`}>{t('nav.experience')}</a>
+    <a class="nav-link" href={`/${baseLanguage}#Projects`}>{t('nav.projects')}</a>
+    <a class="nav-link" href={`/${baseLanguage}#Tools`}>{t('nav.tools')}</a>
+    <a class="nav-link" href={`/${baseLanguage}#Education`}>{t('nav.education')}</a>
 </div>
 
 <style>
@@ -56,6 +56,8 @@ const baseLanguage = formatDefautlBaseLanguage(lang);
             position: static;
             width: auto;
             background: none;
+            height: auto;
+            padding-top: 0rem;
         }
         
         .nav-links a {
