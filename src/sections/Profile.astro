@@ -11,9 +11,9 @@ const t = getTranslation(lang);
         <div>
             <img class="img-profile" src="./images/profile.png" alt="profile" sizes="(max-width: 635px) 50px, (min-width: 636px) 100px" />
         </div>
-        <div class="profile-tag">
+        <a class="profile-tag" href={t("profile.icon.linkedin") as string} target="_blank">
             <span>{t("profile.tag")}</span>
-        </div>
+        </a>
     </div>
     <h1>{t("profile.gretting")}</h1>
     <div class="profile-description-section">
@@ -105,6 +105,7 @@ const t = getTranslation(lang);
         align-items: center;
         margin-top: 24px;
         gap: 7px;
+        box-sizing: border-box;
     }
 
     .profile-social-section {
@@ -139,10 +140,22 @@ const t = getTranslation(lang);
 
     .profile-tag {
         background-color: var(--secondary-bg-color);
-        padding: 6px 8px;
-        border-radius: 6px;
+        padding: 8px 10px;
+        border-radius: 10px;
         display: flex;
         align-content: center;
+        cursor: pointer;
+        text-decoration: none;
+        transition: all 300ms ease-in-out;
+    }
+
+    .profile-tag:hover {
+        background-color: var(--secondary-bg-color-hover);
+        padding: 10px 12px;
+    }
+
+    :global(.dark) .profile-tag:hover {
+        background-color: var(--dark-secondary-bg-color-hover);
     }
 
     .profile-tag span {
