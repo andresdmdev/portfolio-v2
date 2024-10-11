@@ -2,11 +2,12 @@
 import { getLangFromUrl, getTranslation } from "../i18n/utils";
 import OpenCV from "../components/OpenCV.astro";
 import Email from "../components/Email.astro";
+import SectionLayout from "../layouts/SectionLayout.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = getTranslation(lang);
 ---
-<section id="/" class="profile">
+<SectionLayout id="/" className="profile">
     <div class="profile-img-section">
         <div>
             <img class="img-profile" src="./images/profile.png" alt="profile" sizes="(max-width: 635px) 50px, (min-width: 636px) 100px" />
@@ -35,16 +36,9 @@ const t = getTranslation(lang);
             <Email text={t("profile.email") as string} />
         </div>
     </div>
-</section>
+</SectionLayout>
 
 <style>
-    .profile {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 40px;
-    }
-
     .profile-img-section {
         display: flex;
         flex-direction: row;
@@ -174,18 +168,14 @@ const t = getTranslation(lang);
     }
 
     @media screen and (min-width: 636px) {
-        .profile {
-            margin-top: 132px;
-        }
-        
         h1 {
-            font-size: 48px;
+            font-size: 42px;
         }
 
         .profile-description-section {
-            font-size: 22px;
+            font-size: 20px;
             margin-top: 20px;
-            line-height: 32px;
+            line-height: 30px;
         }
 
         .profile-contact-container{
