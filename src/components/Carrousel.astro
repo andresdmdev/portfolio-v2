@@ -101,13 +101,15 @@ const {items} = Astro.props;
             if (!isDragging || touchInButton) return;
             const currentX = e.touches[0].clientX;
             const translateX = currentX - startX;
-            imagesWrapper.style.transform = `translateX(${translateX}px)`;
+            if (Math.abs(translateX) > 30 && isDragging) {
+                imagesWrapper.style.transform = `translateX(${translateX}px)`;
+            }
         };
 
         const handleTouchEnd = () => {
             if (touchInButton) return;
             const translateX: number = parseInt(imagesWrapper.style.transform.replace('translateX(', '').replace('px)', '')) || 0;
-            if (Math.abs(translateX) > 20 && isDragging) {
+            if (Math.abs(translateX) > 30 && isDragging) {
                 if (translateX < 0) {
                     nextButton.click();
                 } else {
