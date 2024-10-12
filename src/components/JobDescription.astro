@@ -54,6 +54,7 @@ const { job } = Astro.props
         color: var(--ternary-color);
         font-weight: bolder;
         margin: 0 0 10px 0;
+        transition: all 300ms ease-in-out;
     }
 
     :global(.dark) h3 {
@@ -171,6 +172,7 @@ const { job } = Astro.props
     
     .job-icon {
         fill: var(--secondary-color);
+        transition: all 300ms ease-in-out;
     }
 
     :global(.dark) .job-icon {
@@ -211,14 +213,14 @@ const { job } = Astro.props
     ul li::before {
         content: '';
         background-image: url('../../images/check-circule.svg');
-        background-size: 14px 14px;
+        background-size: 16px 16px;
         background-repeat: no-repeat;
         position: absolute;
-        left: -5px;
+        left: -6px;
         top: 50%;
         transform: translateY(-50%);
-        width: 14px;
-        height: 14px;
+        width: 16px;
+        height: 16px;
     }
 
     :global(.dark) ul li::before {

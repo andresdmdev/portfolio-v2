@@ -16,10 +16,11 @@ const { title, logo } = Astro.props;
 <style>
     h2 {
         margin: 0;
+        transition: all 300ms ease-in-out;
     }
 
     .title-section {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         display: flex;
         flex-direction: row;
         gap: 10px;
@@ -37,6 +38,7 @@ const { title, logo } = Astro.props;
 
     :global(.dark) .logo {
         fill: var(--dark-secondary-color);
+        transition: all 300ms ease-in-out;
     }
 
     @media screen and (min-width: 636px) {
@@ -45,7 +47,9 @@ const { title, logo } = Astro.props;
             line-height: 32px;
             font-weight: 600;
         }
-
+        .title-section {
+            margin-bottom: 45px;
+        }
         .logo {
             width: 30px;
             height: 30px;
