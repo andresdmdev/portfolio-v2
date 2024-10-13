@@ -2,7 +2,6 @@
 import Hamburger from "../components/Hamburger.astro";
 import Navigation from "../components/Navigation.astro";
 import ThemeIcon from "../components/ThemeIcon.astro";
-import "../styles/header.css";
 ---
 
 <header>
@@ -12,3 +11,12 @@ import "../styles/header.css";
         <Hamburger />
     </nav>
 </header>
+
+<style>
+    nav {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        gap: 32px;
+    }
+</style>

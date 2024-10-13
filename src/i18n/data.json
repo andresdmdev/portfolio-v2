@@ -9,9 +9,9 @@
       "profile.description-1": "FullStack Software Developer.",
       "profile.description-2": "Creating user interfaces, improving UI and UX with",
       "profile.description-3": " best practices.",
-      "profile.tag": "Open to work",
-      "profile.cv": "Open CV",
-      "profile.email": "andresdmf55@gmail.com",
+      "profile.tag": "Ready for work! 🚀",
+      "profile.cv": "Curriculum",
+      "profile.email": "@Email",
       "profile.icon.linkedin": "https://www.linkedin.com/in/andresmarquezdev/",
       "profile.icon.github": "https://github.com/andresdmdev",
       "experience.title": "Experience",
@@ -70,8 +70,16 @@
           "description": "Created from scratch with Next.js and Tailwind CSS. It's a library with SVG logos from the most popular brands. Optimized for SEO and performance.",
           "images": [
             {
+              "image": "laptop.png",
+              "altText": "Laptop image"
+            },
+            {
               "image": "profile.png",
               "altText": "Profile image"
+            },
+            {
+              "image": "laptop.png",
+              "altText": "Laptop image"
             }
           ],
           "technologies": [
@@ -235,9 +243,9 @@
       "profile.description-1": "FullStack Software Developer.",
       "profile.description-2": "part 1",
       "profile.description-3": " part 2",
-      "profile.tag": "Disponible para trabajar",
-      "profile.cv": "Abrir CV",
-      "profile.email": "andresdmf55@gmail.com",
+      "profile.tag": "¡Listo para trabajar! 🚀",
+      "profile.cv": "Curriculum",
+      "profile.email": "@Email",
       "profile.icon.linkedin": "https://www.linkedin.com/in/andresmarquezdev/",
       "profile.icon.github": "https://github.com/andresdmdev",
       "experience.title": "Experiencia Laboral",

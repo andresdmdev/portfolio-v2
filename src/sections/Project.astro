@@ -3,6 +3,7 @@ import ProjectInfo from "../components/ProjectInfo.astro";
 import TitleSection from "../components/TitleSection.astro";
 import { getLangFromUrl, getTranslation } from "../i18n/utils";
 import type { ProjectItem } from "../interfaces/projectItem";
+import SectionLayout from "../layouts/SectionLayout.astro";
 
 const lang = getLangFromUrl(Astro.url);
 
@@ -10,14 +11,8 @@ const t = getTranslation(lang);
 const projectItem = t("project.items") as ProjectItem[];
 ---
 
-<section id="Projects" class="proyect-section">
+<SectionLayout id="Projects" className="proyect-section">
     <TitleSection title={t("project.title") as string} logo={t("project.logo") as string} />
 
     {projectItem.map(p => <ProjectInfo project={p} />)}
-</section>
-
-<style>
-    .proyect-section {
-        margin-top: -20px;
-    }
-</style>
+</SectionLayout>

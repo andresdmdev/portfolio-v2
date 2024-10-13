@@ -3,13 +3,14 @@ import EducationDiploma from "../components/EducationDiploma.astro";
 import TitleSection from "../components/TitleSection.astro";
 import { getLangFromUrl, getTranslation } from "../i18n/utils";
 import type { EducationItem } from "../interfaces/educationDiplomaItem";
+import SectionLayout from "../layouts/SectionLayout.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = getTranslation(lang);
 const educationItem = t("education.diplomas") as EducationItem[];
 ---
 
-<section id="Education">
+<SectionLayout id="Education">
     <TitleSection  title={t("education.title") as string} logo={t("education.logo") as string} />
 
     <div class="education-diplomas">
@@ -19,21 +20,21 @@ const educationItem = t("education.diplomas") as EducationItem[];
             )
         }
     </div>
-</section>
+</SectionLayout>
 
 <style>
     .education-diplomas {
         margin: 10px 0 0 17px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 14px;
+        gap: 20px;
     }
 
     @media screen and (min-width: 636px) {
         .education-diplomas {
             margin: 19px 0 0 40px;
             grid-template-columns: repeat(2, 1fr);
-            gap: 16px;
+            gap: 24px;
         }
     }
 </style>

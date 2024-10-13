@@ -8,63 +8,62 @@ const { text } = Astro.props;
 
 <div class="profile-cv">
     <span class="cv-text">{text}</span>
-    <span class="cv-icon">
-        <box-icon class="link" name='link-external' animation='tada-hover'></box-icon>
-    </span>
+    <box-icon class="link" name='link-external' animation='tada-hover'></box-icon>
 </div>
 
 <style>
     .profile-cv {
         border-radius: 12px;
         border-color: var(--secondary-color);
+        background-color: transparent;
         border-style: solid;
         box-sizing: border-box;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        cursor: pointer;
-        overflow: hidden;
-    }
-
-    .cv-text {
-        padding: 0 10px;
-        line-height: 32px;
-        color: var(--secondary-color);
-        font-size: 12px;
-        font-weight: 600;
-    }
-
-    .cv-icon {
-        width: 32px;
-        height: 32px;
-        background-color: var(--secondary-color);
-        display: flex;
-        justify-content: center;
         align-items: center;
-        margin: 0;
+        cursor: pointer;
+        padding: 0 8px;
+        gap: 5px;
+        transition: all 300ms ease-in-out;
     }
-
-    .cv-icon .link {
+    .profile-cv:hover {
+        background-color: var(--secondary-color);
+    }
+    .profile-cv:hover .cv-text {
+        color: var(--primary-color);
+    }
+    .profile-cv:hover .link {
         fill: var(--primary-color);
-        width: 24px;
-        height: 24px;
-        margin-left: 2px;
     }
-
     :global(.dark) .profile-cv {
         border-color: var(--dark-secondary-color);
     }
-
-    :global(.dark) .cv-text {
-        color: var(--white-color);
-    }
-
-    :global(.dark) .cv-icon {
+    :global(.dark) .profile-cv:hover {
         background-color: var(--dark-secondary-color);
     }
-
-    :global(.dark) .cv-icon .link {
+    .cv-text {
+        line-height: 32px;
+        color: var(--secondary-color);
+        font-size: 13px;
+        font-weight: bolder;
+    }
+    :global(.dark) .profile-cv:hover .cv-text {
+        color: var(--dark-primary-color);
+    }
+    :global(.dark) .profile-cv:hover .link {
         fill: var(--dark-primary-color);
     }
+    .link {
+        fill: var(--secondary-color);
+        width: 22px;
+        height: 22px;
+        margin-left: 2px;
+    }
+    :global(.dark) .cv-text {
+        color: var(--dark-secondary-color);
+    }
+    :global(.dark) .link {
+        fill: var(--dark-secondary-color);
+    } 
 </style>
 

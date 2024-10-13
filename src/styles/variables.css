@@ -4,13 +4,17 @@
     --ternary-color: #F99417;
     --primary-bg-color: #181A23;
     --secondary-bg-color: rgba(24,26,35,0.1);
-    --gray-color: rgb(104, 112, 119);
+    --secondary-bg-color-hover: rgba(24,26,35,0.2);
     --ternary-bg-color: rgba(24,26,35,0.6);
+    --cuaternary-bg-color: #77bef8c0;
+    --gray-color: rgb(104, 112, 119);
     --white-color: #F5F5F5;
     --dark-gold-color: #FFB534;
     --dark-primary-color: #181A23;
     --dark-secondary-color: #77BEF8;
     --dark-secondary-bg-color: rgba(119,190,248,0.16);
+    --dark-secondary-bg-color-bolder: rgba(119,190,248,0.25);
+    --dark-secondary-bg-color-hover: rgba(119,190,248,0.2);
     --dark-font-secondary-color: rgba(119,190,248,0.8);
     --dark-ternary-color: #D0D0D2;
     --dark-cuaternary-color: #E7E7E7;

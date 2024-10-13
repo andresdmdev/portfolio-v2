@@ -26,12 +26,18 @@ const { linkItem } = Astro.props;
         border-radius: 30px;
         background-color: var(--secondary-bg-color);
         padding: 4px 11px;
+        transition: all 500ms ease-in-out;
     }
 
+    .link-item:hover {
+        background-color: var(--secondary-bg-color-hover);
+    }
     :global(.dark) .link-item {
         background-color: #273446;
     }
-
+    :global(.dark) .link-item:hover {
+        background-color: var(--dark-secondary-bg-color-hover);
+    }
     .link-logo {
         display: flex;
         justify-content: center;
@@ -44,7 +50,7 @@ const { linkItem } = Astro.props;
     }
 
     .link-name {
-        font-size: 8px;
+        font-size: 10px;
         font-weight: bold;
         line-height: 24px;
         color: var(--secondary-color);
@@ -56,7 +62,7 @@ const { linkItem } = Astro.props;
 
     @media screen and (min-width: 636px) {
         .link-name {
-            font-size: 10px;
+            font-size: 12px;
             line-height: 24px;
         }
     }

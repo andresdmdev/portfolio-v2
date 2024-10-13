@@ -3,6 +3,7 @@ import JobDescription from "../components/JobDescription.astro";
 import TitleSection from "../components/TitleSection.astro";
 import { getLangFromUrl, getTranslation } from "../i18n/utils";
 import type { Job } from "../interfaces/jobDescription";
+import SectionLayout from "../layouts/SectionLayout.astro";
 
 const lang = getLangFromUrl(Astro.url);
 
@@ -10,12 +11,8 @@ const t = getTranslation(lang);
 const jobs = t("experience.jobs") as Job[]
 ---
 
-<section id="Experience">
+<SectionLayout id="Experience">
     <TitleSection title={t("experience.title") as string} logo={t("experience.logo") as string} />
 
-    <div>
-        {
-            jobs.map(job => <JobDescription job={job} />)
-        }
-    </div>
-</section>
+    <div>{jobs.map(job => <JobDescription job={job} />)}</div>
+</SectionLayout>
