@@ -7,15 +7,19 @@ interface Props {
 
 const {items} = Astro.props;
 ---
-<div class="images-container">
+<div class="images-container" id="carrousel">
     <div class="images-wrapper">
         {items.map(item => (
             <img src={`../../images/${item.image}`} alt={item.altText} />
         ))}
     </div>
     <div class="image-buttons">
-        <box-icon class="prev" name='left-arrow-circle' type='solid' ></box-icon>
-        <box-icon class="next" name='right-arrow-circle' type='solid' ></box-icon>
+        <button>
+            <box-icon class="prev" name='left-arrow-circle' type='solid'></box-icon>
+        </button>
+        <button>
+            <box-icon class="next" name='right-arrow-circle' type='solid'></box-icon>
+        </button>
     </div>
 </div>
 
@@ -41,22 +45,25 @@ const {items} = Astro.props;
         z-index: 2;
     }
     button {
-        background-color: var(--dark-font-secondary-color);
+        background-color: transparent;
         border: none;
-        border-radius: 50%;
-        width: 30px;
-        height: 30px;
     }
     .prev, .next{
         width: 35px;
         height: 35px;
+        fill: var(--ternary-bg-color);
+    }
+
+    :global(.dark) .prev, :global(.dark) .next {
         fill: var(--dark-font-secondary-color);
     }
     img {
         width: 100%;
         object-fit: contain;
     }
-
+    .hidden {
+        display: none;
+    }
     @media screen and (min-width: 636px) {
         img {
             max-width: 400px;
@@ -66,6 +73,7 @@ const {items} = Astro.props;
 
 <script>
     document.addEventListener("DOMContentLoaded", () => {
+
         const imagesContainer = document.querySelector('.images-container') as HTMLElement;
         const imagesWrapper = document.querySelector('.images-wrapper') as HTMLElement;
         const prevButton = document.querySelector('.prev') as HTMLButtonElement;
@@ -121,7 +129,7 @@ const {items} = Astro.props;
             }
             isDragging = false;
         };
-
+        
         imagesContainer.addEventListener('touchstart', handleTouchStart);
         imagesContainer.addEventListener('touchmove', handleTouchMove);
         imagesContainer.addEventListener('touchend', handleTouchEnd);

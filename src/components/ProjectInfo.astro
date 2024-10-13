@@ -1,6 +1,7 @@
 ---
 import type { ProjectItem } from '../interfaces/projectItem'
 import Carrousel from './Carrousel.astro';
+import Mosaic from './Mosaic.astro';
 import ProjectLInks from './ProjectLInks.astro';
 import TechnologyItem from './TechnologyItem.astro';
 
@@ -18,6 +19,7 @@ const { project } = Astro.props;
         {project.technologies.map(tech => <TechnologyItem techItem={tech} />)}
     </div>
     <Carrousel items={project.images} />
+    <Mosaic items={project.images} />
     <div class="links-container">
         {project.links.map(link => <ProjectLInks linkItem={link} />)}
     </div>
@@ -92,3 +94,27 @@ const { project } = Astro.props;
         }
     }
 </style>
+
+<script>
+    
+    document.addEventListener("DOMContentLoaded", () => {
+        CarrouselDisplay();
+    });
+
+    window.addEventListener("resize", CarrouselDisplay)
+    
+    function CarrouselDisplay(){
+        const carrousel = document.getElementById("carrousel") as HTMLElement;
+        const mosaic = document.getElementById("mosaic") as HTMLElement;
+        const screenWidth = window.innerWidth;
+
+        if(screenWidth >= 636){
+            carrousel.style.display = "none";
+            mosaic.style.display = "grid";
+        }
+        else {
+            carrousel.style.display = "block";
+            mosaic.style.display = "none";
+        }
+    }
+</script>

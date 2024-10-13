@@ -26,12 +26,18 @@ const { linkItem } = Astro.props;
         border-radius: 30px;
         background-color: var(--secondary-bg-color);
         padding: 4px 11px;
+        transition: all 500ms ease-in-out;
     }
 
+    .link-item:hover {
+        background-color: var(--secondary-bg-color-hover);
+    }
     :global(.dark) .link-item {
         background-color: #273446;
     }
-
+    :global(.dark) .link-item:hover {
+        background-color: var(--dark-secondary-bg-color-hover);
+    }
     .link-logo {
         display: flex;
         justify-content: center;
