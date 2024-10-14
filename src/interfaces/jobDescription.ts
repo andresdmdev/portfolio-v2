@@ -8,8 +8,8 @@ export interface Job {
     linkedin: SocialIcon,
     webPage: SocialIcon,
     bullets: string[],
-    isCurrentJob: string,
-    isFirstJob: string
+    isCurrentJob: boolean,
+    isFirstJob: boolean
 }
 
 interface SocialIcon {
