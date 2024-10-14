@@ -3,6 +3,7 @@ import { getLangFromUrl, getTranslation } from "../i18n/utils";
 import OpenCV from "../components/OpenCV.astro";
 import Email from "../components/Email.astro";
 import SectionLayout from "../layouts/SectionLayout.astro";
+import "../styles/skeleton.css"
 
 const lang = getLangFromUrl(Astro.url);
 const t = getTranslation(lang);
@@ -10,7 +11,7 @@ const t = getTranslation(lang);
 <SectionLayout id="/" className="profile">
     <div class="profile-img-section">
         <div>
-            <img class="img-profile" src="./images/profile.avif" alt="profile" sizes="(max-width: 635px) 50px, (min-width: 636px) 100px" width="70" height="70" />
+            <img class="img-profile skeleton" src="./images/profile.avif" alt="profile" sizes="(max-width: 635px) 50px, (min-width: 636px) 100px" width="70" height="70" />
         </div>
         <a class="profile-tag" href={t("profile.icon.linkedin") as string} target="_blank">
             <span>{t("profile.tag")}</span>
@@ -49,6 +50,7 @@ const t = getTranslation(lang);
     .img-profile {
         width: 70px;
         object-fit: cover;
+        border-radius: 50%;
     }
 
     h1 {
