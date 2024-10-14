@@ -10,14 +10,14 @@ const {items} = Astro.props;
 <div class="images-container" id="carrousel">
     <div class="images-wrapper">
         {items.map(item => (
-            <img src={`../../images/${item.image}`} alt={item.altText} />
+            <img src={`../../images/${item.image}`} alt={item.altText} width="300" height="300" />
         ))}
     </div>
     <div class="image-buttons">
-        <button>
+        <button aria-label="Prev Image Button">
             <box-icon class="prev" name='left-arrow-circle' type='solid'></box-icon>
         </button>
-        <button>
+        <button aria-label="Next Image Button">
             <box-icon class="next" name='right-arrow-circle' type='solid'></box-icon>
         </button>
     </div>
@@ -59,6 +59,7 @@ const {items} = Astro.props;
     }
     img {
         width: 100%;
+        height: auto;
         object-fit: contain;
     }
     .hidden {
@@ -130,8 +131,8 @@ const {items} = Astro.props;
             isDragging = false;
         };
         
-        imagesContainer.addEventListener('touchstart', handleTouchStart);
-        imagesContainer.addEventListener('touchmove', handleTouchMove);
-        imagesContainer.addEventListener('touchend', handleTouchEnd);
+        imagesContainer.addEventListener('touchstart', handleTouchStart, {passive: true});
+        imagesContainer.addEventListener('touchmove', handleTouchMove, {passive: true});
+        imagesContainer.addEventListener('touchend', handleTouchEnd, {passive: true});
     });
 </script>

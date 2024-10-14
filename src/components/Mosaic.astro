@@ -14,7 +14,7 @@ const { items } = Astro.props;
         items.slice(0,3).map((item, index) => {
             return (
                 <div class={`item item-${index + 1}`}>
-                    <img src={`../../images/${item.image}`} alt={item.altText} />
+                    <img src={`../../images/${item.image}`} alt={item.altText} width="200px" height="auto" />
                 </div>
             )
         })

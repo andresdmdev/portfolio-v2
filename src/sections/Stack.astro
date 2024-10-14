@@ -17,7 +17,7 @@ const stackList = t("stack.tools") as Stackitem[]
     <div class="stack-container">
         {
             stackList.length > 0 && stackList.map(stack => {
-                return <img src={`../../images/${stack.logo}`} alt={stack.name} />
+                return <img src={`../../images/${stack.logo}`} alt={stack.name} width="40" height="40" />
             })
         }
     </div>
@@ -32,11 +32,10 @@ const stackList = t("stack.tools") as Stackitem[]
         align-items: center;
         gap: 20px 0px;
     }
-
     img {
         width: 40px;
+        height: auto;
     }
-
     @media screen and (min-width: 636px) {
         .stack-container {
             margin-top: 40px;
