@@ -9,7 +9,7 @@ const { linkItem } = Astro.props;
 ---
 
 <div>
-    <a class="link-item" href={linkItem.url} target="_blank" rel="noopener noreferrer">
+    <a class="link-item" href={linkItem.url} target="_blank" rel="noopener noreferrer" aria-label="Open webpage">
         <span class="link-logo" set:html={linkItem.icon}></span>
         <span class="link-name">{linkItem.name}</span>
     </a>

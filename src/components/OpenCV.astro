@@ -1,15 +1,16 @@
 ---
 interface Props {
-    text: string
+    text: string,
+    url: string
 }
 
-const { text } = Astro.props;
+const { text, url } = Astro.props;
 ---
 
-<div class="profile-cv">
+<a class="profile-cv" href={url} target="_blank" rel="noopener noreferrer" aria-label="Open CV">
     <span class="cv-text">{text}</span>
     <box-icon class="link" name='link-external' animation='tada-hover'></box-icon>
-</div>
+</a>
 
 <style>
     .profile-cv {
@@ -25,6 +26,7 @@ const { text } = Astro.props;
         padding: 0 8px;
         gap: 5px;
         transition: all 300ms ease-in-out;
+        text-decoration: none;
     }
     .profile-cv:hover {
         background-color: var(--secondary-color);

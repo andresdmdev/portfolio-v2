@@ -33,7 +33,7 @@ const t = getTranslation(lang);
             </a>
         </div>
         <div class="profile-contact-section">
-            <OpenCV text={t("profile.cv") as string} />
+            <OpenCV text={t("profile.cv")  as string} url={t("profile.url-cv") as string} />
             <Email text={t("profile.email") as string} />
         </div>
     </div>
@@ -189,7 +189,7 @@ const t = getTranslation(lang);
         
         .profile-contact-section {
             margin-top: 24px;
-            gap: 30px;
+            gap: 20px;
         }    
     }
 

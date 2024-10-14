@@ -7,13 +7,13 @@ const { text } = Astro.props;
 ---
 
 <div class="profile-email">
-    <div class="first-container">
-        <span class="email-text">{text}</span>
+    <button class="first-container" aria-label="Open email integration">
+        <span class="email-text" aria-valuetext={text} >@Email</span>
         <box-icon name='paper-plane' class="link" animation='tada-hover'></box-icon>
-    </div>
-    <span class="second-email-icon">
+    </button>
+    <button class="second-email-icon" aria-label="Copy email">
         <box-icon class="link" name='copy-alt' animation='tada-hover'></box-icon>
-    </span>
+    </button>
 </div>
 
 
@@ -36,6 +36,7 @@ const { text } = Astro.props;
         padding: 0 8px;
         gap: 5px;
         cursor: pointer;
+        background-color: transparent;
     }
     .first-container:hover {
         background-color: var(--secondary-color);
@@ -50,7 +51,8 @@ const { text } = Astro.props;
         line-height: 32px;
         color: var(--secondary-color);
         font-size: 12px;
-        font-weight: 600;
+        font-weight: bolder;
+        font-family: "Montserrat", sans-serif;
     }
     .first-container:hover .email-text {
         color: var(--primary-color);
@@ -86,7 +88,6 @@ const { text } = Astro.props;
         border: solid var(--secondary-color);
         transition: all 300ms ease-in-out;
         cursor: pointer;
-        padding-right: 2px;
     }
     .second-email-icon:hover {
         background-color: var(--secondary-color);
@@ -113,3 +114,29 @@ const { text } = Astro.props;
         fill: var(--dark-primary-color);
     }
 </style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const sendEmailBtn = document.querySelectorAll(".first-container");
+        const emailElement = document.querySelectorAll(".email-text");
+        const copyEmailBtn = document.querySelectorAll(".second-email-icon");
+
+        const email = emailElement[0]?.getAttribute("aria-valuetext") ?? "";
+
+        if (sendEmailBtn && copyEmailBtn) {
+
+            sendEmailBtn.forEach(e => {
+                e.addEventListener("click", () => {
+                    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=Informacion&body='`;
+                    window.open(gmailUrl, '_blank');
+                });
+            })
+
+            copyEmailBtn.forEach(e => {
+                e.addEventListener("click", () => {
+                    navigator.clipboard.writeText(email);
+                });
+            });
+        }
+    });
+</script>
