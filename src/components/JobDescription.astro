@@ -1,7 +1,6 @@
 ---
 import "../interfaces/jobDescription";
 import type { Job } from "../interfaces/jobDescription";
-
 interface Props {
     job: Job
 }
@@ -22,17 +21,17 @@ const { job } = Astro.props
             <span class="job-date">{job.startDate} - {job.endDate}</span>
             <h3>{job.jobTitle}</h3>
             <div class="job-company">
-                <h5>{job.company}</h5>
-                <a class="job-social" href={job.linkedin.url} target="_blank">
+                <h4>{job.company}</h4>
+                <a class="job-social" href={job.linkedin.url} target="_blank" aria-label="Open linkeding webpage">
                     <svg width="20" height="20" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
                         <path class="job-icon" d="M6.71652 29.75H0.495536V9.88789H6.71652V29.75ZM3.60268 7.17852C1.61384 7.17852 0 5.54492 0 3.57266C0 2.62513 0.379567 1.71641 1.0552 1.04641C1.73083 0.376404 2.64719 0 3.60268 0C4.55817 0 5.47452 0.376404 6.15016 1.04641C6.82579 1.71641 7.20536 2.62513 7.20536 3.57266C7.20536 5.54492 5.59152 7.17852 3.60268 7.17852ZM29.9933 29.75H23.7857V20.0812C23.7857 17.777 23.7388 14.8219 20.5513 14.8219C17.317 14.8219 16.8214 17.3254 16.8214 19.9152V29.75H10.6071V9.88789H16.5737V12.5973H16.6607C17.4911 11.0367 19.5201 9.38984 22.5469 9.38984C28.8415 9.38984 30 13.5004 30 18.8395V29.75H29.9933Z"/>
                     </svg>
                 </a>
-                <a class="job-social" href={job.webPage.url} target="_blank">
+                <a class="job-social" href={job.webPage.url} target="_blank" aria-label="Open github webpage">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 22 22" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path class="job-icon" d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zM4 12c0-.899.156-1.762.431-2.569L6 11l2 2v2l2 2 1 1v1.931C7.061 19.436 4 16.072 4 12zm14.33 4.873C17.677 16.347 16.687 16 16 16v-1a2 2 0 0 0-2-2h-4v-3a2 2 0 0 0 2-2V7h1a2 2 0 0 0 2-2v-.411C17.928 5.778 20 8.65 20 12a7.947 7.947 0 0 1-1.67 4.873z"></path></svg>
                 </a>
             </div>
-            <p class="job-short-description">{job.shortDescription}</p>
+            <p class="job-short-descriptiont">{job.shortDescription}</p>
             <ul class="bullets">
                 {
                     job.bullets.map(bullet => {
@@ -61,7 +60,7 @@ const { job } = Astro.props
         color: var(--dark-gold-color);
     }
 
-    h5 {
+    h4 {
         font-size: 14px;
         line-height: 16px;
         font-weight: bold;
@@ -69,7 +68,7 @@ const { job } = Astro.props
         color: var(--secondary-color);
     }
 
-    :global(.dark) h5 {
+    :global(.dark) h4 {
         color: var(--dark-cuaternary-color);
     }
 
@@ -189,6 +188,10 @@ const { job } = Astro.props
         font-weight: 500;
         line-height: 22px;
         color: var(--secondary-color);
+        min-height: 90px;
+        max-width: 100%;
+        object-fit: cover;
+        flex-shrink: 0;
     }
 
     :global(.dark) .job-short-description {
@@ -233,7 +236,7 @@ const { job } = Astro.props
             line-height: 26px;
             margin: 0 0 12px 0;
         }
-        h5 {
+        h4 {
             font-size: 16px;
             line-height: 18px;
         }

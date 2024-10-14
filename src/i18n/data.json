@@ -70,15 +70,15 @@
           "description": "Created from scratch with Next.js and Tailwind CSS. It's a library with SVG logos from the most popular brands. Optimized for SEO and performance.",
           "images": [
             {
-              "image": "laptop.png",
+              "image": "laptop.avif",
               "altText": "Laptop image"
             },
             {
-              "image": "profile.png",
+              "image": "profile.avif",
               "altText": "Profile image"
             },
             {
-              "image": "laptop.png",
+              "image": "laptop.avif",
               "altText": "Laptop image"
             }
           ],
@@ -281,7 +281,7 @@
           "description": "Created from scratch with Next.js and Tailwind CSS. It's a library with SVG logos from the most popular brands. Optimized for SEO and performance.",
           "images": [
             {
-              "image": "profile.png",
+              "image": "profile.avif",
               "altText": "Profile image"
             }
           ],
@@ -315,7 +315,7 @@
           "description": "Created from scratch with Next.js and Tailwind CSS. It's a library with SVG logos from the most popular brands. Optimized for SEO and performance.",
           "images": [
             {
-              "image": "profile.png",
+              "image": "profile.avif",
               "altText": "Profile image"
             }
           ],
