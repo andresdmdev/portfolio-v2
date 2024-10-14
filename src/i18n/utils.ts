@@ -15,3 +15,7 @@ export function getTranslation(lang: keyof typeof ui) {
 export function formatDefautlBaseLanguage(lang: string) {
   return lang == defaultLang ? '' : lang;
 }
+
+export function changeLanguage(currentLang: string) {
+  return currentLang == defaultLang ? 'es' : ''
+}

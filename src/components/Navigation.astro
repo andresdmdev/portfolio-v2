@@ -6,11 +6,11 @@ const t = getTranslation(lang);
 const baseLanguage = formatDefautlBaseLanguage(lang);
 ---
 <div class="nav-links">
-    <a class="nav-link" href={`/${baseLanguage}#`}>{t('nav.home')}</a>
-    <a class="nav-link" href={`/${baseLanguage}#Experience`}>{t('nav.experience')}</a>
-    <a class="nav-link" href={`/${baseLanguage}#Projects`}>{t('nav.projects')}</a>
-    <a class="nav-link" href={`/${baseLanguage}#Tools`}>{t('nav.tools')}</a>
-    <a class="nav-link" href={`/${baseLanguage}#Education`}>{t('nav.education')}</a>
+    <a class="nav-link" href={`/${baseLanguage}#`} aria-label="Home section">{t('nav.home')}</a>
+    <a class="nav-link" href={`/${baseLanguage}#Experience`} aria-label="Experience section">{t('nav.experience')}</a>
+    <a class="nav-link" href={`/${baseLanguage}#Projects`} aria-label="Project section">{t('nav.projects')}</a>
+    <a class="nav-link" href={`/${baseLanguage}#Tools`} aria-label="Tools section">{t('nav.tools')}</a>
+    <a class="nav-link" href={`/${baseLanguage}#Education`} aria-label="Education section">{t('nav.education')}</a>
 </div>
 
 <style>
