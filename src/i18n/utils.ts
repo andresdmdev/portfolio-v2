@@ -1,4 +1,4 @@
-import { ui, defaultLang } from './ui';
+import { ui, defaultLang, secondaryLang } from './ui';
 
 export function getLangFromUrl(url: URL) {
   const [, lang] = url.pathname.split('/');
@@ -17,5 +17,9 @@ export function formatDefautlBaseLanguage(lang: string) {
 }
 
 export function changeLanguage(currentLang: string) {
-  return currentLang == defaultLang ? 'es' : ''
+  return currentLang == defaultLang ? secondaryLang : ''
+}
+
+export function formattedLanguage(currentLang: string) {
+  return currentLang == defaultLang ? secondaryLang.toLocaleUpperCase() : defaultLang.toLocaleUpperCase();
 }

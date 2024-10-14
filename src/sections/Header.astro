@@ -2,10 +2,10 @@
 import Hamburger from "../components/Hamburger.astro";
 import Navigation from "../components/Navigation.astro";
 import ThemeIcon from "../components/ThemeIcon.astro";
-import { getLangFromUrl, changeLanguage } from "../i18n/utils";
+import { getLangFromUrl, changeLanguage, formattedLanguage } from "../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
-const langFormatted = lang.toLocaleUpperCase();
+const langFormatted = formattedLanguage(lang);
 const urlLanguage = changeLanguage(lang);
 ---
 

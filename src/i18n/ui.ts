@@ -1,10 +1,12 @@
 import data from "./data.json";
 
 export const languages = {
-    en: "English",
-    es: "Español",
-  };
+  en: "English",
+  es: "Español",
+};
   
-  export const defaultLang = "en";
-  
-  export const ui = data;
+export const defaultLang = "en";
+
+export const secondaryLang = "es";
+
+export const ui = data;
