@@ -89,12 +89,12 @@ const {items} = Astro.props;
             imagesWrapper.style.transform = `translateX(-${curr * 100}%)`;
         };
 
-        prevButton.addEventListener('click', (e) => {
+        prevButton.addEventListener('click', () => {
             curr = (curr == 0 ? imagesWrapper.children.length - 1 : curr - 1);
             updateCarousel();
         });
 
-        nextButton.addEventListener('click', (e) => {
+        nextButton.addEventListener('click', () => {
             curr = (curr === (imagesWrapper.children.length - 1) ? 0 : curr + 1);
             updateCarousel();
         });
