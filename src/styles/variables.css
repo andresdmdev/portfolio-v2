@@ -1,21 +1,19 @@
 :root {
-    --primary-color: #77BEF8;
-    --secondary-color: #181A23;
-    --ternary-color: #c96e00;
-    --primary-bg-color: #181A23;
-    --secondary-bg-color: rgba(24,26,35,0.1);
-    --secondary-bg-color-hover: rgba(24,26,35,0.2);
-    --ternary-bg-color: rgba(24,26,35,0.6);
-    --cuaternary-bg-color: #77bef8c0;
-    --gray-color: rgb(104, 112, 119);
-    --white-color: #F5F5F5;
-    --dark-gold-color: #FFB534;
-    --dark-primary-color: #181A23;
-    --dark-secondary-color: #77BEF8;
-    --dark-secondary-bg-color: rgba(119,190,248,0.16);
-    --dark-secondary-bg-color-bolder: rgba(119,190,248,0.25);
-    --dark-secondary-bg-color-hover: rgba(119,190,248,0.2);
-    --dark-font-secondary-color: rgba(119,190,248,0.8);
-    --dark-ternary-color: #D0D0D2;
-    --dark-cuaternary-color: #E7E7E7;
+    --primary-color: hsla(158, 41%, 88%, 1);
+    --secondary-color: hsla(171, 11%, 24%, 0.15);
+    --ternary-color: hsla(160, 22%, 78%, 1);
+    --body-primary-color: hsla(185, 93%, 17%, 1);
+    --body-secondary-color: hsla(171, 11%, 24%, 1);
+    --title-primary-color: hsla(185, 93%, 17%, 1);
+    --title-secondary-color: hsla(38, 100%, 70%, 1);
+
+
+    --dark-primary-color: hsla(229, 18%, 12%, 1);
+    --dark-secondary-color: hsla(171, 11%, 24%, 0.15);
+    --dark-ternary-color: hsla(207, 90%, 72%, .16);
+    /* --dark-ternary-color: hsla(230, 18%, 19%, 0.25); */
+    --dark-body-primary-color: hsla(207, 90%, 72%, 1);
+    --dark-body-secondary-color: hsla(158, 41%, 88%, 1);
+    --dark-title-primary-color: hsla(207, 90%, 72%, 1);
+    --dark-title-secondary-color: hsla(38, 100%, 70%, 1);
 }
