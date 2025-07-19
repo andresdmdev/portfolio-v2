@@ -1,28 +1,36 @@
 ---
 import "../styles/global.css";
-import { getLangFromUrl } from '../i18n/utils';
+import { getLangFromUrl } from "../i18n/utils";
+import { ClientRouter } from "astro:transitions";
 
 const lang = getLangFromUrl(Astro.url);
 const { pageTitle } = Astro.props;
 ---
 
 <html lang={lang}>
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<meta name="description" content="Andres Marquez's Portfolio to describe experience, projects and extra information">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-        <slot />
-		<script>
-			import "../scripts/menu.js";
-		</script>
-		<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="Andres Marquez's Portfolio to describe experience, projects and extra information"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <ClientRouter />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <slot />
+    <script>
+      import "../scripts/menu.js";
+    </script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </body>
 </html>

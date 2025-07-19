@@ -1,9 +1,9 @@
 ---
-import EducationDiploma from "../components/EducationDiploma.astro";
-import TitleSection from "../components/TitleSection.astro";
-import { getLangFromUrl, getTranslation } from "../i18n/utils";
-import type { EducationItem } from "../interfaces/educationDiplomaItem";
-import SectionLayout from "../layouts/SectionLayout.astro";
+import EducationDiploma from "../../components/EducationDiploma.astro";
+import SubTitle from "../../components/SubTitle.astro";
+import { getLangFromUrl, getTranslation } from "../../i18n/utils";
+import type { EducationItem } from "../../interfaces/educationDiplomaItem";
+import SectionLayout from "../../layouts/SectionLayout.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = getTranslation(lang);
@@ -11,7 +11,7 @@ const educationItem = t("education.diplomas") as EducationItem[];
 ---
 
 <SectionLayout id="Education">
-    <TitleSection  title={t("education.title") as string} logo={t("education.logo") as string} />
+    <SubTitle title={t("education.title") as string} logo={t("education.logo") as string} />
 
     <div class="education-diplomas">
         {

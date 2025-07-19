@@ -5,15 +5,45 @@
     --body-primary-color: hsla(185, 93%, 17%, 1);
     --body-secondary-color: hsla(171, 11%, 24%, 1);
     --title-primary-color: hsla(185, 93%, 17%, 1);
-    --title-secondary-color: hsla(38, 100%, 70%, 1);
-
+    --title-secondary-color: hsla(38, 100%, 70%, 1); /* rgba(254, 185, 67, 0.921) */
+    --nav-link-active-color: rgb(236, 236, 236, 0.6);
 
     --dark-primary-color: hsla(229, 18%, 12%, 1);
     --dark-secondary-color: hsla(171, 11%, 24%, 0.15);
     --dark-ternary-color: hsla(207, 90%, 72%, .16);
+    --dark-quaternary-color: hsla(230, 18%, 19%, .25);
     /* --dark-ternary-color: hsla(230, 18%, 19%, 0.25); */
     --dark-body-primary-color: hsla(207, 90%, 72%, 1);
     --dark-body-secondary-color: hsla(158, 41%, 88%, 1);
     --dark-title-primary-color: hsla(207, 90%, 72%, 1);
     --dark-title-secondary-color: hsla(38, 100%, 70%, 1);
+
+    /* Font sizes - titles */
+    --font-size-title: 2.2rem;
+    --font-size-title-tablet: 4.4rem;
+    --font-size-title-desktop: 6.1rem;
+
+    /* Font sizes - subtitles */
+    --font-size-subtitle: 1.75rem;
+    --font-size-subtitle-tablet: 3.3rem;
+    --font-size-subtitle-desktop: 4rem;
+
+    /* Font sizes - paragraphs */
+    --font-size-paragraph-title: 1.35rem;
+    --font-size-paragraph-title-tablet: 1.875rem;
+    --font-size-paragraph-title-desktop: 2.5rem;
+    --font-size-paragraph-body: 0.85rem;
+    --font-size-paragraph-body-tablet: 1.1rem;
+    --font-size-paragraph-body-desktop: 1.1rem; /* Optional */
+
+    /* Font Family */
+    --font-family:Hanken Grotesk,
+        Host Grotesk,
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
 }

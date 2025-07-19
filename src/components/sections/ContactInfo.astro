@@ -1,0 +1,119 @@
+---
+import { getLangFromUrl, getTranslation } from "../../i18n/utils";
+import OpenCV from "../../components/OpenCV.astro";
+import Email from "../../components/Email.astro";
+import SectionLayout from "../../layouts/SectionLayout.astro";
+import "../../styles/skeleton.css";
+
+const lang = getLangFromUrl(Astro.url);
+const t = getTranslation(lang);
+
+const { className = "" } = Astro.props;
+---
+
+<SectionLayout id="/" className="contact-info">
+  <div class={`contact-info-container ${className}`}>
+    <div class="contact-info-social-section">
+      <a
+        class="icon-container"
+        href={t("contact").linkedin as string}
+        target="_blank"
+        aria-label="Open linkeding webpage"
+      >
+        <box-icon type="logo" name="linkedin" class="icon"></box-icon>
+      </a>
+      <a
+        class="icon-container"
+        href={t("contact").github as string}
+        target="_blank"
+        aria-label="Open github webpage"
+      >
+        <box-icon name="github" type="logo" class="icon"></box-icon>
+      </a>
+    </div>
+    <div class="contact-info-section">
+      <OpenCV
+        text={t("contact").cv as string}
+        url={t("contact").url as string}
+      />
+      <Email text={t("contact").email as string} />
+    </div>
+  </div>
+</SectionLayout>
+
+<style>
+  .contact-info-container.about {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .contact-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info-social-section {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 15px;
+  }
+
+  .icon-container {
+    width: 30px;
+    height: 30px;
+  }
+
+  .icon {
+    width: 100%;
+    height: 100%;
+    fill: var(--body-secondary-color);
+    transition: all 300ms ease-in-out;
+  }
+
+  .icon:hover {
+    fill: var(--body-primary-color);
+    transform: scale(1.15);
+  }
+
+  :global(.dark) .icon:hover {
+    fill: var(--dark-body-primary-color);
+  }
+
+  .contact-info-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  @media screen and (min-width: 636px) {
+    .contact-info-container.about {
+      margin-top: 5rem;
+    }
+
+    .contact-info-container {
+      justify-content: center;
+      flex-direction: row;
+      gap: 25px;
+    }
+
+    .contact-info-social-section {
+      gap: 25px;
+      margin-bottom: 0;
+    }
+
+    .icon-container {
+      width: 40px;
+      height: 40px;
+    }
+
+    .contact-info-section {
+      gap: 25px;
+    }
+
+    .contact-info-container.project {
+      margin-top: 50px;
+    }
+  }
+</style>

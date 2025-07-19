@@ -15,43 +15,64 @@ const baseLanguage = formatDefautlBaseLanguage(lang);
   <div class="nav-links">
     <a
       class="nav-link"
-      href={`/${baseLanguage}#Experience`}
-      aria-label="Experience section">{t("nav.experience")}</a
+      href={`${baseLanguage ? "" : "/"}`}
+      transition:animate="fade"
+      transition:name="nav-link-experience"
+      data-selected={Astro.url.pathname === "/" ? "true" : "false"}
+      aria-label="Experience section">{t("nav").experience}</a
     >
     <a
       class="nav-link"
-      href={`/${baseLanguage}#About`}
-      aria-label="About section">{t("nav.about")}</a
+      href={`${baseLanguage}/about`}
+      transition:animate="fade"
+      transition:name="nav-link-about"
+      data-selected={Astro.url.pathname === "/about" ? "true" : "false"}
+      aria-label="About section">{t("nav").about}</a
     >
     <a
       class="nav-link"
-      href={`/${baseLanguage}#Projects`}
-      aria-label="Project section">{t("nav.projects")}</a
+      href={`${baseLanguage}/project`}
+      transition:animate="fade"
+      transition:name="nav-link-projects"
+      data-selected={Astro.url.pathname === "/project" ? "true" : "false"}
+      aria-label="Project section">{t("nav").projects}</a
     >
     <a
       class="nav-link"
-      href={`/${baseLanguage}#Education`}
-      aria-label="Education section">{t("nav.education")}</a
+      href={`${baseLanguage}/education`}
+      transition:animate="fade"
+      transition:name="nav-link-education"
+      data-selected={Astro.url.pathname === "/education" ? "true" : "false"}
+      aria-label="Education section">{t("nav").education}</a
     >
     <ThemeIcon />
   </div>
 </nav>
 
 <script>
-  const navLink = document.querySelector(".nav-links") as HTMLElement;
-  const navLinkRect = navLink?.getBoundingClientRect();
+  document.addEventListener("astro:page-load", () => {
+    const navLink = document.querySelector(".nav-links") as HTMLElement;
+    const navLinkRect = navLink?.getBoundingClientRect();
 
-  if (navLinkRect) {
-    window.addEventListener("scroll", () => {
-      const topLimit = navLinkRect.top + window.pageYOffset;
-
-      if (topLimit > 100) {
-        navLink.classList.add("nav-links-scroll");
-      } else {
-        navLink.classList.remove("nav-links-scroll");
+    const navLinks = document.querySelectorAll(".nav-link");
+    navLinks.forEach((link) => {
+      if ((link as HTMLElement).dataset.selected === "true") {
+        link.classList.add("active");
       }
     });
-  }
+
+    if (navLinkRect) {
+      window.addEventListener("scroll", () => {
+        const topLimit = navLinkRect.top + window.pageYOffset;
+
+        if (topLimit > 100) {
+          navLink.classList.add("nav-links-scroll");
+        } else {
+          navLink.classList.remove("nav-links-scroll");
+        }
+      });
+    }
+  });
 </script>
 
 <style>
@@ -77,10 +98,21 @@ const baseLanguage = formatDefautlBaseLanguage(lang);
   .nav-links a {
     text-align: center;
     text-decoration: none;
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     font-weight: 600;
     color: var(--body-secondary-color);
     transition: all 300ms ease-in-out;
+    padding: 4px 8px;
+  }
+
+  .nav-link.active {
+    background-color: var(--nav-link-active-color);
+    padding: 4px 6px;
+    border-radius: 50px;
+  }
+
+  :global(.dark) .nav-link.active {
+    background-color: var(--dark-secondary-color);
   }
 
   :global(.dark) .nav-links a {
@@ -91,27 +123,29 @@ const baseLanguage = formatDefautlBaseLanguage(lang);
     background-color: hsla(160, 41%, 88%, 0.85);
     width: 100%;
     height: 50px;
-    backdrop-filter: blur(10px) saturate(200%);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px) saturate(10%);
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
   }
 
   :global(.dark) .nav-links-scroll {
     background-color: hsla(229, 18%, 12%, 0.8);
-    backdrop-filter: blur(10px) saturate(200%);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   }
 
   @media screen and (min-width: 636px) {
     .nav-links {
       justify-content: center;
-      gap: 20px;
+      gap: 15px;
       width: auto;
       margin: 0 auto;
     }
 
     .nav-links a {
-      font-size: 1.1rem;
-      padding: 5px 13px;
+      font-size: 1rem;
+      padding: 8px 16px;
+    }
+
+    .nav-link.active {
+      padding: 0;
     }
   }
 </style>

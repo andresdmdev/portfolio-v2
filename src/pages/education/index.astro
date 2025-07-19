@@ -1,0 +1,28 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Header from "../../components/sections/Header.astro";
+import TitleSection from "../../components/sections/TitleSection.astro";
+import { getLangFromUrl, getTranslation } from "../../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = getTranslation(lang);
+---
+
+<BaseLayout pageTitle={t("pageTitle") as string}>
+  <Header />
+  <main>
+    <TitleSection
+      enableIcon={true}
+      title={t("education").title as string}
+      icon={t("education").icon as string}
+      className="education-title-section"
+      id="education-title-section"
+    />
+    <!-- <Profile />
+		<Experience />
+		<Project />
+		<Stack />
+		<Education />
+		<Footer /> -->
+  </main>
+</BaseLayout>

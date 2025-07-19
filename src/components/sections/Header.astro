@@ -1,10 +1,10 @@
 ---
-import Navigation from "../components/Navigation.astro";
+import Navigation from "../../components/Navigation.astro";
 import {
   getLangFromUrl,
   changeLanguage,
   formattedLanguage,
-} from "../i18n/utils";
+} from "../../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 const langFormatted = formattedLanguage(lang);
@@ -32,10 +32,11 @@ const urlLanguage = changeLanguage(lang);
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    z-index: 3;
+    z-index: 1;
   }
 
   .language-button {
+    z-index: 2;
     position: absolute;
     top: 70px;
     left: 0;
@@ -66,7 +67,7 @@ const urlLanguage = changeLanguage(lang);
       font-size: 1rem;
       letter-spacing: 1px;
       border-radius: 0 7px 7px 0;
-      padding: 8px 12px;
+      padding: 6px 10px;
     }
   }
 </style>

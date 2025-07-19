@@ -1,0 +1,90 @@
+---
+interface Props {
+  title: string;
+  logo: string;
+}
+
+const { title, logo } = Astro.props;
+---
+
+<div class="subtitle-section">
+  <div class="logo">
+    <box-icon
+      class="subtitle-icon"
+      name={logo}
+      type="solid"
+      animation="tada-hover"></box-icon>
+  </div>
+  <h3>{title}</h3>
+</div>
+
+<style>
+  h3 {
+    font-size: var(--font-size-subtitle);
+    margin: 0;
+    transition: all 300ms ease-in-out;
+    color: var(--title-primary-color);
+  }
+
+  :global(.dark) h2 {
+    color: var(--dark-title-primary-color);
+  }
+
+  .subtitle-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin-top: 80px;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    fill: var(--body-secondary-color);
+    width: 25px;
+    height: 25px;
+    transition: all 300ms ease-in-out;
+  }
+
+  :global(.dark) .logo {
+    fill: var(--dark-body-secondary-color);
+  }
+
+  .subtitle-icon {
+    rotate: -10deg;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    h3 {
+      font-size: var(--font-size-subtitle-tablet);
+      line-height: 32px;
+      font-weight: 800;
+    }
+    .subtitle-section {
+      margin-top: 185px;
+      margin-bottom: 15px;
+    }
+    .logo {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    h3 {
+      font-size: var(--font-size-subtitle-desktop);
+    }
+    .subtitle-section {
+      margin-bottom: 25px;
+    }
+    .logo {
+      width: 45px;
+      height: 45px;
+    }
+  }
+</style>

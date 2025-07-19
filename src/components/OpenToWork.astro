@@ -1,0 +1,57 @@
+---
+import { getLangFromUrl, getTranslation } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = getTranslation(lang);
+---
+
+<div class="open-to-work">
+  <span class="open-to-work-text">{t("experience").openToWork.title}</span>
+</div>
+
+<style>
+  .open-to-work {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+  }
+
+  .open-to-work-text {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: var(--body-secondary-color);
+    font-size: 0.6rem;
+    font-weight: 800;
+    padding: 0.15rem 0.5rem;
+    margin: 0;
+    border-radius: 0.35rem;
+    font-family:
+      Hanken Grotesk,
+      Host Grotesk,
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Open Sans",
+      "Helvetica Neue",
+      sans-serif;
+  }
+
+  :global(.dark) .open-to-work-text {
+    background-color: var(--dark-ternary-color);
+    color: var(--dark-title-primary-color);
+  }
+
+  @media (min-width: 768px) {
+    .open-to-work-text {
+      font-size: 0.85rem;
+      padding: 0.35rem 1.2rem;
+      border-radius: 0.5rem;
+    }
+  }
+</style>

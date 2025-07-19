@@ -1,7 +1,7 @@
 ---
-import Email from "../components/Email.astro";
-import OpenCV from "../components/OpenCV.astro";
-import { getLangFromUrl, getTranslation } from "../i18n/utils";
+import Email from "../../components/Email.astro";
+import OpenCV from "../../components/OpenCV.astro";
+import { getLangFromUrl, getTranslation } from "../../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 const t = getTranslation(lang);
@@ -10,8 +10,8 @@ const t = getTranslation(lang);
 <footer>
     <h4>¿Quieres contactarme?</h4>
     <div class="footer-social-container">
-        <OpenCV text={t("profile.cv") as string} url={t("profile.url-cv") as string} />
-        <Email text={t("profile.email") as string} />
+        <OpenCV text={t("profile").cv as string} url={t("profile")["url-cv"] as string} />
+        <Email text={t("profile").email as string} />
     </div>
 </footer>
 

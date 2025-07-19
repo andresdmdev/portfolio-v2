@@ -1,8 +1,8 @@
 ---
-import TitleSection from "../components/TitleSection.astro";
-import { getLangFromUrl, getTranslation } from "../i18n/utils";
-import type { Stackitem } from "../interfaces/stackItem";
-import SectionLayout from "../layouts/SectionLayout.astro";
+import SubTitle from "../../components/SubTitle.astro";
+import { getLangFromUrl, getTranslation } from "../../i18n/utils";
+import type { Stackitem } from "../../interfaces/stackItem";
+import SectionLayout from "../../layouts/SectionLayout.astro";
 
 const lang = getLangFromUrl(Astro.url);
 
@@ -12,7 +12,7 @@ const stackList = t("stack.tools") as Stackitem[]
 ---
 
 <SectionLayout id="Tools">
-    <TitleSection title={t("stack.title") as string} logo={t("stack.logo") as string} />
+    <SubTitle title={t("stack.title") as string} logo={t("stack.logo") as string} />
 
     <div class="stack-container">
         {
