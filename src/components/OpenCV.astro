@@ -22,15 +22,15 @@ const { text, url } = Astro.props;
   .contact-info-cv {
     border-radius: 8px;
     border: 2px solid var(--body-secondary-color);
-    background-color: transparent;
+    background-color: var(--body-secondary-color);
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
     align-items: center;
     cursor: pointer;
-    padding: 2px 8px;
+    padding: 3px 10px;
     gap: 5px;
-    transition: all 300ms ease-in-out;
+    transition: all 350ms ease-in-out;
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -38,7 +38,7 @@ const { text, url } = Astro.props;
   }
 
   .contact-info-cv:hover {
-    border-color: var(--body-primary-color);
+    scale: 1.1;
   }
 
   :global(.dark) .contact-info-cv:hover {
@@ -47,14 +47,11 @@ const { text, url } = Astro.props;
 
   .cv-text {
     line-height: 0.7rem;
-    color: var(--body-secondary-color);
-    font-size: 0.6rem;
+    color: var(--primary-color);
+    font-size: var(--font-size-paragraph-body-small);
+    letter-spacing: 0.025rem;
     font-weight: bolder;
     transition: all 300ms ease-in-out;
-  }
-
-  .contact-info-cv:hover .cv-text {
-    color: var(--body-primary-color);
   }
 
   :global(.dark) .contact-info-cv:hover .cv-text {
@@ -62,29 +59,25 @@ const { text, url } = Astro.props;
   }
 
   .link {
-    fill: var(--body-secondary-color);
-    width: 20px;
-    height: 20px;
+    fill: var(--primary-color);
+    width: 16px;
+    height: 16px;
     margin-left: 2px;
     transition: all 300ms ease-in-out;
-  }
-
-  .contact-info-cv:hover .link {
-    fill: var(--body-primary-color);
   }
 
   :global(.dark) .contact-info-cv:hover .link {
     fill: var(--dark-body-primary-color);
   }
 
-  @media (min-width: 636px) {
+  @media (min-width: 768px) {
     .cv-text {
-      font-size: 0.85rem;
+      font-size: var(--font-size-paragraph-body);
     }
 
     .contact-info-cv {
       border: 3px solid var(--body-secondary-color);
-      padding: 5px 12px;
+      padding: 6px 12px;
       transition: all 300ms ease-in-out;
       text-decoration: none;
       border-radius: 12px;

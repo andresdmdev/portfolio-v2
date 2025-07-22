@@ -7,7 +7,6 @@ interface Props {
   icon?: string;
   className: string;
   id: string;
-  enableOpenToWork?: boolean;
   enableIcon?: boolean;
   iconPosition?: {
     top?: string;
@@ -21,7 +20,6 @@ const {
   icon,
   className,
   id,
-  enableOpenToWork = false,
   enableIcon = false,
   iconPosition = {
     top: "-18px",
@@ -48,7 +46,6 @@ const {
     }
     <h2 set:html={title} />
   </div>
-  {enableOpenToWork && <OpenToWork />}
 </SectionLayout>
 
 <style>
