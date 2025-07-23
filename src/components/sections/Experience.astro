@@ -1,6 +1,4 @@
 ---
-import JobDescription from "../../components/JobDescription.astro";
-import SubTitle from "../../components/SubTitle.astro";
 import { getLangFromUrl, getTranslation } from "../../i18n/utils";
 import type { Job } from "../../interfaces/jobDescription";
 import SectionLayout from "../../layouts/SectionLayout.astro";
@@ -8,7 +6,6 @@ import SectionLayout from "../../layouts/SectionLayout.astro";
 const lang = getLangFromUrl(Astro.url);
 
 const t = getTranslation(lang);
-const jobs = t("experience").jobs as Job[];
 ---
 
 <SectionLayout id="Experience">
