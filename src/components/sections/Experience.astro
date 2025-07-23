@@ -8,7 +8,7 @@ import SectionLayout from "../../layouts/SectionLayout.astro";
 const lang = getLangFromUrl(Astro.url);
 
 const t = getTranslation(lang);
-const jobs = t("experience.jobs") as Job[];
+const jobs = t("experience").jobs as Job[];
 ---
 
 <SectionLayout id="Experience">

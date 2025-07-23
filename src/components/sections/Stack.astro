@@ -8,47 +8,58 @@ const lang = getLangFromUrl(Astro.url);
 
 const t = getTranslation(lang);
 
-const stackList = t("stack.tools") as Stackitem[]
+const stackList = t("stack").tools as Stackitem[];
 ---
 
 <SectionLayout id="Tools">
-    <SubTitle title={t("stack.title") as string} logo={t("stack.logo") as string} />
+  <SubTitle
+    title={t("stack").title as string}
+    logo={t("stack").logo as string}
+  />
 
-    <div class="stack-container">
-        {
-            stackList.length > 0 && stackList.map(stack => {
-                return <img src={`../../images/${stack.logo}`} alt={stack.name} width="40" height="40" />
-            })
-        }
-    </div>
+  <div class="stack-container">
+    {
+      stackList.length > 0 &&
+        stackList.map((stack) => {
+          return (
+            <img
+              src={`../../images/${stack.logo}`}
+              alt={stack.name}
+              width="40"
+              height="40"
+            />
+          );
+        })
+    }
+  </div>
 </SectionLayout>
 
 <style>
+  .stack-container {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 20px 0px;
+  }
+  img {
+    width: 40px;
+    height: auto;
+    transition: all 300ms ease-in-out;
+  }
+  img:hover {
+    transform: scale(1.2);
+  }
+  @media screen and (min-width: 636px) {
     .stack-container {
-        margin-top: 25px;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        justify-items: center;
-        align-items: center;
-        gap: 20px 0px;
+      margin-top: 40px;
+      grid-template-columns: repeat(9, 1fr);
+      gap: 30px 5px;
     }
-    img {
-        width: 40px;
-        height: auto;
-        transition: all 300ms ease-in-out;
-    }
-    img:hover {
-        transform: scale(1.2);
-    }
-    @media screen and (min-width: 636px) {
-        .stack-container {
-            margin-top: 40px;
-            grid-template-columns: repeat(9, 1fr);
-            gap: 30px 5px;
-        }
 
-        img {
-            width: 50px;
-        }
+    img {
+      width: 50px;
     }
+  }
 </style>
