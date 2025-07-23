@@ -232,213 +232,228 @@
       }
     },
     "es": {
-      "nav.home": "Inicio",
-      "nav.experience": "Experiencia",
-      "nav.projects": "Proyectos",
-      "nav.education": "Educación",
-      "nav.about": "Perfil",
-      "profile.gretting": "Hola, soy Andrés",
-      "profile.description-1": "FullStack Software Developer.",
-      "profile.description-2": "part 1",
-      "profile.description-3": " part 2",
-      "profile.tag": "¡Listo para trabajar! 🚀",
-      "profile.cv": "Curriculum",
-      "profile.url-cv": "https://docs.google.com/document/d/1G0Z0MEERY-pkBWYhxRFv9ssPU_GI9HMne0bWOKdudkg/edit?usp=sharing",
-      "profile.email": "@Email",
-      "profile.icon.linkedin": "https://www.linkedin.com/in/andresmarquezdev/",
-      "profile.icon.github": "https://github.com/andresdmdev",
-      "experience.jobs": [
-        {
-          "jobTitle": "Software Engineer Junior",
-          "company": "Tienda Pago",
-          "startDate": "Oct. 2023",
-          "endDate": "Current",
-          "shortDescription": "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de apl icaciones web. Mejora de un 30% en la entrega de software.",
-          "longDescription": "",
-          "linkedin": {
-            "url": "https://www.linkedin.com/company/tienda-pago"
+      "pageTitle": "Andres Marquez",
+      "nav": {
+        "home": "Inicio",
+        "experience": "Experiencia",
+        "projects": "Proyectos",
+        "education": "Educación",
+        "about": "Perfil"
+      },
+      "profile": {
+        "gretting": "Hola, soy Andrés",
+        "description-1": "FullStack Software Developer.",
+        "description-2": "part 1",
+        "description-3": "part 2",
+        "tag": "¡Listo para trabajar! 🚀",
+        "cv": "Curriculum",
+        "url-cv": "https://docs.google.com/document/d/1G0Z0MEERY-pkBWYhxRFv9ssPU_GI9HMne0bWOKdudkg/edit?usp=sharing",
+        "email": "@Email",
+        "icon": {
+          "linkedin": "https://www.linkedin.com/in/andresmarquezdev/",
+          "github": "https://github.com/andresdmdev"
+        }
+      },
+      "experience": {
+        "jobs": [
+          {
+            "jobTitle": "Software Engineer Junior",
+            "company": "Tienda Pago",
+            "startDate": "Oct. 2023",
+            "endDate": "Current",
+            "shortDescription": "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de apl icaciones web. Mejora de un 30% en la entrega de software.",
+            "longDescription": "",
+            "linkedin": {
+              "url": "https://www.linkedin.com/company/tienda-pago"
+            },
+            "webPage": {
+              "url": ""
+            },
+            "bullets": [
+              "Migration of call services",
+              "Handling messages via Azure Service Bus",
+              "Use of Service Bus and HTTP trigger functions"
+            ],
+            "isCurrentJob": true,
+            "isFirstJob": true
+          }
+        ]
+      },
+      "project": {
+        "title": "Projects",
+        "logo": "<box-icon name='code-alt' animation='tada-hover'></box-icon>",
+        "items": [
+          {
+            "title": "SVGL - A beautiful library with SVG logos",
+            "description": "Created from scratch with Next.js and Tailwind CSS. It's a library with SVG logos from the most popular brands. Optimized for SEO and performance.",
+            "images": [
+              {
+                "image": "laptop.avif",
+                "altText": "Laptop image"
+              },
+              {
+                "image": "profile.avif",
+                "altText": "Profile image"
+              },
+              {
+                "image": "laptop.avif",
+                "altText": "Laptop image"
+              }
+            ],
+            "technologies": [
+              {
+                "technology": "Angular",
+                "logo": "<box-icon type='logo' name='angular' color='rgba(246,10,72,0.6)'></box-icon>",
+                "backgroundColor": "linear-gradient(to bottom, rgba(255, 49, 217, 0.3), rgba(255, 49, 217, 0));"
+              },
+              {
+                "technology": "Tailwind.CSS",
+                "logo": "<box-icon name='tailwind-css' type='logo' color='#2298bd'></box-icon>",
+                "backgroundColor": "linear-gradient(to bottom, rgba(34,152,189,0.3), rgba(34,152,189,0));"
+              }
+            ],
+            "links": [
+              {
+                "name": "Demo",
+                "url": "",
+                "icon": "<box-icon name='receipt' type='solid' animation='tada-hover'></box-icon>"
+              },
+              {
+                "name": "GitHub",
+                "url": "",
+                "icon": "<box-icon name='github' type='logo' animation='tada-hover'></box-icon>"
+              }
+            ]
+          }
+        ]
+      },
+      "stack": {
+        "title": "Technologies and tools",
+        "logo": "<box-icon name='hot' type='solid' animation='tada-hover'></box-icon>",
+        "tools": [
+          {
+            "name": "C#",
+            "logo": "c-sharp.avif"
           },
-          "webPage": {
-            "url": ""
+          {
+            "name": "Netcore",
+            "logo": "netcore.avif"
           },
-          "bullets": [
-            "Migration of call services",
-            "Handling messages via Azure Service Bus",
-            "Use of Service Bus and HTTP trigger functions"
-          ],
-          "isCurrentJob": true,
-          "isFirstJob": true
-        }
-      ],
-      "project.title": "Projects",
-      "project.logo": "<box-icon name='code-alt' animation='tada-hover'></box-icon>",
-      "project.items": [
-        {
-          "title": "SVGL - A beautiful library with SVG logos",
-          "description": "Created from scratch with Next.js and Tailwind CSS. It's a library with SVG logos from the most popular brands. Optimized for SEO and performance.",
-          "images": [
-            {
-              "image": "laptop.avif",
-              "altText": "Laptop image"
-            },
-            {
-              "image": "profile.avif",
-              "altText": "Profile image"
-            },
-            {
-              "image": "laptop.avif",
-              "altText": "Laptop image"
-            }
-          ],
-          "technologies": [
-            {
-              "technology": "Angular",
-              "logo": "<box-icon type='logo' name='angular' color='rgba(246,10,72,0.6)'></box-icon>",
-              "backgroundColor": "linear-gradient(to bottom, rgba(255, 49, 217, 0.3), rgba(255, 49, 217, 0));"
-            },
-            {
-              "technology": "Tailwind.CSS",
-              "logo": "<box-icon name='tailwind-css' type='logo' color='#2298bd'></box-icon>",
-              "backgroundColor": "linear-gradient(to bottom, rgba(34,152,189,0.3), rgba(34,152,189,0));"
-            }
-          ],
-          "links": [
-            {
-              "name": "Demo",
-              "url": "",
-              "icon": "<box-icon name='receipt' type='solid' animation='tada-hover'></box-icon>"
-            },
-            {
-              "name": "GitHub",
-              "url": "",
-              "icon": "<box-icon name='github' type='logo' animation='tada-hover'></box-icon>"
-            }
-          ]
-        }
-      ],
-      "stack.title": "Technologies and tools",
-      "stack.logo": "<box-icon name='hot' type='solid' animation='tada-hover'></box-icon>",
-      "stack.tools": [
-        {
-          "name": "C#",
-          "logo": "c-sharp.avif"
-        },
-        {
-          "name": "Netcore",
-          "logo": "netcore.avif"
-        },
-        {
-          "name": "TypeScript",
-          "logo": "typescript.avif"
-        },
-        {
-          "name": "JavaScript",
-          "logo": "javascript.avif"
-        },
-        {
-          "name": "Python",
-          "logo": "python.avif"
-        },
-        {
-          "name": "React",
-          "logo": "reactjs.avif"
-        },
-        {
-          "name": "Angular",
-          "logo": "angular.avif"
-        },
-        {
-          "name": "SQL Server",
-          "logo": "sql-server.avif"
-        },
-        {
-          "name": "MySql",
-          "logo": "mysql.avif"
-        },
-        {
-          "name": "NodeJS",
-          "logo": "node.avif"
-        },
-        {
-          "name": "ExpressJs",
-          "logo": "express.avif"
-        },
-        {
-          "name": "Html",
-          "logo": "html.avif"
-        },
-        {
-          "name": "CSS",
-          "logo": "css.avif"
-        },
-        {
-          "name": "TailWindCSS",
-          "logo": "tailwind.avif"
-        },
-        {
-          "name": "Sass",
-          "logo": "sass.avif"
-        },
-        {
-          "name": "Jest",
-          "logo": "jest.avif"
-        },
-        {
-          "name": "Git",
-          "logo": "git.avif"
-        },
-        {
-          "name": "GitHub",
-          "logo": "github.avif"
-        },
-        {
-          "name": "Azure",
-          "logo": "azure.avif"
-        },
-        {
-          "name": "Atlassian",
-          "logo": "atlassian.avif"
-        },
-        {
-          "name": "DataDog",
-          "logo": "datadog.avif"
-        }
-      ],
-      "education.title": "Education",
-      "education.logo": "<box-icon type='solid' name='bank' animation='tada-hover'></box-icon>",
-      "education.diplomas": [
-        {
-          "name": "Bachelor of Technology",
-          "icon": "<box-icon name='badge-check' animation='tada-hover'></box-icon>",
-          "school": "Universidad 'AJS' Mérida",
-          "type": "Course",
-          "dateTime": "20/06/2021",
-          "dateTimeUI": "Jun. 2021"
-        },
-        {
-          "name": "Bachelor of Technology",
-          "icon": "<box-icon name='badge-check' animation='tada-hover'></box-icon>",
-          "school": "Universidad 'AJS' Mérida",
-          "type": "Course",
-          "dateTime": "20/06/2021",
-          "dateTimeUI": "Jun. 2021"
-        },
-        {
-          "name": "Bachelor of Technology",
-          "icon": "<box-icon name='badge-check' animation='tada-hover'></box-icon>",
-          "school": "Universidad 'AJS' Mérida",
-          "type": "Course",
-          "dateTime": "20/06/2021",
-          "dateTimeUI": "Jun. 2021"
-        },
-        {
-          "name": "Bachelor of Technology",
-          "icon": "<box-icon name='badge-check' animation='tada-hover'></box-icon>",
-          "school": "Universidad 'AJS' Mérida",
-          "type": "Course",
-          "dateTime": "20/06/2021",
-          "dateTimeUI": "Jun. 2021"
-        }
-      ]
+          {
+            "name": "TypeScript",
+            "logo": "typescript.avif"
+          },
+          {
+            "name": "JavaScript",
+            "logo": "javascript.avif"
+          },
+          {
+            "name": "Python",
+            "logo": "python.avif"
+          },
+          {
+            "name": "React",
+            "logo": "reactjs.avif"
+          },
+          {
+            "name": "Angular",
+            "logo": "angular.avif"
+          },
+          {
+            "name": "SQL Server",
+            "logo": "sql-server.avif"
+          },
+          {
+            "name": "MySql",
+            "logo": "mysql.avif"
+          },
+          {
+            "name": "NodeJS",
+            "logo": "node.avif"
+          },
+          {
+            "name": "ExpressJs",
+            "logo": "express.avif"
+          },
+          {
+            "name": "Html",
+            "logo": "html.avif"
+          },
+          {
+            "name": "CSS",
+            "logo": "css.avif"
+          },
+          {
+            "name": "TailWindCSS",
+            "logo": "tailwind.avif"
+          },
+          {
+            "name": "Sass",
+            "logo": "sass.avif"
+          },
+          {
+            "name": "Jest",
+            "logo": "jest.avif"
+          },
+          {
+            "name": "Git",
+            "logo": "git.avif"
+          },
+          {
+            "name": "GitHub",
+            "logo": "github.avif"
+          },
+          {
+            "name": "Azure",
+            "logo": "azure.avif"
+          },
+          {
+            "name": "Atlassian",
+            "logo": "atlassian.avif"
+          },
+          {
+            "name": "DataDog",
+            "logo": "datadog.avif"
+          }
+        ]
+      },
+      "education": {
+        "title": "Education",
+        "logo": "<box-icon type='solid' name='bank' animation='tada-hover'></box-icon>",
+        "diplomas": [
+          {
+            "name": "Bachelor of Technology",
+            "icon": "<box-icon name='badge-check' animation='tada-hover'></box-icon>",
+            "school": "Universidad 'AJS' Mérida",
+            "type": "Course",
+            "dateTime": "20/06/2021",
+            "dateTimeUI": "Jun. 2021"
+          },
+          {
+            "name": "Bachelor of Technology",
+            "icon": "<box-icon name='badge-check' animation='tada-hover'></box-icon>",
+            "school": "Universidad 'AJS' Mérida",
+            "type": "Course",
+            "dateTime": "20/06/2021",
+            "dateTimeUI": "Jun. 2021"
+          },
+          {
+            "name": "Bachelor of Technology",
+            "icon": "<box-icon name='badge-check' animation='tada-hover'></box-icon>",
+            "school": "Universidad 'AJS' Mérida",
+            "type": "Course",
+            "dateTime": "20/06/2021",
+            "dateTimeUI": "Jun. 2021"
+          },
+          {
+            "name": "Bachelor of Technology",
+            "icon": "<box-icon name='badge-check' animation='tada-hover'></box-icon>",
+            "school": "Universidad 'AJS' Mérida",
+            "type": "Course",
+            "dateTime": "20/06/2021",
+            "dateTimeUI": "Jun. 2021"
+          }
+        ]
+      }
     }
 }
