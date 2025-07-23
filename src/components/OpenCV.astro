@@ -38,11 +38,14 @@ const { text, url } = Astro.props;
   }
 
   .contact-info-cv:hover {
+    background-color: var(--body-primary-color);
+    border-color: var(--body-primary-color);
     scale: 1.1;
   }
 
   :global(.dark) .contact-info-cv:hover {
     border-color: var(--dark-body-primary-color);
+    background-color: var(--body-secondary-color);
   }
 
   .cv-text {
