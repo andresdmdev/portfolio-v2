@@ -26,7 +26,7 @@ const baseLanguage = formatDefautlBaseLanguage(lang);
       href={`${baseLanguage}/about`}
       transition:animate="fade"
       transition:name="nav-link-about"
-      data-selected={Astro.url.pathname === "/about" ? "true" : "false"}
+      data-selected={/about/i.test(Astro.url.pathname) ? "true" : "false"}
       aria-label="About section">{t("nav").about}</a
     >
     <a
@@ -34,7 +34,7 @@ const baseLanguage = formatDefautlBaseLanguage(lang);
       href={`${baseLanguage}/project`}
       transition:animate="fade"
       transition:name="nav-link-projects"
-      data-selected={Astro.url.pathname === "/project" ? "true" : "false"}
+      data-selected={/project/i.test(Astro.url.pathname) ? "true" : "false"}
       aria-label="Project section">{t("nav").projects}</a
     >
     <a
@@ -42,7 +42,7 @@ const baseLanguage = formatDefautlBaseLanguage(lang);
       href={`${baseLanguage}/education`}
       transition:animate="fade"
       transition:name="nav-link-education"
-      data-selected={Astro.url.pathname === "/education" ? "true" : "false"}
+      data-selected={/education/i.test(Astro.url.pathname) ? "true" : "false"}
       aria-label="Education section">{t("nav").education}</a
     >
     <ThemeIcon />
