@@ -3,6 +3,12 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import Header from "../../components/sections/Header.astro";
 import TitleSection from "../../components/sections/TitleSection.astro";
 import { getLangFromUrl, getTranslation } from "../../i18n/utils";
+import Paragragh from "../../components/Paragragh.astro";
+import ContactInfo from "../../components/sections/ContactInfo.astro";
+import Certifications from "../../components/sections/Certifications.astro";
+import type { EducationItem } from "../../interfaces/educationDiplomaItem";
+import Stack from "../../components/sections/Stack.astro";
+import type { Stackitem } from "../../interfaces/stackItem";
 
 const lang = getLangFromUrl(Astro.url);
 const t = getTranslation(lang);
@@ -18,11 +24,20 @@ const t = getTranslation(lang);
       className="education-title-section"
       id="education-title-section"
     />
-    <!-- <Profile />
-		<Experience />
-		<Project />
-		<Stack />
-		<Education />
-		<Footer /> -->
+    <Paragragh
+      text={t("education").description as string}
+      className="education"
+    />
+    <ContactInfo />
+    <Stack
+      stackList={t("education").tools as Stackitem[]}
+      title={t("education")["first-subtitle"] as string}
+      logo={t("education")["first-subtitleLogo"] as string}
+    />
+    <Certifications
+      educationItem={t("education").diplomas as EducationItem[]}
+      title={t("education")["second-subtitle"] as string}
+      logo={t("education")["second-subtitleLogo"] as string}
+    />
   </main>
 </BaseLayout>

@@ -1,20 +1,21 @@
 ---
 import SubTitle from "../../components/SubTitle.astro";
-import { getLangFromUrl, getTranslation } from "../../i18n/utils";
 import type { Stackitem } from "../../interfaces/stackItem";
 import SectionLayout from "../../layouts/SectionLayout.astro";
 
-const lang = getLangFromUrl(Astro.url);
+interface Props {
+  stackList: Stackitem[];
+  title: string;
+  logo: string;
+}
 
-const t = getTranslation(lang);
-
-const stackList = t("stack").tools as Stackitem[];
+const { stackList, title, logo } = Astro.props;
 ---
 
 <SectionLayout id="Tools">
   <SubTitle
-    title={t("stack").title as string}
-    logo={t("stack").logo as string}
+    title={title}
+    logo={logo}
   />
 
   <div class="stack-container">
@@ -36,7 +37,7 @@ const stackList = t("stack").tools as Stackitem[];
 
 <style>
   .stack-container {
-    margin-top: 25px;
+    margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
@@ -51,15 +52,15 @@ const stackList = t("stack").tools as Stackitem[];
   img:hover {
     transform: scale(1.2);
   }
-  @media screen and (min-width: 636px) {
+  @media screen and (min-width: 768px) {
     .stack-container {
-      margin-top: 40px;
-      grid-template-columns: repeat(9, 1fr);
+      margin-top: 70px;
+      grid-template-columns: repeat(6, 1fr);
       gap: 30px 5px;
     }
 
     img {
-      width: 50px;
+      width: 60px;
     }
   }
 </style>

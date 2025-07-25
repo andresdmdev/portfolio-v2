@@ -26,91 +26,91 @@
         "title": "Technologies and tools",
         "logo": "<box-icon name='hot' type='solid' animation='tada-hover'></box-icon>",
         "tools": [
-        {
-          "name": "C#",
-          "logo": "c-sharp.avif"
-        },
-        {
-          "name": "Netcore",
-          "logo": "netcore.avif"
-        },
-        {
-          "name": "TypeScript",
-          "logo": "typescript.avif"
-        },
-        {
-          "name": "JavaScript",
-          "logo": "javascript.avif"
-        },
-        {
-          "name": "Python",
-          "logo": "python.avif"
-        },
-        {
-          "name": "React",
-          "logo": "reactjs.avif"
-        },
-        {
-          "name": "Angular",
-          "logo": "angular.avif"
-        },
-        {
-          "name": "SQL Server",
-          "logo": "sql-server.avif"
-        },
-        {
-          "name": "MySql",
-          "logo": "mysql.avif"
-        },
-        {
-          "name": "NodeJS",
-          "logo": "node.avif"
-        },
-        {
-          "name": "ExpressJs",
-          "logo": "express.avif"
-        },
-        {
-          "name": "Html",
-          "logo": "html.avif"
-        },
-        {
-          "name": "CSS",
-          "logo": "css.avif"
-        },
-        {
-          "name": "TailWindCSS",
-          "logo": "tailwind.avif"
-        },
-        {
-          "name": "Sass",
-          "logo": "sass.avif"
-        },
-        {
-          "name": "Jest",
-          "logo": "jest.avif"
-        },
-        {
-          "name": "Git",
-          "logo": "git.avif"
-        },
-        {
-          "name": "GitHub",
-          "logo": "github.avif"
-        },
-        {
-          "name": "Azure",
-          "logo": "azure.avif"
-        },
-        {
-          "name": "Atlassian",
-          "logo": "atlassian.avif"
-        },
-        {
-          "name": "DataDog",
-          "logo": "datadog.avif"
-        }
-        ] 
+          {
+            "name": "C#",
+            "logo": "c-sharp.avif"
+          },
+          {
+            "name": "Netcore",
+            "logo": "netcore.avif"
+          },
+          {
+            "name": "TypeScript",
+            "logo": "typescript.avif"
+          },
+          {
+            "name": "JavaScript",
+            "logo": "javascript.avif"
+          },
+          {
+            "name": "Python",
+            "logo": "python.avif"
+          },
+          {
+            "name": "React",
+            "logo": "reactjs.avif"
+          },
+          {
+            "name": "Angular",
+            "logo": "angular.avif"
+          },
+          {
+            "name": "SQL Server",
+            "logo": "sql-server.avif"
+          },
+          {
+            "name": "MySql",
+            "logo": "mysql.avif"
+          },
+          {
+            "name": "NodeJS",
+            "logo": "node.avif"
+          },
+          {
+            "name": "ExpressJs",
+            "logo": "express.avif"
+          },
+          {
+            "name": "Html",
+            "logo": "html.avif"
+          },
+          {
+            "name": "CSS",
+            "logo": "css.avif"
+          },
+          {
+            "name": "TailWindCSS",
+            "logo": "tailwind.avif"
+          },
+          {
+            "name": "Sass",
+            "logo": "sass.avif"
+          },
+          {
+            "name": "Jest",
+            "logo": "jest.avif"
+          },
+          {
+            "name": "Git",
+            "logo": "git.avif"
+          },
+          {
+            "name": "GitHub",
+            "logo": "github.avif"
+          },
+          {
+            "name": "Azure",
+            "logo": "azure.avif"
+          },
+          {
+            "name": "Atlassian",
+            "logo": "atlassian.avif"
+          },
+          {
+            "name": "DataDog",
+            "logo": "datadog.avif"
+          }
+        ]
       },
       "experience": {
         "title": "Hey, I’m Andres. <br>A Software Engineer.",
@@ -192,7 +192,144 @@
       },
       "education": {
         "title": "Education",
-        "icon": "<box-icon name='briefcase' type='solid' animation='tada-hover'></box-icon>"
+        "icon": "<box-icon name='briefcase' type='solid' animation='tada-hover'></box-icon>",
+        "description": "As a FullStack Software Developer, my education has provided a strong foundation in building user interfaces and improving UI/UX with best practices. I am committed to continuous learning and growth, always seeking new knowledge and skills to create efficient and impactful software solutions.",
+        "first-subtitle": "Technologies and tools used",
+        "first-subtitleLogo": "code-alt",
+        "tools": [
+          {
+            "name": "Python",
+            "logo": "python.avif"
+          },
+          {
+            "name": "JavaScript",
+            "logo": "javascript.avif"
+          },
+          {
+            "name": "TypeScript",
+            "logo": "typescript.avif"
+          },
+          {
+            "name": "C#",
+            "logo": "c-sharp.avif"
+          },
+          {
+            "name": "Netcore",
+            "logo": "netcore.avif"
+          },
+          {
+            "name": "NodeJS",
+            "logo": "node.avif"
+          },
+          {
+            "name": "Azure",
+            "logo": "azure.avif"
+          },
+          {
+            "name": "Astro",
+            "logo": "astro.avif"
+          },
+          {
+            "name": "React",
+            "logo": "reactjs.avif"
+          },
+          {
+            "name": "Angular",
+            "logo": "angular.avif"
+          },
+          {
+            "name": "SQL Server",
+            "logo": "sql-server.avif"
+          },
+          {
+            "name": "MySql",
+            "logo": "mysql.avif"
+          },
+          {
+            "name": "PostgresSQL",
+            "logo": "postgres.avif"
+          },
+          {
+            "name": "TailwindCSS",
+            "logo": "tailwind.avif"
+          },
+          {
+            "name": "Git",
+            "logo": "git.avif"
+          },
+          {
+            "name": "DataDog",
+            "logo": "datadog.avif"
+          },
+          {
+            "name": "Jest",
+            "logo": "jest.avif"
+          },
+          {
+            "name": "Botmaker",
+            "logo": "botmaker.avif"
+          },
+          {
+            "name": "Figma",
+            "logo": "figma.avif"
+          },
+          {
+            "name": "GenesysCloud",
+            "logo": "genesyscloud.avif"
+          },
+          {
+            "name": "ElevenLabs",
+            "logo": "elevenlabs.avif"
+          },
+          {
+            "name": "OpenAI",
+            "logo": "openai.avif"
+          }
+        ],
+        "second-subtitle": "Certifications",
+        "second-subtitleLogo": "book-open",
+        "diplomas": [
+          {
+            "name": "Bachelor of Technology",
+            "icon": "<box-icon name='graduation' type='solid'></box-icon>",
+            "school": "Tech University",
+            "type": "Degree",
+            "dateTime": "2015-2019",
+            "dateTimeUI": "2015 - 2019"
+          },
+          {
+            "name": "Full Stack Web Development",
+            "icon": "<box-icon name='code-alt' type='solid'></box-icon>",
+            "school": "Online Bootcamp",
+            "type": "Certification",
+            "dateTime": "2020",
+            "dateTimeUI": "2020"
+          },
+          {
+            "name": "Master of Science in Computer Science",
+            "icon": "<box-icon name='book' type='solid'></box-icon>",
+            "school": "National University",
+            "type": "Degree",
+            "dateTime": "2019-2021",
+            "dateTimeUI": "2019 - 2021"
+          },
+          {
+            "name": "UI/UX Design Specialization",
+            "icon": "<box-icon name='palette' type='solid'></box-icon>",
+            "school": "Design Institute",
+            "type": "Certification",
+            "dateTime": "2022",
+            "dateTimeUI": "2022"
+          },
+          {
+            "name": "Cloud Computing Fundamentals",
+            "icon": "<box-icon name='cloud' type='solid'></box-icon>",
+            "school": "Cloud Academy",
+            "type": "Certification",
+            "dateTime": "2023",
+            "dateTimeUI": "2023"
+          }
+        ]
       },
       "about": {
         "title": "I´m Andrés",
@@ -204,7 +341,7 @@
           "title": "Let's collaborate if you're committed to sustainability, education, equality, or carbon neutrality.",
           "description": "I'm a software engineer with a passion for creating user-friendly and efficient applications. I'm always looking for new challenges and opportunities to grow as a developer."
         },
-        "key-points": [ 
+        "key-points": [
           {
             "title": "Sustainability",
             "description": "I'm a software engineer with a passion for creating user-friendly and efficient applications. I'm always looking for new challenges and opportunities to grow as a developer."
