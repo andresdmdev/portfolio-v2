@@ -13,9 +13,8 @@ html.dark {
     
 body {
     font-family: Hanken Grotesk, Host Grotesk, Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    margin: 48px auto;
-    width: 100%;
-    max-width: 87.5ch;
+    width: 85%;
+    margin: 26px auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -26,9 +25,23 @@ h1, h2, h3, h4, h5, h6 {
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
     body {
-        width: 87%;
-        margin: 26px auto;
+        max-width: 90%;
+        margin: 48px auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        max-width: 85%;
+        margin: 48px auto;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    body {
+        max-width: 75%;
+        margin: 56px auto;
     }
 }

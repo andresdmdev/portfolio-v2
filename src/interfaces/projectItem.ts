@@ -2,9 +2,15 @@ export interface ProjectItem {
     title: string,
     description: string,
     className: string,
+    icons: Icon[],
     technologies: Technology[],
     images: Image[],
     links: Link[]
+}
+
+export interface Icon {
+    name: string;
+    src: string;
 }
 
 export interface Link {
