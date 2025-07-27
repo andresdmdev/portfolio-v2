@@ -199,91 +199,147 @@
         "tools": [
           {
             "name": "Python",
-            "logo": "python.avif"
+            "isSameLogo": false,
+            "logo": {
+              "light": "python.svg",
+              "dark": "python.svg"
+            }
           },
           {
             "name": "JavaScript",
-            "logo": "javascript.avif"
+            "isSameLogo": false,
+            "logo": {
+              "light": "javascript.svg",
+              "dark": "javascript-dark.svg"
+            }
           },
           {
             "name": "TypeScript",
-            "logo": "typescript.avif"
+            "isSameLogo": false,
+            "logo": {
+              "light": "typescript.svg",
+              "dark": "typescript-dark.svg"
+            }
           },
           {
             "name": "C#",
-            "logo": "c-sharp.avif"
+            "isSameLogo": false,
+            "logo": {
+              "light": "c-sharp.svg",
+              "dark": "c-sharp-dark.svg"
+            }
           },
           {
-            "name": "Netcore",
-            "logo": "netcore.avif"
+            "name": "NetCore",
+            "isSameLogo": false,
+            "logo": {
+              "light": "netcore.svg",
+              "dark": "netcore-dark.svg"
+            }
           },
           {
             "name": "NodeJS",
-            "logo": "node.avif"
+            "isSameLogo": false,
+            "logo": {
+              "light": "nodejs.svg",
+              "dark": "nodejs-dark.svg"
+            }
           },
           {
             "name": "Azure",
-            "logo": "azure.avif"
+            "isSameLogo": false,
+            "logo": {
+              "light": "azure.svg",
+              "dark": "azure-dark.svg"
+            }
           },
           {
             "name": "Astro",
-            "logo": "astro.avif"
+            "isSameLogo": false,
+            "logo": {
+              "light": "astro.svg",
+              "dark": "astro-dark.svg"
+            }
           },
           {
             "name": "React",
-            "logo": "reactjs.avif"
+            "isSameLogo": false,
+            "logo": {
+              "light": "reactjs.svg",
+              "dark": "reactjs-dark.svg"
+            }
           },
           {
             "name": "Angular",
-            "logo": "angular.avif"
-          },
-          {
-            "name": "SQL Server",
-            "logo": "sql-server.avif"
+            "isSameLogo": false,
+            "logo": {
+              "light": "angularjs.svg",
+              "dark": "angularjs-dark.svg"
+            }
           },
           {
             "name": "MySql",
-            "logo": "mysql.avif"
+            "isSameLogo": false,
+            "logo": {
+              "light": "mysql.svg",
+              "dark": "mysql-dark.svg"
+            }
           },
           {
             "name": "PostgresSQL",
-            "logo": "postgres.avif"
+            "isSameLogo": false,
+            "logo": {
+              "light": "postgresql.svg",
+              "dark": "postgresql-dark.svg"
+            }
           },
           {
             "name": "TailwindCSS",
-            "logo": "tailwind.avif"
+            "isSameLogo": false,
+            "logo": {
+              "light": "tailwindcss.svg",
+              "dark": "tailwindcss-dark.svg"
+            }
           },
           {
             "name": "Git",
-            "logo": "git.avif"
+            "isSameLogo": false,
+            "logo": {
+              "light": "git.svg",
+              "dark": "git-dark.svg"
+            }
           },
           {
             "name": "DataDog",
-            "logo": "datadog.avif"
+            "isSameLogo": false,
+            "logo": {
+              "light": "datadog.svg",
+              "dark": "datadog-dark.svg"
+            }
           },
           {
             "name": "Jest",
-            "logo": "jest.avif"
-          },
-          {
-            "name": "Botmaker",
-            "logo": "botmaker.avif"
+            "isSameLogo": false,
+            "logo": {
+              "light": "jest.svg",
+              "dark": "jest-dark.svg"
+            }
           },
           {
             "name": "Figma",
-            "logo": "figma.avif"
-          },
-          {
-            "name": "GenesysCloud",
-            "logo": "genesyscloud.avif"
-          },
-          {
-            "name": "ElevenLabs",
-            "logo": "elevenlabs.avif"
+            "isSameLogo": false,
+            "logo": {
+              "light": "figma.svg",
+              "dark": "figma-dark.svg"
+            }
           },
           {
             "name": "OpenAI",
-            "logo": "openai.avif"
+            "isSameLogo": false,
+            "logo": {
+              "light": "openai.svg",
+              "dark": "openai-dark.svg"
+            }
           }
         ],
         "second-subtitle": "Certifications",
@@ -299,7 +355,7 @@
           },
           {
             "name": "Full Stack Web Development",
-            "icon": "<box-icon name='code-alt' type='solid'></box-icon>",
+            "icon": "<box-icon name='book' type='solid'></box-icon>",
             "school": "Online Bootcamp",
             "type": "Certification",
             "dateTime": "2020",

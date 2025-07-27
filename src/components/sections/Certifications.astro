@@ -29,7 +29,7 @@ const { educationItem, title, logo } = Astro.props;
 
 <style>
   .education-diplomas {
-    margin: 20px 0 0 0px;
+    margin: 20px auto 0 auto;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 25px;
@@ -37,7 +37,7 @@ const { educationItem, title, logo } = Astro.props;
 
   @media screen and (min-width: 768px) {
     .education-diplomas {
-      margin: 70px 0 0 40px;
+      margin: 70px auto 0 auto;
       grid-template-columns: repeat(2, 1fr);
       gap: 24px;
     }

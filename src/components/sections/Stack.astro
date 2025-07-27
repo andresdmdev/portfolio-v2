@@ -13,10 +13,7 @@ const { stackList, title, logo } = Astro.props;
 ---
 
 <SectionLayout id="Tools">
-  <SubTitle
-    title={title}
-    logo={logo}
-  />
+  <SubTitle title={title} logo={logo} />
 
   <div class="stack-container">
     {
@@ -24,7 +21,9 @@ const { stackList, title, logo } = Astro.props;
         stackList.map((stack) => {
           return (
             <img
-              src={`../../images/${stack.logo}`}
+              src={`../../images/${stack.logo.light}`}
+              class="stack-image"
+              data-sameLogo={stack.isSameLogo}
               alt={stack.name}
               width="40"
               height="40"
@@ -64,3 +63,43 @@ const { stackList, title, logo } = Astro.props;
     }
   }
 </style>
+
+<script is:inline>
+  const handleToggleClick = (defaultTheme = "dark") => {
+    const theme = localStorage.getItem("theme");
+    const stackImages = document.querySelectorAll(".stack-image");
+    if (theme == defaultTheme) {
+      stackImages.forEach((image) => {
+        const isSameLogo = image.dataset.samelogo === "true";
+
+        if (image.src.includes(".avif") && !isSameLogo) {
+          image.src = image.src.replace(".avif", "-dark.avif");
+        } else if (image.src.includes(".png") && !isSameLogo) {
+          image.src = image.src.replace(".png", "-dark.png");
+        } else if (image.src.includes(".jpg") && !isSameLogo) {
+          image.src = image.src.replace(".jpg", "-dark.jpg");
+        } else if (image.src.includes(".jpeg") && !isSameLogo) {
+          image.src = image.src.replace(".jpeg", "-dark.jpeg");
+        } else if (image.src.includes(".gif") && !isSameLogo) {
+          image.src = image.src.replace(".gif", "-dark.gif");
+        } else if (image.src.includes(".svg") && !isSameLogo) {
+          image.src = image.src.replace(".svg", "-dark.svg");
+        }
+      });
+    } else {
+      stackImages.forEach((image) => {
+        if (image.src.includes("-dark")) {
+          image.src = image.src.replace("-dark", "");
+        }
+      });
+    }
+  };
+
+  document.addEventListener("astro:page-load", () => {
+    handleToggleClick("dark");
+  });
+
+  document.getElementById("themeToggle").addEventListener("click", () => {
+    handleToggleClick("light");
+  });
+</script>
