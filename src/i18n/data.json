@@ -172,27 +172,37 @@
             "title": "Project 1",
             "description": "Description of project 1",
             "className": "grid-4",
-            "icons": [
-              {
-                "name": "Test Automation",
-                "src": "test-automation.svg"
-              }
-            ]
+            "icon": {
+              "name": "Test Automation",
+              "src": "test-automation.svg"
+            }
           },
           {
             "title": "Project 1",
             "description": "Description of project 1",
-            "className": "grid-6"
+            "className": "grid-6",
+            "icon": {
+              "name": "Test Automation",
+              "src": "test-automation.svg"
+            }
           },
           {
             "title": "Project 1",
             "description": "Description of project 1",
-            "className": "grid-6"
+            "className": "grid-6",
+            "icon": {
+              "name": "Test Automation",
+              "src": "test-automation.svg"
+            }
           },
           {
             "title": "Project 1",
             "description": "Description of project 1",
-            "className": "grid-4"
+            "className": "grid-4",
+            "icon": {
+              "name": "Test Automation",
+              "src": "test-automation.svg"
+            }
           }
         ]
       },

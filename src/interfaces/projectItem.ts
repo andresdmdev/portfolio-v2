@@ -2,7 +2,7 @@ export interface ProjectItem {
     title: string,
     description: string,
     className: string,
-    icons: Icon[],
+    icon: Icon,
     technologies: Technology[],
     images: Image[],
     links: Link[]

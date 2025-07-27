@@ -16,33 +16,13 @@ interface Props {
 
 const {
   title,
-  icon,
   className,
-  id,
-  enableIcon = false,
-  iconPosition = {
-    top: "-18px",
-    right: "75px",
-    rotate: "20deg",
-  },
+  id
 } = Astro.props;
 ---
 
 <SectionLayout id={id} className={className}>
   <div class="title-wrapper">
-    {
-      enableIcon && (
-        <span
-          set:html={icon}
-          class="icon"
-          style={`
-          top: ${iconPosition.top};
-          right: ${iconPosition.right};
-          rotate: ${iconPosition.rotate};
-        `}
-        />
-      )
-    }
     <h2 set:html={title} />
   </div>
 </SectionLayout>
@@ -68,26 +48,10 @@ const {
     width: 100%;
   }
 
-  .icon {
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    fill: var(--title-primary-color);
-  }
-
-  :global(.dark) .icon {
-    fill: var(--dark-title-primary-color);
-  }
-
   @media screen and (min-width: 768px) {
     h2 {
       margin-top: 35px;
       font-size: var(--font-size-title-tablet);
-    }
-
-    .icon {
-      right: 240px !important;
-      top: 20px !important;
     }
   }
 
