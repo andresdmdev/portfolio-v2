@@ -15,7 +15,7 @@ const { text, className, title = null } = Astro.props;
     flex-direction: column;
     margin: 0 auto;
     max-width: 500px;
-    margin-top: 2rem;
+    margin-top: 1.7rem;
   }
 
   .paragraph-title {
@@ -25,7 +25,7 @@ const { text, className, title = null } = Astro.props;
     line-height: 1.4rem;
     letter-spacing: 1px;
     color: var(--body-primary-color);
-    margin: 1rem 0 1rem 0;
+    margin: 0 0 1rem 0;
     font-family: var(--font-family);
   }
 
@@ -54,7 +54,7 @@ const { text, className, title = null } = Astro.props;
 
   @media screen and (min-width: 768px) {
     .paragraph-container {
-      margin-top: 70px;
+      margin: 35px auto 60px auto;
       max-width: 650px;
     }
 
@@ -65,6 +65,14 @@ const { text, className, title = null } = Astro.props;
       font-size: var(--font-size-paragraph-body-tablet);
       line-height: 30px;
       font-weight: 400;
+    }
+
+    .paragraph-container.about {
+      margin: 0 auto;
+    }
+
+    .paragraph-container.about.with-out-margin {
+      margin-top: 120px;
     }
 
     .paragraph.about {
