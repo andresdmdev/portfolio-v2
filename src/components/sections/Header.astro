@@ -2,20 +2,20 @@
 import Navigation from "../../components/Navigation.astro";
 import {
   getLangFromUrl,
-  changeLanguage,
-  formattedLanguage,
+  getLanguageSwitchUrl,
+  getLanguageDisplayText,
 } from "../../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
-const langFormatted = formattedLanguage(lang);
-const urlLanguage = changeLanguage(lang);
+const languageDisplayText = getLanguageDisplayText(lang);
+const languageSwitchUrl = getLanguageSwitchUrl(lang, Astro.url);
 ---
 
 <>
   <a
-    href={`/${urlLanguage}`}
+    href={languageSwitchUrl}
     class="language-button"
-    aria-label="Change language">{langFormatted}</a
+    aria-label="Change language">{languageDisplayText}</a
   >
   <header>
     <Navigation />

@@ -443,98 +443,25 @@
     "es": {
       "pageTitle": "Andres Marquez",
       "nav": {
-        "home": "Inicio",
-        "experience": "Experiencia",
-        "projects": "Proyectos",
-        "education": "Educación",
-        "about": "Perfil"
+        "home": "Home",
+        "experience": "Experience",
+        "projects": "Projects",
+        "education": "Education",
+        "about": "About"
       },
       "profile": {
-        "gretting": "Hola, soy Andrés",
+        "gretting": "Hey, I'm Andres",
         "description-1": "FullStack Software Developer.",
-        "description-2": "part 1",
-        "description-3": "part 2",
-        "tag": "¡Listo para trabajar! 🚀",
+        "description-2": "Creating user interfaces, improving UI and UX with",
+        "description-3": " best practices.",
+        "tag": "Ready for work! 🚀",
         "cv": "Curriculum",
         "url-cv": "https://docs.google.com/document/d/1G0Z0MEERY-pkBWYhxRFv9ssPU_GI9HMne0bWOKdudkg/edit?usp=sharing",
-        "email": "@Email",
+        "email": "andresdmf55@gmail.com",
         "icon": {
           "linkedin": "https://www.linkedin.com/in/andresmarquezdev/",
           "github": "https://github.com/andresdmdev"
         }
-      },
-      "experience": {
-        "jobs": [
-          {
-            "jobTitle": "Software Engineer Junior",
-            "company": "Tienda Pago",
-            "startDate": "Oct. 2023",
-            "endDate": "Current",
-            "shortDescription": "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de apl icaciones web. Mejora de un 30% en la entrega de software.",
-            "longDescription": "",
-            "linkedin": {
-              "url": "https://www.linkedin.com/company/tienda-pago"
-            },
-            "webPage": {
-              "url": ""
-            },
-            "bullets": [
-              "Migration of call services",
-              "Handling messages via Azure Service Bus",
-              "Use of Service Bus and HTTP trigger functions"
-            ],
-            "isCurrentJob": true,
-            "isFirstJob": true
-          }
-        ]
-      },
-      "project": {
-        "title": "Projects",
-        "logo": "<box-icon name='code-alt' animation='tada-hover'></box-icon>",
-        "items": [
-          {
-            "title": "SVGL - A beautiful library with SVG logos",
-            "description": "Created from scratch with Next.js and Tailwind CSS. It's a library with SVG logos from the most popular brands. Optimized for SEO and performance.",
-            "images": [
-              {
-                "image": "laptop.avif",
-                "altText": "Laptop image"
-              },
-              {
-                "image": "profile.avif",
-                "altText": "Profile image"
-              },
-              {
-                "image": "laptop.avif",
-                "altText": "Laptop image"
-              }
-            ],
-            "technologies": [
-              {
-                "technology": "Angular",
-                "logo": "<box-icon type='logo' name='angular' color='rgba(246,10,72,0.6)'></box-icon>",
-                "backgroundColor": "linear-gradient(to bottom, rgba(255, 49, 217, 0.3), rgba(255, 49, 217, 0));"
-              },
-              {
-                "technology": "Tailwind.CSS",
-                "logo": "<box-icon name='tailwind-css' type='logo' color='#2298bd'></box-icon>",
-                "backgroundColor": "linear-gradient(to bottom, rgba(34,152,189,0.3), rgba(34,152,189,0));"
-              }
-            ],
-            "links": [
-              {
-                "name": "Demo",
-                "url": "",
-                "icon": "<box-icon name='receipt' type='solid' animation='tada-hover'></box-icon>"
-              },
-              {
-                "name": "GitHub",
-                "url": "",
-                "icon": "<box-icon name='github' type='logo' animation='tada-hover'></box-icon>"
-              }
-            ]
-          }
-        ]
       },
       "stack": {
         "title": "Technologies and tools",
@@ -626,43 +553,332 @@
           }
         ]
       },
+      "experience": {
+        "title": "Hey, I’m Andres. <br>A Software Engineer.",
+        "icon": "",
+        "openToWork": {
+          "title": "Open to work",
+          "icon": "<box-icon name='briefcase' type='solid' animation='tada-hover'></box-icon>"
+        },
+        "description": "I'm a software engineer with a passion for creating user-friendly and efficient applications. I'm always looking for new challenges and opportunities to grow as a developer.",
+        "subtitle": "Working Experience",
+        "subtitleLogo": "briefcase",
+        "jobs": [
+          {
+            "jobTitle": "Software Engineer Junior",
+            "company": "Tienda Pago",
+            "startDate": "Oct. 2023",
+            "endDate": "Current",
+            "shortDescription": "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de apl icaciones web. Mejora de un 30% en la entrega de software.",
+            "longDescription": "",
+            "linkedin": {
+              "url": "https://www.linkedin.com/company/tienda-pago"
+            },
+            "webPage": {
+              "url": ""
+            },
+            "bullets": [
+              "Migration of call services",
+              "Handling messages via Azure Service Bus",
+              "Use of Service Bus and HTTP trigger functions"
+            ]
+          },
+          {
+            "jobTitle": "Software Engineer Junior",
+            "company": "Tienda Pago",
+            "startDate": "Oct. 2023",
+            "endDate": "Current",
+            "shortDescription": "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de apl icaciones web. Mejora de un 30% en la entrega de software.",
+            "longDescription": "",
+            "linkedin": {
+              "url": "https://www.linkedin.com/company/tienda-pago"
+            },
+            "webPage": {
+              "url": ""
+            },
+            "bullets": [
+              "Migration of call services",
+              "Handling messages via Azure Service Bus",
+              "Use of Service Bus and HTTP trigger functions"
+            ]
+          }
+        ]
+      },
+      "project": {
+        "title": "Projects",
+        "icon": "<box-icon name='briefcase' type='solid' animation='tada-hover'></box-icon>",
+        "description": "I'm a software engineer with a passion for creating user-friendly and efficient applications. I'm always looking for new challenges and opportunities to grow as a developer.",
+        "items": [
+          {
+            "title": "Project 1",
+            "description": "Description of project 1",
+            "className": "grid-4",
+            "icon": {
+              "name": "Test Automation",
+              "src": "test-automation.svg"
+            }
+          },
+          {
+            "title": "Project 1",
+            "description": "Description of project 1",
+            "className": "grid-6",
+            "icon": {
+              "name": "Test Automation",
+              "src": "test-automation.svg"
+            }
+          },
+          {
+            "title": "Project 1",
+            "description": "Description of project 1",
+            "className": "grid-6",
+            "icon": {
+              "name": "Test Automation",
+              "src": "test-automation.svg"
+            }
+          },
+          {
+            "title": "Project 1",
+            "description": "Description of project 1",
+            "className": "grid-4",
+            "icon": {
+              "name": "Test Automation",
+              "src": "test-automation.svg"
+            }
+          }
+        ]
+      },
       "education": {
         "title": "Education",
-        "logo": "<box-icon type='solid' name='bank' animation='tada-hover'></box-icon>",
+        "icon": "<box-icon name='briefcase' type='solid' animation='tada-hover'></box-icon>",
+        "description": "As a FullStack Software Developer, my education has provided a strong foundation in building user interfaces and improving UI/UX with best practices. I am committed to continuous learning and growth, always seeking new knowledge and skills to create efficient and impactful software solutions.",
+        "first-subtitle": "Technologies and tools used",
+        "first-subtitleLogo": "code-alt",
+        "tools": [
+          {
+            "name": "Python",
+            "isSameLogo": false,
+            "logo": {
+              "light": "python.svg",
+              "dark": "python.svg"
+            }
+          },
+          {
+            "name": "JavaScript",
+            "isSameLogo": false,
+            "logo": {
+              "light": "javascript.svg",
+              "dark": "javascript-dark.svg"
+            }
+          },
+          {
+            "name": "TypeScript",
+            "isSameLogo": false,
+            "logo": {
+              "light": "typescript.svg",
+              "dark": "typescript-dark.svg"
+            }
+          },
+          {
+            "name": "C#",
+            "isSameLogo": false,
+            "logo": {
+              "light": "c-sharp.svg",
+              "dark": "c-sharp-dark.svg"
+            }
+          },
+          {
+            "name": "NetCore",
+            "isSameLogo": false,
+            "logo": {
+              "light": "netcore.svg",
+              "dark": "netcore-dark.svg"
+            }
+          },
+          {
+            "name": "NodeJS",
+            "isSameLogo": false,
+            "logo": {
+              "light": "nodejs.svg",
+              "dark": "nodejs-dark.svg"
+            }
+          },
+          {
+            "name": "Azure",
+            "isSameLogo": false,
+            "logo": {
+              "light": "azure.svg",
+              "dark": "azure-dark.svg"
+            }
+          },
+          {
+            "name": "Astro",
+            "isSameLogo": false,
+            "logo": {
+              "light": "astro.svg",
+              "dark": "astro-dark.svg"
+            }
+          },
+          {
+            "name": "React",
+            "isSameLogo": false,
+            "logo": {
+              "light": "reactjs.svg",
+              "dark": "reactjs-dark.svg"
+            }
+          },
+          {
+            "name": "Angular",
+            "isSameLogo": false,
+            "logo": {
+              "light": "angularjs.svg",
+              "dark": "angularjs-dark.svg"
+            }
+          },
+          {
+            "name": "MySql",
+            "isSameLogo": false,
+            "logo": {
+              "light": "mysql.svg",
+              "dark": "mysql-dark.svg"
+            }
+          },
+          {
+            "name": "PostgresSQL",
+            "isSameLogo": false,
+            "logo": {
+              "light": "postgresql.svg",
+              "dark": "postgresql-dark.svg"
+            }
+          },
+          {
+            "name": "TailwindCSS",
+            "isSameLogo": false,
+            "logo": {
+              "light": "tailwindcss.svg",
+              "dark": "tailwindcss-dark.svg"
+            }
+          },
+          {
+            "name": "Git",
+            "isSameLogo": false,
+            "logo": {
+              "light": "git.svg",
+              "dark": "git-dark.svg"
+            }
+          },
+          {
+            "name": "DataDog",
+            "isSameLogo": false,
+            "logo": {
+              "light": "datadog.svg",
+              "dark": "datadog-dark.svg"
+            }
+          },
+          {
+            "name": "Jest",
+            "isSameLogo": false,
+            "logo": {
+              "light": "jest.svg",
+              "dark": "jest-dark.svg"
+            }
+          },
+          {
+            "name": "Figma",
+            "isSameLogo": false,
+            "logo": {
+              "light": "figma.svg",
+              "dark": "figma-dark.svg"
+            }
+          },
+          {
+            "name": "OpenAI",
+            "isSameLogo": false,
+            "logo": {
+              "light": "openai.svg",
+              "dark": "openai-dark.svg"
+            }
+          }
+        ],
+        "second-subtitle": "Certifications",
+        "second-subtitleLogo": "book-open",
         "diplomas": [
           {
             "name": "Bachelor of Technology",
-            "icon": "<box-icon name='badge-check' animation='tada-hover'></box-icon>",
-            "school": "Universidad 'AJS' Mérida",
-            "type": "Course",
-            "dateTime": "20/06/2021",
-            "dateTimeUI": "Jun. 2021"
+            "icon": "<box-icon name='graduation' type='solid'></box-icon>",
+            "school": "Tech University",
+            "type": "Degree",
+            "dateTime": "2015-2019",
+            "dateTimeUI": "2015 - 2019"
           },
           {
-            "name": "Bachelor of Technology",
-            "icon": "<box-icon name='badge-check' animation='tada-hover'></box-icon>",
-            "school": "Universidad 'AJS' Mérida",
-            "type": "Course",
-            "dateTime": "20/06/2021",
-            "dateTimeUI": "Jun. 2021"
+            "name": "Full Stack Web Development",
+            "icon": "<box-icon name='book' type='solid'></box-icon>",
+            "school": "Online Bootcamp",
+            "type": "Certification",
+            "dateTime": "2020",
+            "dateTimeUI": "2020"
           },
           {
-            "name": "Bachelor of Technology",
-            "icon": "<box-icon name='badge-check' animation='tada-hover'></box-icon>",
-            "school": "Universidad 'AJS' Mérida",
-            "type": "Course",
-            "dateTime": "20/06/2021",
-            "dateTimeUI": "Jun. 2021"
+            "name": "Master of Science in Computer Science",
+            "icon": "<box-icon name='book' type='solid'></box-icon>",
+            "school": "National University",
+            "type": "Degree",
+            "dateTime": "2019-2021",
+            "dateTimeUI": "2019 - 2021"
           },
           {
-            "name": "Bachelor of Technology",
-            "icon": "<box-icon name='badge-check' animation='tada-hover'></box-icon>",
-            "school": "Universidad 'AJS' Mérida",
-            "type": "Course",
-            "dateTime": "20/06/2021",
-            "dateTimeUI": "Jun. 2021"
+            "name": "UI/UX Design Specialization",
+            "icon": "<box-icon name='palette' type='solid'></box-icon>",
+            "school": "Design Institute",
+            "type": "Certification",
+            "dateTime": "2022",
+            "dateTimeUI": "2022"
+          },
+          {
+            "name": "Cloud Computing Fundamentals",
+            "icon": "<box-icon name='cloud' type='solid'></box-icon>",
+            "school": "Cloud Academy",
+            "type": "Certification",
+            "dateTime": "2023",
+            "dateTimeUI": "2023"
           }
         ]
+      },
+      "about": {
+        "title": "I´m Andrés",
+        "first-paragraph": {
+          "title": "FullStack Software Developer. Creating user interfaces, improving UI and UX with best practices.",
+          "description": "I'm a software engineer with a passion for creating user-friendly and efficient applications. I'm always looking for new challenges and opportunities to grow as a developer."
+        },
+        "second-paragraph": {
+          "title": "Let's collaborate if you're committed to sustainability, education, equality, or carbon neutrality.",
+          "description": "I'm a software engineer with a passion for creating user-friendly and efficient applications. I'm always looking for new challenges and opportunities to grow as a developer."
+        },
+        "key-points": [
+          {
+            "title": "Sustainability",
+            "description": "I'm a software engineer with a passion for creating user-friendly and efficient applications. I'm always looking for new challenges and opportunities to grow as a developer."
+          },
+          {
+            "title": "Education",
+            "description": "I'm a software engineer with a passion for creating user-friendly and efficient applications. I'm always looking for new challenges and opportunities to grow as a developer."
+          },
+          {
+            "title": "Equality",
+            "description": "I'm a software engineer with a passion for creating user-friendly and efficient applications. I'm always looking for new challenges and opportunities to grow as a developer."
+          },
+          {
+            "title": "Carbon Neutrality",
+            "description": "I'm a software engineer with a passion for creating user-friendly and efficient applications. I'm always looking for new challenges and opportunities to grow as a developer."
+          }
+        ]
+      },
+      "contact": {
+        "cv": "Curriculum",
+        "url": "https://docs.google.com/document/d/1G0Z0MEERY-pkBWYhxRFv9ssPU_GI9HMne0bWOKdudkg/edit?usp=sharing",
+        "email": "andresdmf55@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/andresmarquezdev/",
+        "github": "https://github.com/andresdmdev"
       }
     }
 }

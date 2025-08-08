@@ -2,49 +2,32 @@
 import {
   getLangFromUrl,
   getTranslation,
-  formatDefautlBaseLanguage,
+  getLocalizedUrl,
+  isActiveRoute,
+  getNavRoutes,
 } from "../i18n/utils";
 import ThemeIcon from "./ThemeIcon.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = getTranslation(lang);
-const baseLanguage = formatDefautlBaseLanguage(lang);
+const currentPath = Astro.url.pathname;
+const navRoutes = getNavRoutes();
 ---
 
 <nav>
   <div class="nav-links">
-    <a
-      class="nav-link"
-      href={`${baseLanguage ? "" : "/"}`}
-      transition:animate="fade"
-      transition:name="nav-link-experience"
-      data-selected={Astro.url.pathname === "/" ? "true" : "false"}
-      aria-label="Experience section">{t("nav").experience}</a
-    >
-    <a
-      class="nav-link"
-      href={`${baseLanguage}/about`}
-      transition:animate="fade"
-      transition:name="nav-link-about"
-      data-selected={/about/i.test(Astro.url.pathname) ? "true" : "false"}
-      aria-label="About section">{t("nav").about}</a
-    >
-    <a
-      class="nav-link"
-      href={`${baseLanguage}/project`}
-      transition:animate="fade"
-      transition:name="nav-link-projects"
-      data-selected={/project/i.test(Astro.url.pathname) ? "true" : "false"}
-      aria-label="Project section">{t("nav").projects}</a
-    >
-    <a
-      class="nav-link"
-      href={`${baseLanguage}/education`}
-      transition:animate="fade"
-      transition:name="nav-link-education"
-      data-selected={/education/i.test(Astro.url.pathname) ? "true" : "false"}
-      aria-label="Education section">{t("nav").education}</a
-    >
+    {navRoutes.map((route) => (
+      <a
+        class="nav-link"
+        href={getLocalizedUrl(lang, route.path)}
+        transition:animate="fade"
+        transition:name={route.transitionName}
+        data-selected={isActiveRoute(currentPath, route.path) ? "true" : "false"}
+        aria-label={route.ariaLabel}
+      >
+        {t("nav")[route.translationKey]}
+      </a>
+    ))}
     <ThemeIcon />
   </div>
 </nav>
