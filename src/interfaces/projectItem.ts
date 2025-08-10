@@ -1,7 +1,8 @@
 export interface ProjectItem {
     title: string,
     urlName: string,
-    description: string,
+    descriptionShort: string,
+    descriptionLong: string,
     className: string,
     icon: Icon,
     technologies: Technology[],
@@ -9,6 +10,24 @@ export interface ProjectItem {
     linkedin: Link,
     github: Link,
     website: Link,
+    tag: string,
+    backPageHref: string,
+    paragraphs: Paragraph[]
+}
+
+export interface Paragraph {
+    title: string;
+    description: string;
+    diagram: Diagram | null;
+    gif: string | null;
+    img: string | null;
+}
+
+export interface Diagram {
+    name: string;
+    src: string;
+    alt: string;
+    position: string;
 }
 
 export interface Icon {

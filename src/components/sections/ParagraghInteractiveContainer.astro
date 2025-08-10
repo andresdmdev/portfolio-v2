@@ -1,0 +1,11 @@
+---
+import type { Paragraph } from "../../interfaces/projectItem";
+import SectionLayout from "../../layouts/SectionLayout.astro";
+import ParagraghInteractive from "../ParagraghInteractive.astro";
+
+const { paragraphs } = Astro.props as { paragraphs: Paragraph[] };
+---
+
+<SectionLayout id="paragraph-interactive-container" className="paragraph-interactive-container">
+  {paragraphs.map((paragraph) => <ParagraghInteractive {...paragraph} />)}
+</SectionLayout>

@@ -1,0 +1,162 @@
+---
+import type { Paragraph } from "../interfaces/projectItem";
+
+const {
+  description,
+  title = null,
+  diagram = null,
+  gif = null,
+  img = null,
+} = Astro.props as Paragraph;
+---
+
+<div class="paragraph-interactive-container">
+  {title && <h3 class="paragraph-title">{title}</h3>}
+  <div class="paragraph-interactive-content">
+    {
+      diagram && diagram.position === "top" && (
+        <img
+          src={`/images/${diagram.src}`}
+          alt={diagram.alt}
+          class="paragraph-interactive-diagram"
+        />
+      )
+    }
+    <p class="paragraph">
+      {description}
+    </p>
+    {
+      diagram && diagram.position === "bottom" && (
+        <img
+          src={`/images/${diagram.src}`}
+          alt={diagram.alt}
+          class="paragraph-interactive-diagram"
+        />
+      )
+    }
+    {
+      gif && img && (
+        <div class="paragraph-interactive-content-media">
+          {gif && (
+            <img
+              src={`${gif}`}
+              alt="interactive-video"
+              class="paragraph-interactive-gif"
+            />
+          )}
+          {img && (
+            <img
+              src={`${img}`}
+              alt="interactive-image"
+              class="paragraph-interactive-img"
+            />
+          )}
+        </div>
+      )
+    }
+  </div>
+</div>
+
+<style>
+  .paragraph-interactive-container {
+    margin: 30px auto;
+    content: fit-content;
+    width: 100%;
+  }
+
+  .paragraph-interactive-content {
+    width: 100%;
+  }
+
+  .paragraph-title {
+    margin: 0;
+    font-size: 2rem;
+    color: var(--body-secondary-color);
+    font-weight: 600;
+    font-family: var(--font-family);
+  }
+
+  .paragraph {
+    font-size: var(--font-size-paragraph-body);
+    font-weight: 400;
+    line-height: 1.3rem;
+    letter-spacing: 0.7px;
+    color: var(--body-secondary-color);
+    font-family: var(--font-family);
+    margin-top: 0;
+    max-width: 650px;
+  }
+
+  .paragraph-interactive-content img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    display: block;
+  }
+
+  .paragraph-interactive-diagram {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+  }
+
+  .paragraph-interactive-content-media {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    margin: 30px auto;
+    max-width: 650px;
+  }
+
+  .paragraph-interactive-content-media img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .paragraph-interactive-gif {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .paragraph-interactive-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  @media screen and (min-width: 768px) {
+    .paragraph-title {
+      font-size: var(--font-size-paragraph-title-tablet);
+      line-height: 2.3rem;
+      letter-spacing: 1px;
+    }
+
+    .paragraph {
+      margin: 50px auto;
+      display: flex;
+      font-size: var(--font-size-paragraph-body-tablet);
+      line-height: 30px;
+      font-weight: 400;
+    }
+
+    .paragraph-interactive-diagram {
+      margin: 60px auto;
+    }
+
+    .paragraph-interactive-content-media {
+      flex-direction: row;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .paragraph-interactive-content-media img {
+      max-width: 500px;
+    }
+  }
+</style>

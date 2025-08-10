@@ -169,9 +169,10 @@
         "description": "I'm a software engineer with a passion for creating user-friendly and efficient applications. I'm always looking for new challenges and opportunities to grow as a developer.",
         "items": [
           {
-            "title": "Project 1",
-            "urlName": "project1",
-            "description": "Description of project 1",
+            "title": "Bill Tracker",
+            "urlName": "bill-tracker",
+            "descriptionLong": "Bill tracker is a web application that allows you to track your bills and expenses.",
+            "descriptionShort": "Automation Project",
             "className": "grid-4",
             "linkedin": {
               "url": "https://www.linkedin.com/company/tienda-pago",
@@ -191,39 +192,37 @@
             "icon": {
               "name": "Test Automation",
               "src": "test-automation.svg"
-            }
-          },
-          {
-            "title": "Project 2",
-            "urlName": "project2",
-            "description": "Description of project 1",
-            "className": "grid-6",
-            "linkedinUrl": "https://www.linkedin.com/company/tienda-pago",
-            "githubUrl": "https://github.com/andresdmdev",
-            "icon": {
-              "name": "Test Automation",
-              "src": "test-automation.svg"
-            }
-          },
-          {
-            "title": "Project 3",
-            "urlName": "project3",
-            "description": "Description of project 1",
-            "className": "grid-6",
-            "icon": {
-              "name": "Test Automation",
-              "src": "test-automation.svg"
-            }
-          },
-          {
-            "title": "Project 4",
-            "urlName": "project4",
-            "description": "Description of project 1",
-            "className": "grid-4",
-            "icon": {
-              "name": "Test Automation",
-              "src": "test-automation.svg"
-            }
+            },
+            "tag": "PYTHON | AI | AWS | GOOGLE",
+            "backPageHref": "/project",
+            "paragraphs": [
+              {
+                "title": "",
+                "description": "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.",
+                "diagram": {
+                  "name": "Diagram",
+                  "src": "diagram.avif",
+                  "alt": "Diagram",
+                  "position": "top"
+                },
+                "gif": "",
+                "img": ""
+              },
+              {
+                "title": "",
+                "description": "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.",
+                "diagram": null,
+                "gif": "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExemNkd2NvbXMyeXZobHgxOTBnZWV2MHJuNDllOXM5MmgzNjRzdzBiciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fy8mDHil1yK1l0KmMN/giphy.gif",
+                "img": "https://i.blogs.es/ce1eaa/app-store/1366_2000.webp"
+              },
+              {
+                "title": "",
+                "description": "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.",
+                "diagram": null,
+                "gif": "",
+                "img": ""
+              }
+            ]
           }
         ]
       },
