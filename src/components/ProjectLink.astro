@@ -1,0 +1,71 @@
+---
+const { linkedin, github, website } = Astro.props;
+---
+
+<div class="project-link-section">
+  <a
+    class="icon-container"
+    href={linkedin}
+    target="_blank"
+    aria-label="Open linkedin webpage"
+  >
+    <box-icon type="logo" name="linkedin" class="icon"></box-icon>
+  </a>
+  <a
+    class="icon-container"
+    href={github}
+    target="_blank"
+    aria-label="Open github webpage"
+  >
+    <box-icon name="github" type="logo" class="icon"></box-icon>
+  </a>
+  <a
+    class="icon-container"
+    href={website}
+    target="_blank"
+    aria-label="Open website webpage"
+  >
+    <box-icon name="windows" class="icon"></box-icon>
+  </a>
+</div>
+
+<style>
+  .project-link-section {
+    display: flex;
+    justify-content: center;
+    margin: 1.3rem 0;
+    gap: 0.5rem;
+  }
+
+  .icon-container {
+    width: 30px;
+    height: 30px;
+  }
+
+  .icon {
+    width: 100%;
+    height: 100%;
+    fill: var(--body-secondary-color);
+    transition: all 300ms ease-in-out;
+  }
+
+  .icon:hover {
+    fill: var(--body-primary-color);
+    transform: scale(1.15);
+  }
+
+  :global(.dark) .icon:hover {
+    fill: var(--dark-body-primary-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    .icon-container {
+      width: 40px;
+      height: 40px;
+    }
+
+    .project-link-section {
+      gap: 1.2rem;
+    }
+  }
+</style>

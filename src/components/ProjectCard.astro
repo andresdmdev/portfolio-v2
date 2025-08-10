@@ -4,7 +4,7 @@ import type { ProjectItem } from "../interfaces/projectItem";
 const { project } = Astro.props as { project: ProjectItem };
 ---
 
-<div class={`project-card ${project.className}`}>
+<a class={`project-card ${project.className}`} href={`/project/${project.urlName}`}>
   <div class="project-card-icon-container">
     {
       project?.icon && (
@@ -25,7 +25,7 @@ const { project } = Astro.props as { project: ProjectItem };
   <div class="project-card-image">
     <img />
   </div>
-</div>
+</a>
 
 <style>
   .project-card {
@@ -42,6 +42,7 @@ const { project } = Astro.props as { project: ProjectItem };
     overflow: hidden;
     position: relative;
     cursor: pointer;
+    text-decoration: none;
   }
 
   .project-card-content {

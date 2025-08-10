@@ -170,15 +170,44 @@
         "items": [
           {
             "title": "Project 1",
+            "urlName": "project1",
             "description": "Description of project 1",
             "className": "grid-4",
+            "linkedin": {
+              "url": "https://www.linkedin.com/company/tienda-pago",
+              "icon": "linkedin",
+              "name": "Linkedin"
+            },
+            "github": {
+              "url": "https://github.com/andresdmdev",
+              "icon": "github",
+              "name": "Github"
+            },
+            "website": {
+              "url": "https://www.tiendapago.com",
+              "icon": "website",
+              "name": "Website"
+            },
             "icon": {
               "name": "Test Automation",
               "src": "test-automation.svg"
             }
           },
           {
-            "title": "Project 1",
+            "title": "Project 2",
+            "urlName": "project2",
+            "description": "Description of project 1",
+            "className": "grid-6",
+            "linkedinUrl": "https://www.linkedin.com/company/tienda-pago",
+            "githubUrl": "https://github.com/andresdmdev",
+            "icon": {
+              "name": "Test Automation",
+              "src": "test-automation.svg"
+            }
+          },
+          {
+            "title": "Project 3",
+            "urlName": "project3",
             "description": "Description of project 1",
             "className": "grid-6",
             "icon": {
@@ -187,16 +216,8 @@
             }
           },
           {
-            "title": "Project 1",
-            "description": "Description of project 1",
-            "className": "grid-6",
-            "icon": {
-              "name": "Test Automation",
-              "src": "test-automation.svg"
-            }
-          },
-          {
-            "title": "Project 1",
+            "title": "Project 4",
+            "urlName": "project4",
             "description": "Description of project 1",
             "className": "grid-4",
             "icon": {
@@ -611,6 +632,7 @@
         "items": [
           {
             "title": "Project 1",
+            "urlName": "project1",
             "description": "Description of project 1",
             "className": "grid-4",
             "icon": {
@@ -620,6 +642,7 @@
           },
           {
             "title": "Project 1",
+            "urlName": "project2",
             "description": "Description of project 1",
             "className": "grid-6",
             "icon": {
@@ -629,6 +652,7 @@
           },
           {
             "title": "Project 1",
+            "urlName": "project3",
             "description": "Description of project 1",
             "className": "grid-6",
             "icon": {
@@ -638,6 +662,7 @@
           },
           {
             "title": "Project 1",
+            "urlName": "project4",
             "description": "Description of project 1",
             "className": "grid-4",
             "icon": {

@@ -1,5 +1,6 @@
 import { ui, defaultLang, secondaryLang } from './ui';
 import type { NavRoute } from '../interfaces/navegationRouteType';
+import type { ProjectItem } from '../interfaces/projectItem';
 
 /**
  * Extracts the language code from the given URL's pathname.
@@ -138,4 +139,16 @@ export function getNavRoutes(): NavRoute[] {
       transitionName: 'nav-link-education'
     }
   ];
+}
+
+/**
+ * Retrieves a project item by its urlName and language.
+ *
+ * @param urlName - The unique urlName identifier of the project.
+ * @param lang - The language key to select the correct localized project list.
+ * @returns The matching ProjectItem if found, otherwise undefined.
+ */
+export function getProject(urlName: string, lang: keyof typeof ui): ProjectItem | undefined {
+  const items = ui[lang]['project'].items as unknown as ProjectItem[];
+  return items.find((item) => item.urlName === urlName);
 }

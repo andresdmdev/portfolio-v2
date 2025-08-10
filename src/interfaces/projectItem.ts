@@ -1,11 +1,14 @@
 export interface ProjectItem {
     title: string,
+    urlName: string,
     description: string,
     className: string,
     icon: Icon,
     technologies: Technology[],
     images: Image[],
-    links: Link[]
+    linkedin: Link,
+    github: Link,
+    website: Link,
 }
 
 export interface Icon {
