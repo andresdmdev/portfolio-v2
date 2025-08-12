@@ -463,19 +463,19 @@
     "es": {
       "pageTitle": "Andres Marquez",
       "nav": {
-        "home": "Home",
-        "experience": "Experience",
-        "projects": "Projects",
-        "education": "Education",
-        "about": "About"
+        "home": "Inicio",
+        "experience": "Experiencia",
+        "projects": "Proyectos",
+        "education": "Educación",
+        "about": "Sobre mí"
       },
       "profile": {
-        "gretting": "Hey, I'm Andres",
-        "description-1": "FullStack Software Developer.",
-        "description-2": "Creating user interfaces, improving UI and UX with",
-        "description-3": " best practices.",
-        "tag": "Ready for work! 🚀",
-        "cv": "Curriculum",
+        "gretting": "Hola, soy Andrés",
+        "description-1": "Desarrollador de software Full‑Stack.",
+        "description-2": "Creando interfaces de usuario y mejorando la UI/UX con",
+        "description-3": " buenas prácticas.",
+        "tag": "¡Listo para trabajar! 🚀",
+        "cv": "Currículum",
         "url-cv": "https://docs.google.com/document/d/1G0Z0MEERY-pkBWYhxRFv9ssPU_GI9HMne0bWOKdudkg/edit?usp=sharing",
         "email": "andresdmf55@gmail.com",
         "icon": {
@@ -484,7 +484,7 @@
         }
       },
       "stack": {
-        "title": "Technologies and tools",
+        "title": "Tecnologías y herramientas",
         "logo": "<box-icon name='hot' type='solid' animation='tada-hover'></box-icon>",
         "tools": [
           {
@@ -574,22 +574,22 @@
         ]
       },
       "experience": {
-        "title": "Hey, I’m Andres. <br>A Software Engineer.",
+        "title": "Hola, soy Andrés. <br>Ingeniero de software.",
         "icon": "",
         "openToWork": {
-          "title": "Open to work",
+          "title": "Disponible para trabajar",
           "icon": "<box-icon name='briefcase' type='solid' animation='tada-hover'></box-icon>"
         },
-        "description": "I'm a software engineer with a passion for creating user-friendly and efficient applications. I'm always looking for new challenges and opportunities to grow as a developer.",
-        "subtitle": "Working Experience",
+        "description": "Soy ingeniero de software con pasión por crear aplicaciones eficientes y fáciles de usar. Siempre busco nuevos retos y oportunidades para crecer como desarrollador.",
+        "subtitle": "Experiencia laboral",
         "subtitleLogo": "briefcase",
         "jobs": [
           {
-            "jobTitle": "Software Engineer Junior",
+            "jobTitle": "Ingeniero de software junior",
             "company": "Tienda Pago",
             "startDate": "Oct. 2023",
-            "endDate": "Current",
-            "shortDescription": "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de apl icaciones web. Mejora de un 30% en la entrega de software.",
+            "endDate": "Actualidad",
+            "shortDescription": "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software.",
             "longDescription": "",
             "linkedin": {
               "url": "https://www.linkedin.com/company/tienda-pago"
@@ -598,17 +598,17 @@
               "url": ""
             },
             "bullets": [
-              "Migration of call services",
-              "Handling messages via Azure Service Bus",
-              "Use of Service Bus and HTTP trigger functions"
+              "Migración de servicios de llamadas",
+              "Gestión de mensajes con Azure Service Bus",
+              "Uso de Service Bus y funciones con desencadenadores HTTP"
             ]
           },
           {
-            "jobTitle": "Software Engineer Junior",
+            "jobTitle": "Ingeniero de software junior",
             "company": "Tienda Pago",
             "startDate": "Oct. 2023",
-            "endDate": "Current",
-            "shortDescription": "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de apl icaciones web. Mejora de un 30% en la entrega de software.",
+            "endDate": "Actualidad",
+            "shortDescription": "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software.",
             "longDescription": "",
             "linkedin": {
               "url": "https://www.linkedin.com/company/tienda-pago"
@@ -617,65 +617,81 @@
               "url": ""
             },
             "bullets": [
-              "Migration of call services",
-              "Handling messages via Azure Service Bus",
-              "Use of Service Bus and HTTP trigger functions"
+              "Migración de servicios de llamadas",
+              "Gestión de mensajes con Azure Service Bus",
+              "Uso de Service Bus y funciones con desencadenadores HTTP"
             ]
           }
         ]
       },
       "project": {
-        "title": "Projects",
+        "title": "Proyectos",
         "icon": "<box-icon name='briefcase' type='solid' animation='tada-hover'></box-icon>",
-        "description": "I'm a software engineer with a passion for creating user-friendly and efficient applications. I'm always looking for new challenges and opportunities to grow as a developer.",
+        "description": "Soy ingeniero de software con pasión por crear aplicaciones eficientes y fáciles de usar. Siempre busco nuevos retos y oportunidades para crecer como desarrollador.",
         "items": [
           {
-            "title": "Project 1",
-            "urlName": "project1",
-            "description": "Description of project 1",
+            "title": "Bill Tracker",
+            "urlName": "bill-tracker",
+            "descriptionLong": "Bill Tracker es una aplicación web que te permite llevar el control de tus facturas y gastos.",
+            "descriptionShort": "Automatización",
             "className": "grid-4",
+            "linkedin": {
+              "url": "https://www.linkedin.com/company/tienda-pago",
+              "icon": "linkedin",
+              "name": "LinkedIn"
+            },
+            "github": {
+              "url": "https://github.com/andresdmdev",
+              "icon": "github",
+              "name": "GitHub"
+            },
+            "website": {
+              "url": "https://www.tiendapago.com",
+              "icon": "website",
+              "name": "Sitio web"
+            },
             "icon": {
-              "name": "Test Automation",
-              "src": "test-automation.svg"
-            }
-          },
-          {
-            "title": "Project 1",
-            "urlName": "project2",
-            "description": "Description of project 1",
-            "className": "grid-6",
-            "icon": {
-              "name": "Test Automation",
-              "src": "test-automation.svg"
-            }
-          },
-          {
-            "title": "Project 1",
-            "urlName": "project3",
-            "description": "Description of project 1",
-            "className": "grid-6",
-            "icon": {
-              "name": "Test Automation",
-              "src": "test-automation.svg"
-            }
-          },
-          {
-            "title": "Project 1",
-            "urlName": "project4",
-            "description": "Description of project 1",
-            "className": "grid-4",
-            "icon": {
-              "name": "Test Automation",
-              "src": "test-automation.svg"
-            }
+              "name": "Bill Tracker",
+              "src": "bill-tracker-icon.svg"
+            },
+            "tag": "PYTHON | AI | AWS | GOOGLE",
+            "backPageHref": "/project",
+            "paragraphs": [
+              {
+                "title": "",
+                "description": "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.",
+                "diagram": {
+                  "name": "Diagrama",
+                  "src": "diagram.avif",
+                  "alt": "Diagrama",
+                  "position": "top"
+                },
+                "gif": "",
+                "img": ""
+              },
+              {
+                "title": "",
+                "description": "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.",
+                "diagram": null,
+                "gif": "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExemNkd2NvbXMyeXZobHgxOTBnZWV2MHJuNDllOXM5MmgzNjRzdzBiciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fy8mDHil1yK1l0KmMN/giphy.gif",
+                "img": "https://i.blogs.es/ce1eaa/app-store/1366_2000.webp"
+              },
+              {
+                "title": "",
+                "description": "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.",
+                "diagram": null,
+                "gif": "",
+                "img": ""
+              }
+            ]
           }
         ]
       },
       "education": {
-        "title": "Education",
+        "title": "Educación",
         "icon": "<box-icon name='briefcase' type='solid' animation='tada-hover'></box-icon>",
-        "description": "As a FullStack Software Developer, my education has provided a strong foundation in building user interfaces and improving UI/UX with best practices. I am committed to continuous learning and growth, always seeking new knowledge and skills to create efficient and impactful software solutions.",
-        "first-subtitle": "Technologies and tools used",
+        "description": "Como desarrollador de software Full‑Stack, mi formación me ha dado una base sólida para construir interfaces de usuario y mejorar la UI/UX con buenas prácticas. Estoy comprometido con el aprendizaje continuo y la mejora constante para crear soluciones eficientes y de impacto.",
+        "first-subtitle": "Tecnologías y Herramientas",
         "first-subtitleLogo": "code-alt",
         "tools": [
           {
@@ -823,82 +839,82 @@
             }
           }
         ],
-        "second-subtitle": "Certifications",
+        "second-subtitle": "Certificaciones",
         "second-subtitleLogo": "book-open",
         "diplomas": [
           {
-            "name": "Bachelor of Technology",
+            "name": "Licenciatura en Tecnología",
             "icon": "<box-icon name='graduation' type='solid'></box-icon>",
             "school": "Tech University",
-            "type": "Degree",
+            "type": "Grado",
             "dateTime": "2015-2019",
             "dateTimeUI": "2015 - 2019"
           },
           {
-            "name": "Full Stack Web Development",
+            "name": "Desarrollo Web Full Stack",
             "icon": "<box-icon name='book' type='solid'></box-icon>",
             "school": "Online Bootcamp",
-            "type": "Certification",
+            "type": "Certificación",
             "dateTime": "2020",
             "dateTimeUI": "2020"
           },
           {
-            "name": "Master of Science in Computer Science",
+            "name": "Maestría en Ciencias de la Computación",
             "icon": "<box-icon name='book' type='solid'></box-icon>",
             "school": "National University",
-            "type": "Degree",
+            "type": "Grado",
             "dateTime": "2019-2021",
             "dateTimeUI": "2019 - 2021"
           },
           {
-            "name": "UI/UX Design Specialization",
+            "name": "Especialización en Diseño UI/UX",
             "icon": "<box-icon name='palette' type='solid'></box-icon>",
             "school": "Design Institute",
-            "type": "Certification",
+            "type": "Certificación",
             "dateTime": "2022",
             "dateTimeUI": "2022"
           },
           {
-            "name": "Cloud Computing Fundamentals",
+            "name": "Fundamentos de Computación en la Nube",
             "icon": "<box-icon name='cloud' type='solid'></box-icon>",
             "school": "Cloud Academy",
-            "type": "Certification",
+            "type": "Certificación",
             "dateTime": "2023",
             "dateTimeUI": "2023"
           }
         ]
       },
       "about": {
-        "title": "I´m Andrés",
+        "title": "Soy Andrés",
         "first-paragraph": {
-          "title": "FullStack Software Developer. Creating user interfaces, improving UI and UX with best practices.",
-          "description": "I'm a software engineer with a passion for creating user-friendly and efficient applications. I'm always looking for new challenges and opportunities to grow as a developer."
+          "title": "Desarrollador de software Full‑Stack. Creando interfaces de usuario y mejorando la UI/UX con buenas prácticas.",
+          "description": "Soy ingeniero de software con pasión por crear aplicaciones eficientes y fáciles de usar. Siempre busco nuevos retos y oportunidades para crecer como desarrollador."
         },
         "second-paragraph": {
-          "title": "Let's collaborate if you're committed to sustainability, education, equality, or carbon neutrality.",
-          "description": "I'm a software engineer with a passion for creating user-friendly and efficient applications. I'm always looking for new challenges and opportunities to grow as a developer."
+          "title": "Colaboremos si estás comprometido con la sostenibilidad, la educación, la igualdad o la neutralidad de carbono.",
+          "description": "Soy ingeniero de software con pasión por crear aplicaciones eficientes y fáciles de usar. Siempre busco nuevos retos y oportunidades para crecer como desarrollador."
         },
         "key-points": [
           {
-            "title": "Sustainability",
-            "description": "I'm a software engineer with a passion for creating user-friendly and efficient applications. I'm always looking for new challenges and opportunities to grow as a developer."
+            "title": "Sostenibilidad",
+            "description": "Soy ingeniero de software con pasión por crear aplicaciones eficientes y fáciles de usar. Siempre busco nuevos retos y oportunidades para crecer como desarrollador."
           },
           {
-            "title": "Education",
-            "description": "I'm a software engineer with a passion for creating user-friendly and efficient applications. I'm always looking for new challenges and opportunities to grow as a developer."
+            "title": "Educación",
+            "description": "Soy ingeniero de software con pasión por crear aplicaciones eficientes y fáciles de usar. Siempre busco nuevos retos y oportunidades para crecer como desarrollador."
           },
           {
-            "title": "Equality",
-            "description": "I'm a software engineer with a passion for creating user-friendly and efficient applications. I'm always looking for new challenges and opportunities to grow as a developer."
+            "title": "Igualdad",
+            "description": "Soy ingeniero de software con pasión por crear aplicaciones eficientes y fáciles de usar. Siempre busco nuevos retos y oportunidades para crecer como desarrollador."
           },
           {
-            "title": "Carbon Neutrality",
-            "description": "I'm a software engineer with a passion for creating user-friendly and efficient applications. I'm always looking for new challenges and opportunities to grow as a developer."
+            "title": "Neutralidad de carbono",
+            "description": "Soy ingeniero de software con pasión por crear aplicaciones eficientes y fáciles de usar. Siempre busco nuevos retos y oportunidades para crecer como desarrollador."
           }
         ]
       },
       "contact": {
-        "cv": "Curriculum",
+        "cv": "Currículum",
         "url": "https://docs.google.com/document/d/1G0Z0MEERY-pkBWYhxRFv9ssPU_GI9HMne0bWOKdudkg/edit?usp=sharing",
         "email": "andresdmf55@gmail.com",
         "linkedin": "https://www.linkedin.com/in/andresmarquezdev/",
