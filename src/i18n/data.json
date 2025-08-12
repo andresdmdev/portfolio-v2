@@ -190,8 +190,8 @@
               "name": "Website"
             },
             "icon": {
-              "name": "Test Automation",
-              "src": "test-automation.svg"
+              "name": "Bill Tracker",
+              "src": "bill-tracker-icon.svg"
             },
             "tag": "PYTHON | AI | AWS | GOOGLE",
             "backPageHref": "/project",
