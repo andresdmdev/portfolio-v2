@@ -1,4 +1,8 @@
 export interface Stackitem {
     name: string,
-    logo: string
+    isSameLogo: boolean,
+    logo: {
+        light: string,
+        dark: string
+    }
 }

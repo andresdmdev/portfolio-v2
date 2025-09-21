@@ -1,0 +1,64 @@
+---
+import SectionLayout from "../../layouts/SectionLayout.astro";
+import BackPage from "../BackPage.astro";
+
+interface Props {
+  title: string;
+  icon?: string;
+  className: string;
+  id: string;
+  enableIcon?: boolean;
+  iconPosition?: {
+    top?: string;
+    right?: string;
+    rotate?: string;
+  };
+  isBackPageEnable?: boolean;
+  backPageHref?: string;
+}
+
+const { title, className, id, isBackPageEnable = false, backPageHref = "/" } = Astro.props;
+---
+
+<SectionLayout id={id} className={className}>
+  {isBackPageEnable && <BackPage href={backPageHref} />}
+  <div class="title-wrapper">
+    <h2 set:html={title} />
+  </div>
+</SectionLayout>
+
+<style>
+  h2 {
+    text-align: center;
+    font-size: var(--font-size-title);
+    font-weight: 800;
+    color: var(--title-primary-color);
+    margin: 0;
+  }
+
+  :global(.dark) h2 {
+    color: var(--dark-title-primary-color);
+  }
+
+  .title-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    h2 {
+      margin-top: 35px;
+      font-size: var(--font-size-title-tablet);
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    h2 {
+      margin-top: 35px;
+      font-size: var(--font-size-title-desktop);
+    }
+  }
+</style>

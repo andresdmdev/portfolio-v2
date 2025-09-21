@@ -1,0 +1,34 @@
+---
+const { tag } = Astro.props as { tag: string };
+---
+
+<div class="project-tag">
+  <p>{tag}</p>
+</div>
+
+<style>
+  .project-tag {
+    display: flex;
+    justify-content: center;
+  }
+
+  p {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 0.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    margin: 0;
+    color: var(--body-secondary-color);
+  }
+
+  :global(.dark) p {
+    color: var(--dark-body-secondary-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    p {
+      font-size: 0.875rem;
+    }
+  }
+</style>

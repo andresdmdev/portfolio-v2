@@ -1,0 +1,106 @@
+---
+import SubTitle from "../../components/SubTitle.astro";
+import type { Stackitem } from "../../interfaces/stackItem";
+import SectionLayout from "../../layouts/SectionLayout.astro";
+
+interface Props {
+  stackList: Stackitem[];
+  title: string;
+  logo: string;
+}
+
+const { stackList, title, logo } = Astro.props;
+---
+
+<SectionLayout id="Tools">
+  <SubTitle title={title} logo={logo} />
+
+  <div class="stack-container">
+    {
+      stackList.length > 0 &&
+        stackList.map((stack) => {
+          return (
+            <img
+              src={`../../images/${stack.logo.light}`}
+              class="stack-image"
+              data-sameLogo={stack.isSameLogo}
+              alt={stack.name}
+              width="40"
+              height="40"
+            />
+          );
+        })
+    }
+  </div>
+</SectionLayout>
+
+<style>
+  .stack-container {
+    max-width: 1100px;
+    margin: 20px auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 20px 0px;
+  }
+  img {
+    width: 40px;
+    height: auto;
+    transition: all 300ms ease-in-out;
+  }
+  img:hover {
+    transform: scale(1.2);
+  }
+  @media screen and (min-width: 768px) {
+    .stack-container {
+      margin-top: 70px;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 30px 5px;
+    }
+
+    img {
+      width: 60px;
+    }
+  }
+</style>
+
+<script is:inline>
+  const handleToggleClick = (defaultTheme = "dark") => {
+    const theme = localStorage.getItem("theme");
+    const stackImages = document.querySelectorAll(".stack-image");
+    if (theme == defaultTheme) {
+      stackImages.forEach((image) => {
+        const isSameLogo = image.dataset.samelogo === "true";
+
+        if (image.src.includes(".avif") && !isSameLogo) {
+          image.src = image.src.replace(".avif", "-dark.avif");
+        } else if (image.src.includes(".png") && !isSameLogo) {
+          image.src = image.src.replace(".png", "-dark.png");
+        } else if (image.src.includes(".jpg") && !isSameLogo) {
+          image.src = image.src.replace(".jpg", "-dark.jpg");
+        } else if (image.src.includes(".jpeg") && !isSameLogo) {
+          image.src = image.src.replace(".jpeg", "-dark.jpeg");
+        } else if (image.src.includes(".gif") && !isSameLogo) {
+          image.src = image.src.replace(".gif", "-dark.gif");
+        } else if (image.src.includes(".svg") && !isSameLogo) {
+          image.src = image.src.replace(".svg", "-dark.svg");
+        }
+      });
+    } else {
+      stackImages.forEach((image) => {
+        if (image.src.includes("-dark")) {
+          image.src = image.src.replace("-dark", "");
+        }
+      });
+    }
+  };
+
+  document.addEventListener("astro:page-load", () => {
+    handleToggleClick("dark");
+  });
+
+  document.getElementById("themeToggle").addEventListener("click", () => {
+    handleToggleClick("light");
+  });
+</script>

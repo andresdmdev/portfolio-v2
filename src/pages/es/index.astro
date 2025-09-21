@@ -1,22 +1,35 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import Education from "../../sections/Education.astro";
-import Experience from "../../sections/Experience.astro";
-import Footer from "../../sections/Footer.astro";
-import Header from "../../sections/Header.astro";
-import Profile from "../../sections/Profile.astro";
-import Project from "../../sections/Project.astro";
-import Stack from "../../sections/Stack.astro";
+import Header from "../../components/sections/Header.astro";
+import TitleSection from "../../components/sections/TitleSection.astro";
+import { getLangFromUrl, getTranslation } from "../../i18n/utils";
+import ContactInfo from "../../components/sections/ContactInfo.astro";
+import Paragragh from "../../components/Paragragh.astro";
+import SubTitle from "../../components/SubTitle.astro";
+import type { Job } from "../../interfaces/jobDescription";
+import JobContainer from "../../components/JobContainer.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const t = getTranslation(lang);
 ---
 
-<BaseLayout pageTitle="Andres Marquez">
-	<Header />
-	<main>
-		<Profile />
-		<Experience />
-		<Project />
-		<Stack />
-		<Education />
-		<Footer />
-	</main>
+<BaseLayout pageTitle={t("pageTitle") as string}>
+  <Header />
+  <main>
+    <TitleSection
+      title={t("experience").title as string}
+      className="experience-title-section"
+      id="experience-title-section"
+    />
+    <Paragragh
+      text={t("experience").description as string}
+      className="experience"
+    />
+    <ContactInfo />
+    <SubTitle
+      title={t("experience").subtitle as string}
+      logo={t("experience").subtitleLogo as string}
+    />
+    <JobContainer jobs={t("experience").jobs as Job[]} />
+  </main>
 </BaseLayout>

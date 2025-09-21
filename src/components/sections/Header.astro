@@ -1,0 +1,73 @@
+---
+import Navigation from "../../components/Navigation.astro";
+import {
+  getLangFromUrl,
+  getLanguageSwitchUrl,
+  getLanguageDisplayText,
+} from "../../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const languageDisplayText = getLanguageDisplayText(lang);
+const languageSwitchUrl = getLanguageSwitchUrl(lang, Astro.url);
+---
+
+<>
+  <a
+    href={languageSwitchUrl}
+    class="language-button"
+    aria-label="Change language">{languageDisplayText}</a
+  >
+  <header>
+    <Navigation />
+  </header>
+</>
+
+<style>
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .language-button {
+    z-index: 2;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    background-color: var(--ternary-color);
+    color: var(--body-secondary-color);
+    border-radius: 0 5px 5px 0;
+    padding: 3px 5px;
+  }
+
+  :global(.dark) .language-button {
+    background-color: var(--dark-ternary-color);
+    color: var(--dark-body-secondary-color);
+  }
+
+  @media screen and (min-width: 636px) {
+    header {
+      justify-content: center;
+      top: 30px;
+      width: auto;
+    }
+
+    .language-button {
+      top: 50px;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      border-radius: 0 7px 7px 0;
+      padding: 6px 10px;
+    }
+  }
+</style>

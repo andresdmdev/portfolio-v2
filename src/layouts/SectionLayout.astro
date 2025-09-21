@@ -1,43 +1,62 @@
 ---
 interface Props {
-    id: string,
-    className?: string | null
+  id: string;
+  className?: string | null;
 }
 
 const { id, className } = Astro.props;
 ---
 
 <section id={id} class={className}>
-    <slot />
+  <slot />
 </section>
 
 <style>
+  section {
+    margin-top: 100px;
+    position: relative;
+  }
+
+  .contact-info {
+    margin-top: 15px;
+  }
+
+  .proyect-section {
+    margin-top: 60px;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+  }
+
+  .paragraph-interactive-container{
+    margin: 0 auto;
+  } 
+  
+  @media screen and (min-width: 768px) {
     section {
-        margin-top: 90px;
+      margin-top: 120px;
     }
 
     .proyect-section {
-        margin-top: 60px;
+      margin: 90px auto 0 auto;
     }
 
     .profile {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 40px;
+      margin-top: 120px;
     }
 
-    @media screen and (min-width: 636px) {
-        section {
-            margin-top: 120px
-        }
-
-        .proyect-section {
-            margin-top: 90px;
-        }
-
-        .profile {
-            margin-top: 120px;
-        }
+    .contact-info {
+      margin-top: 30px;
     }
+
+    .experience-title-section {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1000px;
+    }
+  }
 </style>

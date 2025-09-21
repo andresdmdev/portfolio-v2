@@ -1,0 +1,40 @@
+---
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import Header from "../../../../components/sections/Header.astro";
+import TitleSection from "../../../../components/sections/TitleSection.astro";
+import {
+  getLangFromUrl,
+  getTranslation,
+  getProject,
+} from "../../../../i18n/utils";
+import Paragragh from "../../../../components/Paragragh.astro";
+import ProjectLink from "../../../../components/ProjectLink.astro";
+import ProjectTag from "../../../../components/ProjectTag.astro";
+import ParagraghInteractiveContainer from "../../../../components/sections/ParagraghInteractiveContainer.astro";
+import type { Paragraph } from "../../../../interfaces/projectItem";
+
+const lang = getLangFromUrl(Astro.url);
+const t = getTranslation(lang);
+const project = getProject("bill-tracker", lang);
+---
+
+<BaseLayout pageTitle={t("pageTitle") as string}>
+  <Header />
+  <main>
+    <TitleSection
+      title={project?.title as string}
+      className="experience-title-section"
+      id="experience-title-section"
+      isBackPageEnable={true}
+      backPageHref={project?.backPageHref as string}
+    />
+    <ProjectTag tag={project?.tag as string} />
+    <ProjectLink
+      linkedin={project?.linkedin.url as string}
+      github={project?.github.url as string}
+      website={project?.website.url as string}
+    />
+    <Paragragh text={project?.descriptionLong as string} className="project" />
+    <ParagraghInteractiveContainer paragraphs={project?.paragraphs as Paragraph[]} />
+  </main>
+</BaseLayout>

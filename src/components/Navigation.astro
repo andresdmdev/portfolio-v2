@@ -1,72 +1,134 @@
 ---
-import { getLangFromUrl, getTranslation, formatDefautlBaseLanguage } from '../i18n/utils';
+import {
+  getLangFromUrl,
+  getTranslation,
+  getLocalizedUrl,
+  isActiveRoute,
+  getNavRoutes,
+} from "../i18n/utils";
+import ThemeIcon from "./ThemeIcon.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = getTranslation(lang);
-const baseLanguage = formatDefautlBaseLanguage(lang);
+const currentPath = Astro.url.pathname;
+const navRoutes = getNavRoutes();
 ---
-<div class="nav-links">
-    <a class="nav-link" href={`/${baseLanguage}#`} aria-label="Home section">{t('nav.home')}</a>
-    <a class="nav-link" href={`/${baseLanguage}#Experience`} aria-label="Experience section">{t('nav.experience')}</a>
-    <a class="nav-link" href={`/${baseLanguage}#Projects`} aria-label="Project section">{t('nav.projects')}</a>
-    <a class="nav-link" href={`/${baseLanguage}#Tools`} aria-label="Tools section">{t('nav.tools')}</a>
-    <a class="nav-link" href={`/${baseLanguage}#Education`} aria-label="Education section">{t('nav.education')}</a>
-</div>
+
+<nav>
+  <div class="nav-links">
+    {navRoutes.map((route) => (
+      <a
+        class="nav-link"
+        href={getLocalizedUrl(lang, route.path)}
+        transition:animate="fade"
+        transition:name={route.transitionName}
+        data-selected={isActiveRoute(currentPath, route.path) ? "true" : "false"}
+        aria-label={route.ariaLabel}
+      >
+        {t("nav")[route.translationKey]}
+      </a>
+    ))}
+    <ThemeIcon />
+  </div>
+</nav>
+
+<script>
+  document.addEventListener("astro:page-load", () => {
+    const navLink = document.querySelector(".nav-links") as HTMLElement;
+    const navLinkRect = navLink?.getBoundingClientRect();
+
+    const navLinks = document.querySelectorAll(".nav-link");
+    navLinks.forEach((link) => {
+      if ((link as HTMLElement).dataset.selected === "true") {
+        link.classList.add("active");
+      }
+    });
+
+    if (navLinkRect) {
+      window.addEventListener("scroll", () => {
+        const topLimit = navLinkRect.top + window.pageYOffset;
+
+        if (topLimit > 100) {
+          navLink.classList.add("nav-links-scroll");
+        } else {
+          navLink.classList.remove("nav-links-scroll");
+        }
+      });
+    }
+  });
+</script>
 
 <style>
-    .nav-links {
-        background-color: var(--primary-color);
-        position: fixed;
-        width: 100vw;
-        height: 700px;
-        padding-top: 22rem;
-        left: 0;
-        display: none;
-        margin: 0;
-        z-index: 2;
-    }
+  nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .nav-links {
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    border-radius: 50px;
+    margin: 10px 15px;
+    padding: 0 15px;
+  }
 
-    :global(.dark) .nav-links {
-        background-color: var(--dark-primary-color);
+  .nav-links a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--body-secondary-color);
+    transition: all 300ms ease-in-out;
+    padding: 4px 8px;
+  }
+
+  .nav-link.active {
+    background-color: var(--nav-link-active-color);
+    padding: 4px 6px;
+    border-radius: 50px;
+  }
+
+  :global(.dark) .nav-link.active {
+    background-color: var(--dark-secondary-color);
+  }
+
+  :global(.dark) .nav-links a {
+    color: var(--dark-body-secondary-color);
+  }
+
+  .nav-links-scroll {
+    background-color: hsla(160, 41%, 88%, 0.85);
+    width: 100%;
+    height: 50px;
+    backdrop-filter: blur(5px) saturate(10%);
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+  }
+
+  :global(.dark) .nav-links-scroll {
+    background-color: hsla(229, 18%, 12%, 0.8);
+  }
+
+  @media screen and (min-width: 636px) {
+    .nav-links {
+      justify-content: center;
+      gap: 15px;
+      width: auto;
+      margin: 0 auto;
     }
 
     .nav-links a {
-        display: block;
-        text-align: center;
-        padding: 20px 0;
-        text-decoration: none;
-        font-size: 1rem;
-        font-weight: bold;
-        color: var(--dark-primary-color);
+      font-size: 1rem;
+      padding: 8px 16px;
     }
 
-    .nav-links a:hover,
-    .nav-links a:focus {
-        color: var(--primary-color);
+    .nav-link.active {
+      padding: 0;
     }
-
-    :global(.dark) .nav-links a {
-        color: var(--white-color);
-    }
-
-    .expanded {
-        display: unset;
-    }
-
-    @media screen and (min-width: 636px) {
-        .nav-links {
-            margin-left: 5em;
-            display: block;
-            position: static;
-            width: auto;
-            background: none;
-            height: auto;
-            padding-top: 0rem;
-        }
-        
-        .nav-links a {
-            display: inline-block;
-            padding: 5px 13px;
-        }
-    }
+  }
 </style>

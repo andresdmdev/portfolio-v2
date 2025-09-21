@@ -1,0 +1,55 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Header from "../../components/sections/Header.astro";
+import TitleSection from "../../components/sections/TitleSection.astro";
+import { getLangFromUrl, getTranslation } from "../../i18n/utils";
+import Paragragh from "../../components/Paragragh.astro";
+import ImageProfile from "../../components/ImageProfile.astro";
+import ContactInfo from "../../components/sections/ContactInfo.astro";
+import KeyPoints from "../../components/KeyPoints.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const t = getTranslation(lang);
+---
+
+<BaseLayout pageTitle={t("pageTitle") as string}>
+  <Header />
+  <main>
+    <TitleSection
+      title={t("about").title as string}
+      className="about-title-section"
+      id="about-title-section"
+    />
+    <div class="about-container-profile">
+      <ImageProfile />
+      <Paragragh
+        title={t("about")["first-paragraph"].title as string}text={t("about")["first-paragraph"].description as string}
+        className="about"
+      />
+    </div>
+    <ContactInfo className="about" />
+    <Paragragh
+      title={t("about")["second-paragraph"].title as string}
+      text={t("about")["second-paragraph"].description as string}
+      className="about with-out-margin"
+    />
+    <KeyPoints keyPoints={t("about")["key-points"]} />
+  </main>
+</BaseLayout>
+
+<style>
+    .about-container-profile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media screen and (min-width: 768px) {
+        .about-container-profile {
+          margin: 0 auto;
+          align-items: end;
+          flex-direction: row;
+          gap: 6rem;
+          max-width: 800px;
+        }
+    }
+</style>

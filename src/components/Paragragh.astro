@@ -1,0 +1,89 @@
+---
+const { text, className, title = null } = Astro.props;
+---
+
+<div class={`paragraph-container ${className}`}>
+  {title && <h3 class="paragraph-title">{title}</h3>}
+  <p class={`paragraph ${className}`}>
+    {text}
+  </p>
+</div>
+
+<style>
+  .paragraph-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 500px;
+    margin-top: 1.7rem;
+  }
+
+  .paragraph-title {
+    padding: 0px;
+    font-size: var(--font-size-paragraph-title);
+    font-weight: 600;
+    line-height: 1.4rem;
+    letter-spacing: 1px;
+    color: var(--body-primary-color);
+    margin: 0 0 1rem 0;
+    font-family: var(--font-family);
+  }
+
+  :global(.dark) .paragraph-title {
+    color: var(--dark-body-primary-color);
+  }
+
+  .paragraph {
+    font-size: var(--font-size-paragraph-body);
+    font-weight: 400;
+    line-height: 1.3rem;
+    letter-spacing: 0.7px;
+    color: var(--body-secondary-color);
+    font-family: var(--font-family);
+    margin-top: 0;
+  }
+
+  :global(.dark) .paragraph {
+    color: var(--dark-body-secondary-color);
+  }
+
+  .with-out-margin {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .paragraph-container {
+      margin: 35px auto 60px auto;
+      max-width: 650px;
+    }
+
+    .paragraph {
+      margin: 0 auto;
+      display: flex;
+      text-align: center;
+      font-size: var(--font-size-paragraph-body-tablet);
+      line-height: 30px;
+      font-weight: 400;
+    }
+
+    .paragraph-container.about {
+      margin: 0 auto;
+    }
+
+    .paragraph-container.about.with-out-margin {
+      margin-top: 120px;
+    }
+
+    .paragraph.about {
+      text-align: left;
+    }
+
+    .paragraph-title {
+      font-size: var(--font-size-paragraph-title-tablet);
+      line-height: 2.3rem;
+      letter-spacing: 1px;
+      margin-bottom: 18px;
+    }
+  }
+</style>

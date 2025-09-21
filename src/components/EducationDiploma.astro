@@ -1,76 +1,84 @@
 ---
-import type { EducationItem } from '../interfaces/educationDiplomaItem'
+import type { EducationItem } from "../interfaces/educationDiplomaItem";
 
 interface Props {
-    diploma: EducationItem
+  diploma: EducationItem;
 }
 
 const { diploma } = Astro.props;
 ---
 
 <div class="education-item-container">
-    <div class="education-icon" set:html={diploma.icon}></div>
-    <div class="education-info">
-        <span>{diploma.type}</span>
-        <h3>{diploma.name}</h3>
-        <p>{diploma.school} - {diploma.dateTimeUI}</p>
-    </div>
+  <div class="education-icon" set:html={diploma.icon} />
+  <div class="education-info">
+    <span>{diploma.type}</span>
+    <h4>{diploma.name}</h4>
+    <p>{diploma.school} - {diploma.dateTimeUI}</p>
+  </div>
 </div>
 
 <style>
-    .education-item-container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 5px;
-    }
+  .education-item-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
 
-    .education-icon {
-        fill: var(--secondary-color);
-    }
+  .education-icon {
+    fill: var(--body-secondary-color);
+  }
 
-    :global(.dark) .education-icon {
-        fill: var(--dark-secondary-color);
-    }
+  :global(.dark) .education-icon {
+    fill: var(--dark-body-secondary-color);
+  }
 
-    .education-info {
-        display: flex;
-        flex-direction: column;
-    }
+  .education-info {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .education-info span {
-        font-size: 12px;
-        font-weight: bold;
-        line-height: 12px;
-    }
+  .education-info span {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 12px;
+    color: var(--body-secondary-color);
+  }
 
-    .education-info h3 {
-        font-size: 16px;
-        font-weight: bolder;
-        line-height: 20px;
-        color: var(--ternary-color);
-        margin: 1px 0 0 0;
-    }
+  :global(.dark) .education-info span {
+    color: var(--dark-body-secondary-color);
+    opacity: 0.6;
+  }
 
-    :global(.dark) .education-info h3 {
-        color: var(--dark-gold-color);
-    }
+  .education-info h4 {
+    font-size: 1.1rem;
+    font-weight: bolder;
+    line-height: 20px;
+    color: var(--title-primary-color);
+    margin: 4px 0 0 0;
+  }
 
-    .education-info p {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 18px;
-        color: var(--secondary-color);
-        margin: 0;
-    }
+  :global(.dark) .education-info h4 {
+    color: var(--dark-title-primary-color);
+  }
 
-    :global(.dark) .education-info p {
-        color: var(--dark-cuaternary-color);
-    }
+  .education-info p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--body-secondary-color);
+    margin: 0;
+  }
 
-    @media screen and (min-width: 636px) {
-        .education-info h3 {
-            font-weight: bold;
-        }
+  :global(.dark) .education-info p {
+    color: var(--dark-body-secondary-color);
+    opacity: 0.6;
+  }
+
+  @media screen and (min-width: 768px) {
+    .education-info h4 {
+      font-weight: bold;
+      font-size: 1.5rem;
     }
+  }
 </style>

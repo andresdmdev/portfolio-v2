@@ -1,0 +1,33 @@
+---
+import { getLangFromUrl, getTranslation } from "../../i18n/utils";
+import type { ProjectItem } from "../../interfaces/projectItem";
+import SectionLayout from "../../layouts/SectionLayout.astro";
+import ProjectCard from "../ProjectCard.astro";
+
+const lang = getLangFromUrl(Astro.url);
+
+const t = getTranslation(lang);
+const projectItem = t("project").items as ProjectItem[];
+---
+
+<SectionLayout id="Projects" className="proyect-section">
+  <div class="project-container">
+    {projectItem.map((p) => <ProjectCard project={p} />)}
+  </div>
+</SectionLayout>
+
+<style>
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .project-container {
+      max-width: 1350px;
+      margin: 0 auto;
+      grid-template-columns: repeat(10, 1fr);
+    }
+  }
+</style>
