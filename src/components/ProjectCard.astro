@@ -1,10 +1,16 @@
 ---
 import type { ProjectItem } from "../interfaces/projectItem";
+import { getLangFromUrl, getLocalizedUrl } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
 
 const { project } = Astro.props as { project: ProjectItem };
 ---
 
-<a class={`project-card ${project.className}`} href={`/project/${project.urlName}`}>
+<a
+  class={`project-card ${project.className}`}
+  href={getLocalizedUrl(lang, `project/${project.urlName}`)}
+>
   <div class="project-card-icon-container">
     {
       project?.icon && (

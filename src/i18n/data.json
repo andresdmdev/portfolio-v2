@@ -8,110 +8,6 @@
         "education": "Education",
         "about": "About"
       },
-      "profile": {
-        "gretting": "Hey, I'm Andres",
-        "description-1": "FullStack Software Developer.",
-        "description-2": "Creating user interfaces, improving UI and UX with",
-        "description-3": " best practices.",
-        "tag": "Ready for work! 🚀",
-        "cv": "Curriculum",
-        "url-cv": "https://docs.google.com/document/d/1G0Z0MEERY-pkBWYhxRFv9ssPU_GI9HMne0bWOKdudkg/edit?usp=sharing",
-        "email": "andresdmf55@gmail.com",
-        "icon": {
-          "linkedin": "https://www.linkedin.com/in/andresmarquezdev/",
-          "github": "https://github.com/andresdmdev"
-        }
-      },
-      "stack": {
-        "title": "Technologies and tools",
-        "logo": "<box-icon name='hot' type='solid' animation='tada-hover'></box-icon>",
-        "tools": [
-          {
-            "name": "C#",
-            "logo": "c-sharp.avif"
-          },
-          {
-            "name": "Netcore",
-            "logo": "netcore.avif"
-          },
-          {
-            "name": "TypeScript",
-            "logo": "typescript.avif"
-          },
-          {
-            "name": "JavaScript",
-            "logo": "javascript.avif"
-          },
-          {
-            "name": "Python",
-            "logo": "python.avif"
-          },
-          {
-            "name": "React",
-            "logo": "reactjs.avif"
-          },
-          {
-            "name": "Angular",
-            "logo": "angular.avif"
-          },
-          {
-            "name": "SQL Server",
-            "logo": "sql-server.avif"
-          },
-          {
-            "name": "MySql",
-            "logo": "mysql.avif"
-          },
-          {
-            "name": "NodeJS",
-            "logo": "node.avif"
-          },
-          {
-            "name": "ExpressJs",
-            "logo": "express.avif"
-          },
-          {
-            "name": "Html",
-            "logo": "html.avif"
-          },
-          {
-            "name": "CSS",
-            "logo": "css.avif"
-          },
-          {
-            "name": "TailWindCSS",
-            "logo": "tailwind.avif"
-          },
-          {
-            "name": "Sass",
-            "logo": "sass.avif"
-          },
-          {
-            "name": "Jest",
-            "logo": "jest.avif"
-          },
-          {
-            "name": "Git",
-            "logo": "git.avif"
-          },
-          {
-            "name": "GitHub",
-            "logo": "github.avif"
-          },
-          {
-            "name": "Azure",
-            "logo": "azure.avif"
-          },
-          {
-            "name": "Atlassian",
-            "logo": "atlassian.avif"
-          },
-          {
-            "name": "DataDog",
-            "logo": "datadog.avif"
-          }
-        ]
-      },
       "experience": {
         "title": "Hey, I’m Andres. <br>A Software Engineer.",
         "icon": "",
@@ -119,46 +15,49 @@
           "title": "Open to work",
           "icon": "<box-icon name='briefcase' type='solid' animation='tada-hover'></box-icon>"
         },
-        "description": "I'm a software engineer with a passion for creating user-friendly and efficient applications. I'm always looking for new challenges and opportunities to grow as a developer.",
+        "description": "I'm a Software Engineer with expertise in designing and deploying scalable microservices architectures within the Azure ecosystem. I leverage C#, Python, and JS to build innovative solutions, from high-performance APIs to conversational bots.",
         "subtitle": "Working Experience",
         "subtitleLogo": "briefcase",
         "jobs": [
           {
-            "jobTitle": "Software Engineer Junior",
+            "jobTitle": "Software Engineer Mid-Senior",
             "company": "Tienda Pago",
-            "startDate": "Oct. 2023",
+            "startDate": "Jun. 2025",
             "endDate": "Current",
-            "shortDescription": "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de apl icaciones web. Mejora de un 30% en la entrega de software.",
+            "shortDescription": "I led the implementation of robust architectures and the automation of key workflows, optimizing the company's operational efficiency. My work involved creating comprehensive solutions that improved both the user experience and internal processes.",
             "longDescription": "",
             "linkedin": {
               "url": "https://www.linkedin.com/company/tienda-pago"
             },
             "webPage": {
-              "url": ""
+              "url": "https://tiendapago.com/"
             },
             "bullets": [
-              "Migration of call services",
-              "Handling messages via Azure Service Bus",
-              "Use of Service Bus and HTTP trigger functions"
+              "Leadership & Strategy: I implemented conversational bots and WA Flows, leading to a 7% increase in lead generation through workflow automation. With the goal of improving and optimizing the company's acquisition processes, I was one of the initial team members involved in the incorporation of WA Flows into the Botmaker platform.",
+              "Microservices Architecture: I created and deployed a microservices architecture in Microsoft Azure, utilizing Logic Apps and Service Bus Queues.",
+              "Platform & Process Improvement: I was responsible for managing the movement of every call process in Genesys Cloud, defining the communication logic between distributed microservices. This led to an 18% increase in contact capacity and a 14% improvement in agent effectiveness.",
+              "IVR Development with MCPs: I developed a personalized Text-to-Speech (TTS) system using MCP, Claude Code, and ElevenLabs in Python. This resulted in a better user experience by decreasing production costs by 80% and increasing implementation speed by 200%.",
+              "Full-Stack Development: To create user interfaces, I implemented React, Astro, and Angular. For developing RESTful APIs, I used C# and .NET Core. I developed unit and integration tests to ensure code quality, optimizing the way information is presented to the call center agent and the customer.",
+              "Collaboration & Quality: I collaborated with multidisciplinary teams to design and implement scalable software applications and optimized SQL queries to improve the performance of the company's database processes."
             ]
           },
           {
             "jobTitle": "Software Engineer Junior",
             "company": "Tienda Pago",
             "startDate": "Oct. 2023",
-            "endDate": "Current",
-            "shortDescription": "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de apl icaciones web. Mejora de un 30% en la entrega de software.",
+            "endDate": "May. 2025",
+            "shortDescription": "My primary responsibilities focused on full-stack development, from creating robust APIs to fluid user interfaces. I also focused on process automation and the maintenance of key solutions for call center platforms.",
             "longDescription": "",
             "linkedin": {
               "url": "https://www.linkedin.com/company/tienda-pago"
             },
             "webPage": {
-              "url": ""
+              "url": "https://tiendapago.com/"
             },
             "bullets": [
-              "Migration of call services",
-              "Handling messages via Azure Service Bus",
-              "Use of Service Bus and HTTP trigger functions"
+              "Full-Stack Development: Developed front-end applications with Angular to provide a seamless user experience and created RESTful APIs using C# and the .NET Core framework.",
+              "Automation and Efficiency: Used Python to automate tasks and optimize development processes, while leveraging Service Bus to facilitate asynchronous communication between systems.",
+              "Platform Support and Maintenance: Developed and maintained call center solutions on the XCally Motion platform."
             ]
           }
         ]
@@ -166,28 +65,28 @@
       "project": {
         "title": "Projects",
         "icon": "<box-icon name='briefcase' type='solid' animation='tada-hover'></box-icon>",
-        "description": "I'm a software engineer with a passion for creating user-friendly and efficient applications. I'm always looking for new challenges and opportunities to grow as a developer.",
+        "description": "I'm excited to share a glimpse of my professional journey! In this section, you'll find a collection of projects that showcase my passion for building robust and efficient solutions. From microservices architecture to full-stack development and process automation, my goal is always to create a positive and lasting impact.",
         "items": [
           {
             "title": "Bill Tracker",
             "urlName": "bill-tracker",
-            "descriptionLong": "Bill tracker is a web application that allows you to track your bills and expenses.",
+            "descriptionLong": "Bill Tracker is an automation system designed to simplify the tracking of invoices and expenses.",
             "descriptionShort": "Automation Project",
             "className": "grid-4",
             "linkedin": {
-              "url": "https://www.linkedin.com/company/tienda-pago",
-              "icon": "linkedin",
-              "name": "Linkedin"
+              "url": "",
+              "icon": "",
+              "name": ""
             },
             "github": {
-              "url": "https://github.com/andresdmdev",
+              "url": "https://github.com/andresdmdev/bill-tracker",
               "icon": "github",
               "name": "Github"
             },
             "website": {
-              "url": "https://www.tiendapago.com",
-              "icon": "website",
-              "name": "Website"
+              "url": "",
+              "icon": "",
+              "name": ""
             },
             "icon": {
               "name": "Bill Tracker",
@@ -198,7 +97,7 @@
             "paragraphs": [
               {
                 "title": "",
-                "description": "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.",
+                "description": "It works through an intuitive Telegram bot: the user simply takes a photo of any invoice or receipt and sends it. The system handles the entire process in the background, from extracting key information to organizing it in accessible databases, freeing the user from manual data entry and reducing errors.",
                 "diagram": {
                   "name": "Diagram",
                   "src": "diagram.avif",
@@ -210,14 +109,21 @@
               },
               {
                 "title": "",
-                "description": "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.",
+                "description": "The heart of the system is a serverless architecture that uses an AWS Lambda function connected to a webhook. When the bot receives an image, a GPT agent scans it to extract relevant data such as the amount, date, and expense concept, returning the information in a JSON format. The original image is archived in Google Drive, and the structured data is saved to Supabase and Google Sheets, offering a dual layer of storage and accessibility. Finally, the bot notifies the user of the operation's status.",
                 "diagram": null,
                 "gif": "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExemNkd2NvbXMyeXZobHgxOTBnZWV2MHJuNDllOXM5MmgzNjRzdzBiciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fy8mDHil1yK1l0KmMN/giphy.gif",
                 "img": "https://i.blogs.es/ce1eaa/app-store/1366_2000.webp"
               },
               {
-                "title": "",
-                "description": "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.",
+                "title": "Real-World Benefits and Value",
+                "description": "Bill Tracker eliminates the need for manual invoice data entry, saving time and minimizing errors. By automatically centralizing and organizing expense information, it provides detailed financial control.",
+                "diagram": null,
+                "gif": "",
+                "img": ""
+              },
+              {
+                "title": "Future Improvements",
+                "description": "Bill Tracker's growth potential is enormous. A predictive analysis system could be integrated to generate personalized expense reports or detect anomalies. Additionally, functionality could be expanded to include automatic bank reconciliation or the ability to generate tax reports, turning the tool into a more complete financial solution. Integration with other messaging platforms like WhatsApp could also significantly increase its accessibility and utility.",
                 "diagram": null,
                 "gif": "",
                 "img": ""
@@ -229,7 +135,7 @@
       "education": {
         "title": "Education",
         "icon": "<box-icon name='briefcase' type='solid' animation='tada-hover'></box-icon>",
-        "description": "As a FullStack Software Developer, my education has provided a strong foundation in building user interfaces and improving UI/UX with best practices. I am committed to continuous learning and growth, always seeking new knowledge and skills to create efficient and impactful software solutions.",
+        "description": "My academic background provided a solid foundation in software development, which continues to drive my professional growth and constant learning to create innovative solutions. In this section, I also share the technologies I've worked with, along with my professional certifications.",
         "first-subtitle": "Technologies and tools used",
         "first-subtitleLogo": "code-alt",
         "tools": [
@@ -426,29 +332,29 @@
       "about": {
         "title": "I´m Andrés",
         "first-paragraph": {
-          "title": "FullStack Software Developer. Creating user interfaces, improving UI and UX with best practices.",
+          "title": "Software Engineer. Building Scalable Solutions & Enhancing User Experiences.",
           "description": "I'm a software engineer with a passion for creating user-friendly and efficient applications. I'm always looking for new challenges and opportunities to grow as a developer."
         },
         "second-paragraph": {
-          "title": "Let's collaborate if you're committed to sustainability, education, equality, or carbon neutrality.",
-          "description": "I'm a software engineer with a passion for creating user-friendly and efficient applications. I'm always looking for new challenges and opportunities to grow as a developer."
+          "title": "Let's collaborate if you're committed to continuous improvement, empowering teams, data-driven decisions, or innovative solutions.",
+          "description": "I'm a passionate and results-driven software engineer who specializes in transforming complex challenges into effective, scalable, and user-friendly applications."
         },
         "key-points": [
           {
-            "title": "Sustainability",
-            "description": "I'm a software engineer with a passion for creating user-friendly and efficient applications. I'm always looking for new challenges and opportunities to grow as a developer."
+            "title": "Data Analysis & Reporting",
+            "description": "I leverage data to inform critical decisions and optimize processes, leading to measurable improvements in efficiency and effectiveness."
           },
           {
-            "title": "Education",
-            "description": "I'm a software engineer with a passion for creating user-friendly and efficient applications. I'm always looking for new challenges and opportunities to grow as a developer."
+            "title": "Change Management",
+            "description": "I successfully manage the implementation of new technologies and platforms, ensuring seamless transitions and high user adoption."
           },
           {
-            "title": "Equality",
-            "description": "I'm a software engineer with a passion for creating user-friendly and efficient applications. I'm always looking for new challenges and opportunities to grow as a developer."
+            "title": "Training & Mentorship",
+            "description": "I empower teams by sharing knowledge and providing guidance on new tools and best practices to foster continuous improvement."
           },
           {
-            "title": "Carbon Neutrality",
-            "description": "I'm a software engineer with a passion for creating user-friendly and efficient applications. I'm always looking for new challenges and opportunities to grow as a developer."
+            "title": "Growth & Innovation",
+            "description": "I thrive on exploring new technologies and architectural patterns to build scalable and forward-thinking solutions."
           }
         ]
       },
@@ -469,157 +375,56 @@
         "education": "Educación",
         "about": "Sobre mí"
       },
-      "profile": {
-        "gretting": "Hola, soy Andrés",
-        "description-1": "Desarrollador de software Full‑Stack.",
-        "description-2": "Creando interfaces de usuario y mejorando la UI/UX con",
-        "description-3": " buenas prácticas.",
-        "tag": "¡Listo para trabajar! 🚀",
-        "cv": "Currículum",
-        "url-cv": "https://docs.google.com/document/d/1G0Z0MEERY-pkBWYhxRFv9ssPU_GI9HMne0bWOKdudkg/edit?usp=sharing",
-        "email": "andresdmf55@gmail.com",
-        "icon": {
-          "linkedin": "https://www.linkedin.com/in/andresmarquezdev/",
-          "github": "https://github.com/andresdmdev"
-        }
-      },
-      "stack": {
-        "title": "Tecnologías y herramientas",
-        "logo": "<box-icon name='hot' type='solid' animation='tada-hover'></box-icon>",
-        "tools": [
-          {
-            "name": "C#",
-            "logo": "c-sharp.avif"
-          },
-          {
-            "name": "Netcore",
-            "logo": "netcore.avif"
-          },
-          {
-            "name": "TypeScript",
-            "logo": "typescript.avif"
-          },
-          {
-            "name": "JavaScript",
-            "logo": "javascript.avif"
-          },
-          {
-            "name": "Python",
-            "logo": "python.avif"
-          },
-          {
-            "name": "React",
-            "logo": "reactjs.avif"
-          },
-          {
-            "name": "Angular",
-            "logo": "angular.avif"
-          },
-          {
-            "name": "SQL Server",
-            "logo": "sql-server.avif"
-          },
-          {
-            "name": "MySql",
-            "logo": "mysql.avif"
-          },
-          {
-            "name": "NodeJS",
-            "logo": "node.avif"
-          },
-          {
-            "name": "ExpressJs",
-            "logo": "express.avif"
-          },
-          {
-            "name": "Html",
-            "logo": "html.avif"
-          },
-          {
-            "name": "CSS",
-            "logo": "css.avif"
-          },
-          {
-            "name": "TailWindCSS",
-            "logo": "tailwind.avif"
-          },
-          {
-            "name": "Sass",
-            "logo": "sass.avif"
-          },
-          {
-            "name": "Jest",
-            "logo": "jest.avif"
-          },
-          {
-            "name": "Git",
-            "logo": "git.avif"
-          },
-          {
-            "name": "GitHub",
-            "logo": "github.avif"
-          },
-          {
-            "name": "Azure",
-            "logo": "azure.avif"
-          },
-          {
-            "name": "Atlassian",
-            "logo": "atlassian.avif"
-          },
-          {
-            "name": "DataDog",
-            "logo": "datadog.avif"
-          }
-        ]
-      },
       "experience": {
-        "title": "Hola, soy Andrés. <br>Ingeniero de software.",
+        "title": "Hola, soy Andrés. <br>Software Engineer.",
         "icon": "",
         "openToWork": {
-          "title": "Disponible para trabajar",
+          "title": "Abierto a trabajar",
           "icon": "<box-icon name='briefcase' type='solid' animation='tada-hover'></box-icon>"
         },
-        "description": "Soy ingeniero de software con pasión por crear aplicaciones eficientes y fáciles de usar. Siempre busco nuevos retos y oportunidades para crecer como desarrollador.",
-        "subtitle": "Experiencia laboral",
+        "description": "Software Enginieer con experiencia en el diseño e implementación de arquitecturas de microservicios escalables dentro del ecosistema de Azure. Utilizo C#, Python y JS para construir soluciones innovadoras, desde APIs de alto rendimiento hasta bots conversacionales.",
+        "subtitle": "Experiencia Laboral",
         "subtitleLogo": "briefcase",
         "jobs": [
           {
-            "jobTitle": "Ingeniero de software junior",
+            "jobTitle": "Software Engineer Mid-Senior",
             "company": "Tienda Pago",
-            "startDate": "Oct. 2023",
-            "endDate": "Actualidad",
-            "shortDescription": "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software.",
+            "startDate": "Jun. 2025",
+            "endDate": "Actual",
+            "shortDescription": "Lideré la implementación de arquitecturas robustas y la automatización de flujos de trabajo clave, optimizando la eficiencia operativa de la empresa. Creando soluciones integrales que mejoraron la experiencia del usuario y los procesos internos.",
             "longDescription": "",
             "linkedin": {
               "url": "https://www.linkedin.com/company/tienda-pago"
             },
             "webPage": {
-              "url": ""
+              "url": "https://tiendapago.com/"
             },
             "bullets": [
-              "Migración de servicios de llamadas",
-              "Gestión de mensajes con Azure Service Bus",
-              "Uso de Service Bus y funciones con desencadenadores HTTP"
+              "Liderazgo y estrategia: Implementé bots conversacionales y WA Flows, lo que posibilitó un aumento del 7% en la obtención de leads a través de la automatización del flujo. Con el objetivo de mejorar y optimizar los procesos de adquisición de la empresa, fui uno de los miembros iniciales del equipo que participó en la incorporación de WA Flows a la plataforma Botmaker.",
+              "Arquitectura de microservicios: He creado y puesto en marcha una arquitectura de microservicios en Microsoft Azure, utilizando Logic Apps y Service Bus Queues.",
+              "Mejora de plataformas y procedimientos: Me encargué de gestionar el movimiento de cada uno de los procesos de llamadas en Genesys Cloud, definiendo la lógica comunicativa entre microservicios que estaban repartidos. Esto provocó que la capacidad de contacto aumentara en un 18% y que la efectividad de los agentes mejorara en un 14%.",
+              "Desarrollo del IVR con MCPs: Desarrollé un sistema de texto a voz (TTS) personalizado utilizando MCP, Claude Code y ElevenLabs en Python. Esto produjo una mejor experiencia de usuario, al disminuir los costos de producción en un 80% y elevar la rapidez de implementación en un 200%.",
+              "Desarrollo Full-Stack: Con el objetivo de crear interfaces de usuario, implemente React, Astro y Angular. Para desarrollar APIs RESTful, utilize C# y .NET Core. Desarrolle pruebas unitarias y de integración para garantizar la calidad del código, optimizando la manera en que se presenta la información al agente del call center y al cliente.",
+              "Colaboración y Calidad: Colaboré con equipos multidisciplinarios para diseñar e implementar aplicaciones de software escalables y optimicé consultas SQL para mejorar el rendimiento de la base de datos que se usan en los procesos de la empresa."
             ]
           },
           {
-            "jobTitle": "Ingeniero de software junior",
+            "jobTitle": "Software Engineer Junior",
             "company": "Tienda Pago",
             "startDate": "Oct. 2023",
-            "endDate": "Actualidad",
-            "shortDescription": "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software.",
+            "endDate": "May. 2025",
+            "shortDescription": "Mis responsabilidades principales se centraron en el desarrollo full-stack, desde la creación de APIs robustas hasta interfaces de usuario fluidas. Además, me enfoqué en la automatización de procesos y el mantenimiento de soluciones clave para plataformas de call center.",
             "longDescription": "",
             "linkedin": {
               "url": "https://www.linkedin.com/company/tienda-pago"
             },
             "webPage": {
-              "url": ""
+              "url": "https://tiendapago.com/"
             },
             "bullets": [
-              "Migración de servicios de llamadas",
-              "Gestión de mensajes con Azure Service Bus",
-              "Uso de Service Bus y funciones con desencadenadores HTTP"
+              "Desarrollo Full-Stack: Desarrollé aplicaciones front-end con Angular para que la experiencia del usuario fuera fluida y creé APIs RESTful usando C# y .NET Core.",
+              "Automatización y Eficiencia: Utilicé Python para automatizar tareas y optimizar los procesos de desarrollo, y al mismo tiempo, Service Bus para facilitar la comunicación asincrónica entre sistemas.",
+              "Soporte y Mantenimiento de Plataformas: Desarrolle soluciones en conjunto con XCally Motion, enfocado en la creación y el mantenimiento de soluciones para el call center"
             ]
           }
         ]
@@ -627,28 +432,28 @@
       "project": {
         "title": "Proyectos",
         "icon": "<box-icon name='briefcase' type='solid' animation='tada-hover'></box-icon>",
-        "description": "Soy ingeniero de software con pasión por crear aplicaciones eficientes y fáciles de usar. Siempre busco nuevos retos y oportunidades para crecer como desarrollador.",
+        "description": "¡Me emociona compartir un vistazo de mi viaje profesional! En esta sección, he reunido una colección de proyectos que demuestran mi pasión por construir soluciones robustas y eficientes. Desde la arquitectura de microservicios hasta el desarrollo full-stack y la automatización de procesos, mi objetivo siempre es generar un impacto positivo y duradero.",
         "items": [
           {
             "title": "Bill Tracker",
             "urlName": "bill-tracker",
-            "descriptionLong": "Bill Tracker es una aplicación web que te permite llevar el control de tus facturas y gastos.",
+            "descriptionLong": "Bill Tracker es un sistema de automatización diseñado para simplificar el seguimiento de facturas y gastos.",
             "descriptionShort": "Automatización",
             "className": "grid-4",
             "linkedin": {
-              "url": "https://www.linkedin.com/company/tienda-pago",
-              "icon": "linkedin",
-              "name": "LinkedIn"
+              "url": "",
+              "icon": "",
+              "name": ""
             },
             "github": {
-              "url": "https://github.com/andresdmdev",
+              "url": "https://github.com/andresdmdev/bill-tracker",
               "icon": "github",
-              "name": "GitHub"
+              "name": "Github"
             },
             "website": {
-              "url": "https://www.tiendapago.com",
-              "icon": "website",
-              "name": "Sitio web"
+              "url": "",
+              "icon": "",
+              "name": ""
             },
             "icon": {
               "name": "Bill Tracker",
@@ -659,11 +464,11 @@
             "paragraphs": [
               {
                 "title": "",
-                "description": "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.",
+                "description": "Funciona a través de un bot de Telegram intuitivo: el usuario simplemente toma una foto de cualquier factura o recibo y la envía. El sistema se encarga de todo el proceso en segundo plano, desde extraer la información clave hasta organizarla en bases de datos accesibles, liberando al usuario de la tarea manual de ingreso de datos y reduciendo los errores.",
                 "diagram": {
-                  "name": "Diagrama",
+                  "name": "Diagram",
                   "src": "diagram.avif",
-                  "alt": "Diagrama",
+                  "alt": "Diagram",
                   "position": "top"
                 },
                 "gif": "",
@@ -671,14 +476,21 @@
               },
               {
                 "title": "",
-                "description": "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.",
+                "description": "El corazón del sistema es una arquitectura sin servidor que utiliza una función AWS Lambda conectada a un webhook. Cuando el bot recibe una imagen, un agente de GPT la escanea para extraer datos relevantes como el monto, la fecha y el concepto de gasto, devolviendo la información en un formato JSON. La imagen original se archiva en Google Drive y los datos estructurados se guardan en Supabase y Google Sheets, ofreciendo una doble capa de almacenamiento y accesibilidad. Finalmente, el bot notifica al usuario el estado de la operación.",
                 "diagram": null,
                 "gif": "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExemNkd2NvbXMyeXZobHgxOTBnZWV2MHJuNDllOXM5MmgzNjRzdzBiciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fy8mDHil1yK1l0KmMN/giphy.gif",
                 "img": "https://i.blogs.es/ce1eaa/app-store/1366_2000.webp"
               },
               {
-                "title": "",
-                "description": "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.",
+                "title": "Beneficios y Valor en la Vida Real",
+                "description": "Bill Tracker elimina la necesidad de ingresar manualmente los datos de las facturas, ahorrando tiempo y minimizando errores. Al centralizar y organizar la información de gastos de forma automática, proporciona un control financiero detallado.",
+                "diagram": null,
+                "gif": "",
+                "img": ""
+              },
+              {
+                "title": "Siguientes Mejoras",
+                "description": "El potencial de crecimiento de Bill Tracker es enorme. Se podría integrar un sistema de análisis predictivo para generar informes de gastos personalizados o detectar anomalías. Además, la funcionalidad podría expandirse para incluir la conciliación bancaria automática o la capacidad de generar reportes fiscales, convirtiendo la herramienta en una solución financiera más completa. La integración con otras plataformas de mensajería como WhatsApp también podría aumentar significativamente su accesibilidad y utilidad.",
                 "diagram": null,
                 "gif": "",
                 "img": ""
@@ -688,10 +500,10 @@
         ]
       },
       "education": {
-        "title": "Educación",
+        "title": "Education",
         "icon": "<box-icon name='briefcase' type='solid' animation='tada-hover'></box-icon>",
-        "description": "Como desarrollador de software Full‑Stack, mi formación me ha dado una base sólida para construir interfaces de usuario y mejorar la UI/UX con buenas prácticas. Estoy comprometido con el aprendizaje continuo y la mejora constante para crear soluciones eficientes y de impacto.",
-        "first-subtitle": "Tecnologías y Herramientas",
+        "description": "Mi formación académica me proporcionó una base sólida en el desarrollo de software, la cual sigue impulsando mi crecimiento profesional y mi aprendizaje constante para crear soluciones innovadoras. En esta sección, comparto las tecnologías con las que he trabajado, junto con mis certificaciones profesionales.",
+        "first-subtitle": "Tecnologías y Stacks utilizados",
         "first-subtitleLogo": "code-alt",
         "tools": [
           {
@@ -839,46 +651,46 @@
             }
           }
         ],
-        "second-subtitle": "Certificaciones",
+        "second-subtitle": "Certifications",
         "second-subtitleLogo": "book-open",
         "diplomas": [
           {
-            "name": "Licenciatura en Tecnología",
+            "name": "Bachelor of Technology",
             "icon": "<box-icon name='graduation' type='solid'></box-icon>",
             "school": "Tech University",
-            "type": "Grado",
+            "type": "Degree",
             "dateTime": "2015-2019",
             "dateTimeUI": "2015 - 2019"
           },
           {
-            "name": "Desarrollo Web Full Stack",
+            "name": "Full Stack Web Development",
             "icon": "<box-icon name='book' type='solid'></box-icon>",
             "school": "Online Bootcamp",
-            "type": "Certificación",
+            "type": "Certification",
             "dateTime": "2020",
             "dateTimeUI": "2020"
           },
           {
-            "name": "Maestría en Ciencias de la Computación",
+            "name": "Master of Science in Computer Science",
             "icon": "<box-icon name='book' type='solid'></box-icon>",
             "school": "National University",
-            "type": "Grado",
+            "type": "Degree",
             "dateTime": "2019-2021",
             "dateTimeUI": "2019 - 2021"
           },
           {
-            "name": "Especialización en Diseño UI/UX",
+            "name": "UI/UX Design Specialization",
             "icon": "<box-icon name='palette' type='solid'></box-icon>",
             "school": "Design Institute",
-            "type": "Certificación",
+            "type": "Certification",
             "dateTime": "2022",
             "dateTimeUI": "2022"
           },
           {
-            "name": "Fundamentos de Computación en la Nube",
+            "name": "Cloud Computing Fundamentals",
             "icon": "<box-icon name='cloud' type='solid'></box-icon>",
             "school": "Cloud Academy",
-            "type": "Certificación",
+            "type": "Certification",
             "dateTime": "2023",
             "dateTimeUI": "2023"
           }
@@ -887,34 +699,34 @@
       "about": {
         "title": "Soy Andrés",
         "first-paragraph": {
-          "title": "Desarrollador de software Full‑Stack. Creando interfaces de usuario y mejorando la UI/UX con buenas prácticas.",
-          "description": "Soy ingeniero de software con pasión por crear aplicaciones eficientes y fáciles de usar. Siempre busco nuevos retos y oportunidades para crecer como desarrollador."
+          "title": "Software Engineer. Construyendo Soluciones Escalables y Mejorando las Experiencias de Usuario.",
+          "description": "Software engineer apasionado por crear aplicaciones eficientes y fáciles de usar. Siempre estoy buscando nuevos desafíos y oportunidades para crecer como desarrollador."
         },
         "second-paragraph": {
-          "title": "Colaboremos si estás comprometido con la sostenibilidad, la educación, la igualdad o la neutralidad de carbono.",
-          "description": "Soy ingeniero de software con pasión por crear aplicaciones eficientes y fáciles de usar. Siempre busco nuevos retos y oportunidades para crecer como desarrollador."
+          "title": "Colaboremos si estás comprometido con la mejora continua, el empoderamiento de los equipos, las decisiones basadas en datos o las soluciones innovadoras.",
+          "description": "Orientado a resultados, especializado en transformar desafíos complejos en aplicaciones efectivas, escalables y fáciles de usar."
         },
         "key-points": [
           {
-            "title": "Sostenibilidad",
-            "description": "Soy ingeniero de software con pasión por crear aplicaciones eficientes y fáciles de usar. Siempre busco nuevos retos y oportunidades para crecer como desarrollador."
+            "title": "Análisis de Datos e Informes",
+            "description": "Utilizo los datos para informar decisiones críticas y optimizar procesos, lo que lleva a mejoras medibles en la eficiencia y efectividad."
           },
           {
-            "title": "Educación",
-            "description": "Soy ingeniero de software con pasión por crear aplicaciones eficientes y fáciles de usar. Siempre busco nuevos retos y oportunidades para crecer como desarrollador."
+            "title": "Gestión del Cambio",
+            "description": "Gestiono con éxito la implementación de nuevas tecnologías y plataformas, asegurando transiciones fluidas y una alta adopción por parte de los usuarios."
           },
           {
-            "title": "Igualdad",
-            "description": "Soy ingeniero de software con pasión por crear aplicaciones eficientes y fáciles de usar. Siempre busco nuevos retos y oportunidades para crecer como desarrollador."
+            "title": "Formación y Mentoría",
+            "description": "Empodero a los equipos al compartir conocimientos y brindar orientación sobre nuevas herramientas y mejores prácticas para fomentar la mejora continua."
           },
           {
-            "title": "Neutralidad de carbono",
-            "description": "Soy ingeniero de software con pasión por crear aplicaciones eficientes y fáciles de usar. Siempre busco nuevos retos y oportunidades para crecer como desarrollador."
+            "title": "Crecimiento e Innovación",
+            "description": "Me desarrollo explorando nuevas tecnologías y patrones de arquitectura para construir soluciones escalables y con visión de futuro."
           }
         ]
       },
       "contact": {
-        "cv": "Currículum",
+        "cv": "Curriculum",
         "url": "https://docs.google.com/document/d/1G0Z0MEERY-pkBWYhxRFv9ssPU_GI9HMne0bWOKdudkg/edit?usp=sharing",
         "email": "andresdmf55@gmail.com",
         "linkedin": "https://www.linkedin.com/in/andresmarquezdev/",

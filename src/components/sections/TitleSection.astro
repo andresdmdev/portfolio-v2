@@ -1,6 +1,7 @@
 ---
 import SectionLayout from "../../layouts/SectionLayout.astro";
 import BackPage from "../BackPage.astro";
+import { getLangFromUrl, getLocalizedUrl } from "../../i18n/utils";
 
 interface Props {
   title: string;
@@ -18,10 +19,12 @@ interface Props {
 }
 
 const { title, className, id, isBackPageEnable = false, backPageHref = "/" } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const localizedBackPageHref = getLocalizedUrl(lang, backPageHref);
 ---
 
 <SectionLayout id={id} className={className}>
-  {isBackPageEnable && <BackPage href={backPageHref} />}
+  {isBackPageEnable && <BackPage href={localizedBackPageHref} />}
   <div class="title-wrapper">
     <h2 set:html={title} />
   </div>
