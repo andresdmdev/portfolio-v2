@@ -3,6 +3,7 @@ const { linkedin, github, website } = Astro.props;
 ---
 
 <div class="project-link-section">
+  {linkedin && (
   <a
     class="icon-container"
     href={linkedin}
@@ -11,6 +12,8 @@ const { linkedin, github, website } = Astro.props;
   >
     <box-icon type="logo" name="linkedin" class="icon"></box-icon>
   </a>
+  )}
+  {github && (
   <a
     class="icon-container"
     href={github}
@@ -19,6 +22,8 @@ const { linkedin, github, website } = Astro.props;
   >
     <box-icon name="github" type="logo" class="icon"></box-icon>
   </a>
+  )}
+  {website && (
   <a
     class="icon-container"
     href={website}
@@ -27,6 +32,7 @@ const { linkedin, github, website } = Astro.props;
   >
     <box-icon name="windows" class="icon"></box-icon>
   </a>
+  )}
 </div>
 
 <style>

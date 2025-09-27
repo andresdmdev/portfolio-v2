@@ -25,17 +25,10 @@ const { id, className } = Astro.props;
     margin-top: 60px;
   }
 
-  .profile {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 40px;
+  .paragraph-interactive-container {
+    margin: 0 auto;
   }
 
-  .paragraph-interactive-container{
-    margin: 0 auto;
-  } 
-  
   @media screen and (min-width: 768px) {
     section {
       margin-top: 120px;
@@ -43,14 +36,19 @@ const { id, className } = Astro.props;
 
     .proyect-section {
       margin: 90px auto 0 auto;
+      max-width: 900px;
     }
-
-    .profile {
-      margin-top: 120px;
-    }
-
     .contact-info {
       margin-top: 30px;
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .project-title-section {
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .experience-title-section {
