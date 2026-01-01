@@ -13,11 +13,15 @@ const { diploma } = Astro.props;
   <div class="education-info">
     <span>{diploma.type}</span>
     <h4>{diploma.name}</h4>
-    <p>{diploma.school} - {diploma.dateTimeUI}</p>
+    <p class="education-description">{diploma.school} - {diploma.dateTimeUI}</p>
   </div>
 </div>
 
 <style>
+  .education-description {
+    padding-top: 8px;
+  }
+
   .education-item-container {
     display: flex;
     flex-direction: row;

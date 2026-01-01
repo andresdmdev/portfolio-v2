@@ -35,7 +35,7 @@ const {
       )
     }
     {
-      gif && img && (
+      (gif || img) && (
         <div class="paragraph-interactive-content-media">
           {gif && (
             <img
@@ -46,7 +46,7 @@ const {
           )}
           {img && (
             <img
-              src={`${img}`}
+              src={`/images/${img}`}
               alt="interactive-image"
               class="paragraph-interactive-img"
             />

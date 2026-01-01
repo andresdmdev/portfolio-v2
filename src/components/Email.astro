@@ -6,9 +6,9 @@ interface Props {
 const { text } = Astro.props;
 ---
 
-<div class="contact-info-email">
+<div class="contact-info-email" data-email={text}>
   <a class="first-container" aria-label="Open email integration">
-    <span class="email-text" aria-valuetext={text}>@Email</span>
+    <span class="email-text">@Email</span>
     <box-icon name="paper-plane" class="link" animation="tada-hover"></box-icon>
   </a>
   <button class="second-email-icon" aria-label="Copy email">
@@ -18,26 +18,60 @@ const { text } = Astro.props;
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
-    const sendEmailBtn = document.querySelectorAll(".first-container");
-    const emailElement = document.querySelectorAll(".email-text");
-    const copyEmailBtn = document.querySelectorAll(".second-email-icon");
+    const emailContainers = document.querySelectorAll(".contact-info-email");
 
-    const email = emailElement[0]?.getAttribute("aria-valuetext") ?? "";
+    emailContainers.forEach((container) => {
+      const email = container.getAttribute("data-email") ?? "";
+      const sendEmailBtn = container.querySelector(".first-container");
+      const copyEmailBtn = container.querySelector(".second-email-icon");
 
-    if (sendEmailBtn && copyEmailBtn) {
-      sendEmailBtn.forEach((e) => {
-        e.addEventListener("click", () => {
-          const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=Informacion&body='`;
+      if (sendEmailBtn) {
+        sendEmailBtn.addEventListener("click", () => {
+          const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}&su=Informacion&body='`;
           window.open(gmailUrl, "_blank");
         });
-      });
+      }
 
-      copyEmailBtn.forEach((e) => {
-        e.addEventListener("click", () => {
-          navigator.clipboard.writeText(email);
+      if (copyEmailBtn && email) {
+        copyEmailBtn.addEventListener("click", async () => {
+          try {
+            await navigator.clipboard.writeText(email);
+            // Feedback visual opcional
+            const icon = copyEmailBtn.querySelector("box-icon");
+            if (icon) {
+              const originalName = icon.getAttribute("name");
+              icon.setAttribute("name", "check");
+              setTimeout(() => {
+                icon.setAttribute("name", originalName || "copy-alt");
+              }, 1000);
+            }
+          } catch (err) {
+            // Fallback para navegadores que no soportan clipboard API
+            const textArea = document.createElement("textarea");
+            textArea.value = email;
+            textArea.style.position = "fixed";
+            textArea.style.left = "-999999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            try {
+              document.execCommand("copy");
+              const icon = copyEmailBtn.querySelector("box-icon");
+              if (icon) {
+                const originalName = icon.getAttribute("name");
+                icon.setAttribute("name", "check");
+                setTimeout(() => {
+                  icon.setAttribute("name", originalName || "copy-alt");
+                }, 1000);
+              }
+            } catch (fallbackErr) {
+              console.error("Failed to copy email:", fallbackErr);
+            } finally {
+              document.body.removeChild(textArea);
+            }
+          }
         });
-      });
-    }
+      }
+    });
   });
 </script>
 

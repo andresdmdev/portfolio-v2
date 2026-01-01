@@ -19,9 +19,9 @@
     --dark-title-secondary-color: hsla(38, 100%, 70%, 1);
 
     /* Font sizes - titles */
-    --font-size-title: 2.2rem;
-    --font-size-title-tablet: 4.4rem;
-    --font-size-title-desktop: 6.1rem;
+    --font-size-title: 2rem;
+    --font-size-title-tablet: 4rem;
+    --font-size-title-desktop: 5rem;
 
     /* Font sizes - subtitles */
     --font-size-subtitle: 1.75rem;

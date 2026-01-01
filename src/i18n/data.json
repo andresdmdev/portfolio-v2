@@ -9,7 +9,7 @@
         "about": "About"
       },
       "experience": {
-        "title": "Hey, I’m Andres. <br>A Software Engineer.",
+        "title": "Hey, I’m Andres. <br>A Software Engineer. 🧑🏻‍💻",
         "icon": "",
         "openToWork": {
           "title": "Open to work",
@@ -33,12 +33,12 @@
               "url": "https://tiendapago.com/"
             },
             "bullets": [
-              "Leadership & Strategy: I implemented conversational bots and WA Flows, leading to a 7% increase in lead generation through workflow automation. With the goal of improving and optimizing the company's acquisition processes, I was one of the initial team members involved in the incorporation of WA Flows into the Botmaker platform.",
-              "Microservices Architecture: I created and deployed a microservices architecture in Microsoft Azure, utilizing Logic Apps and Service Bus Queues.",
-              "Platform & Process Improvement: I was responsible for managing the movement of every call process in Genesys Cloud, defining the communication logic between distributed microservices. This led to an 18% increase in contact capacity and a 14% improvement in agent effectiveness.",
-              "IVR Development with MCPs: I developed a personalized Text-to-Speech (TTS) system using MCP, Claude Code, and ElevenLabs in Python. This resulted in a better user experience by decreasing production costs by 80% and increasing implementation speed by 200%.",
-              "Full-Stack Development: To create user interfaces, I implemented React, Astro, and Angular. For developing RESTful APIs, I used C# and .NET Core. I developed unit and integration tests to ensure code quality, optimizing the way information is presented to the call center agent and the customer.",
-              "Collaboration & Quality: I collaborated with multidisciplinary teams to design and implement scalable software applications and optimized SQL queries to improve the performance of the company's database processes."
+              "Leadership & Strategy: I was one of the initial team members who participated in the incorporation of WA Flows into the Botmaker platform, with the goal of improving and optimizing customer acquisition processes, which enabled a 7% increase in lead generation.",
+              "Microservices Architecture: I participated in projects where we developed microservices for the Acquisition team's processes, utilizing Microsoft Azure and integrating Azure Functions, Service Bus Queues, subscriptions and topics. This generated an operational improvement and workflow automation of more than 20%.",
+              "Platform & Process Improvement: I was responsible for managing requirements for call processes in the Genesys Cloud platform, defining the communication and integration between microservices used in the workflows. This resulted in an 18% increase in lead/client contact capacity and a 14% improvement in agent operational effectiveness.",
+              "IVR Development with MCPs: I developed an automated personalized Text-to-Speech (TTS) system using MCP, Claude Code, and ElevenLabs in Python. This produced a better user experience in the IVR by decreasing production costs by 80% and increasing implementation speed by 200%.",
+              "Full-Stack Development: On the frontend, I worked with React, Astro, and Angular, and on the backend, with C# and .NET Core (for RESTful API development). I generated efficient user interfaces according to business requirements. For call center agents, operational efficiency increased by 40%, while communication with leads/clients increased by more than 120%, generating more engagement and brand visibility for lead acquisition.",
+              "Collaboration & Quality: I collaborated with GenesysCloud and Botmaker teams to design and implement business solutions within established processes, optimizing and improving workflows by 60%. This encompasses migrations, new requirements, and hotfixes."
             ]
           },
           {
@@ -55,17 +55,17 @@
               "url": "https://tiendapago.com/"
             },
             "bullets": [
-              "Full-Stack Development: Developed front-end applications with Angular to provide a seamless user experience and created RESTful APIs using C# and the .NET Core framework.",
-              "Automation and Efficiency: Used Python to automate tasks and optimize development processes, while leveraging Service Bus to facilitate asynchronous communication between systems.",
-              "Platform Support and Maintenance: Developed and maintained call center solutions on the XCally Motion platform."
+              "Full-Stack Development: I developed front-end applications with Angular to provide a seamless user experience and implemented RESTful APIs using C# and .NET Core for communication.",
+              "Automation and Efficiency: I used Python to automate tasks and optimize customer acquisition processes by 15%, together with Azure Functions and Service Bus Queues to facilitate asynchronous communication between systems.",
+              "Platform Support and Maintenance: I developed solutions in collaboration with XCally Motion, focused on creating and maintaining solutions for the call center. This improved daily operations for agents by 30%."
             ]
           }
         ]
       },
       "project": {
-        "title": "Projects",
+        "title": "Projects 🚀",
         "icon": "<box-icon name='briefcase' type='solid' animation='tada-hover'></box-icon>",
-        "description": "I'm excited to share a glimpse of my professional journey! In this section, you'll find a collection of projects that showcase my passion for building robust and efficient solutions. From microservices architecture to full-stack development and process automation, my goal is always to create a positive and lasting impact.",
+        "description": "I'm excited to share a glimpse of my professional journey! In this section, you'll find a collection of projects that showcase my passion for building robust and efficient solutions 🛠️.",
         "items": [
           {
             "title": "Bill Tracker",
@@ -97,11 +97,11 @@
             "paragraphs": [
               {
                 "title": "",
-                "description": "It works through an intuitive Telegram bot: the user simply takes a photo of any invoice or receipt and sends it. The system handles the entire process in the background, from extracting key information to organizing it in accessible databases, freeing the user from manual data entry and reducing errors.",
+                "description": "It works through an intuitive Telegram bot: the user simply takes a photo of any invoice or receipt and sends it. The system handles the entire process in the background, from extracting key information to organizing and storing it in databases, freeing the user from manual data entry and reducing errors.",
                 "diagram": {
-                  "name": "Diagram",
-                  "src": "diagram.avif",
-                  "alt": "Diagram",
+                  "name": "Workflow",
+                  "src": "bill-tracker-workflow-en.jpg",
+                  "alt": "Workflow",
                   "position": "top"
                 },
                 "gif": "",
@@ -109,13 +109,13 @@
               },
               {
                 "title": "",
-                "description": "The heart of the system is a serverless architecture that uses an AWS Lambda function connected to a webhook. When the bot receives an image, a GPT agent scans it to extract relevant data such as the amount, date, and expense concept, returning the information in a JSON format. The original image is archived in Google Drive, and the structured data is saved to Supabase and Google Sheets, offering a dual layer of storage and accessibility. Finally, the bot notifies the user of the operation's status.",
+                "description": "The heart of the system is a serverless architecture that uses an AWS Lambda function connected to a webhook. When the Telegram bot receives an image, a ChatGPT agent scans it to extract relevant data such as the amount, date, and expense concept, returning the information in a JSON format. The original image is archived in Google Drive and the structured data is saved in Supabase and Google Sheets, offering a dual layer of storage and accessibility. Finally, the bot notifies the user of the operation's status.",
                 "diagram": null,
-                "gif": "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExemNkd2NvbXMyeXZobHgxOTBnZWV2MHJuNDllOXM5MmgzNjRzdzBiciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fy8mDHil1yK1l0KmMN/giphy.gif",
-                "img": "https://i.blogs.es/ce1eaa/app-store/1366_2000.webp"
+                "gif": "",
+                "img": "bill_tracker_screenshot_bot.jpeg"
               },
               {
-                "title": "Real-World Benefits and Value",
+                "title": "Real-World Benefits",
                 "description": "Bill Tracker eliminates the need for manual invoice data entry, saving time and minimizing errors. By automatically centralizing and organizing expense information, it provides detailed financial control.",
                 "diagram": null,
                 "gif": "",
@@ -133,10 +133,10 @@
         ]
       },
       "education": {
-        "title": "Education",
-        "icon": "<box-icon name='briefcase' type='solid' animation='tada-hover'></box-icon>",
-        "description": "My academic background provided a solid foundation in software development, which continues to drive my professional growth and constant learning to create innovative solutions. In this section, I also share the technologies I've worked with, along with my professional certifications.",
-        "first-subtitle": "Technologies and tools used",
+        "title": "Education 📖",
+        "icon": "",
+        "description": "I'm always looking for new ways to train myself and learn useful tools for me and my work. In this section, I share the technologies I've worked with, along with my professional certifications.",
+        "first-subtitle": "Technologies and tools",
         "first-subtitleLogo": "code-alt",
         "tools": [
           {
@@ -285,76 +285,68 @@
           }
         ],
         "second-subtitle": "Certifications",
-        "second-subtitleLogo": "book-open",
+        "second-subtitleLogo": "",
         "diplomas": [
           {
-            "name": "Bachelor of Technology",
+            "name": "Computer Science Career Path",
+            "icon": "<box-icon name='book' type='solid'></box-icon>",
+            "school": "CodeAcademy",
+            "type": "Certification",
+            "dateTime": "2025",
+            "dateTimeUI": "Jul 2025"
+          },
+          {
+            "name": "Backend Architecture with C# and .NET",
+            "icon": "<box-icon name='book' type='solid'></box-icon>",
+            "school": "Platzi",
+            "type": "Certification",
+            "dateTime": "2024",
+            "dateTimeUI": "May 2024"
+          },
+          {
+            "name": "Unit Testing with C# and .NET",
+            "icon": "<box-icon name='book' type='solid'></box-icon>",
+            "school": "Platzi",
+            "type": "Certification",
+            "dateTime": "2024",
+            "dateTimeUI": "Feb 2024"
+          },
+          {
+            "name": "Bachelor of Technology in Computer Science",
             "icon": "<box-icon name='graduation' type='solid'></box-icon>",
-            "school": "Tech University",
+            "school": "Universidad Nacional Experimental Politécnica 'Antonio José de Sucre'",
             "type": "Degree",
-            "dateTime": "2015-2019",
-            "dateTimeUI": "2015 - 2019"
-          },
-          {
-            "name": "Full Stack Web Development",
-            "icon": "<box-icon name='book' type='solid'></box-icon>",
-            "school": "Online Bootcamp",
-            "type": "Certification",
-            "dateTime": "2020",
-            "dateTimeUI": "2020"
-          },
-          {
-            "name": "Master of Science in Computer Science",
-            "icon": "<box-icon name='book' type='solid'></box-icon>",
-            "school": "National University",
-            "type": "Degree",
-            "dateTime": "2019-2021",
-            "dateTimeUI": "2019 - 2021"
-          },
-          {
-            "name": "UI/UX Design Specialization",
-            "icon": "<box-icon name='palette' type='solid'></box-icon>",
-            "school": "Design Institute",
-            "type": "Certification",
-            "dateTime": "2022",
-            "dateTimeUI": "2022"
-          },
-          {
-            "name": "Cloud Computing Fundamentals",
-            "icon": "<box-icon name='cloud' type='solid'></box-icon>",
-            "school": "Cloud Academy",
-            "type": "Certification",
-            "dateTime": "2023",
-            "dateTimeUI": "2023"
+            "dateTime": "2017-2021",
+            "dateTimeUI": "Aug 2017 - Jun 2021"
           }
         ]
       },
       "about": {
         "title": "I´m Andrés",
         "first-paragraph": {
-          "title": "Software Engineer. Building Scalable Solutions & Enhancing User Experiences.",
-          "description": "I'm a software engineer with a passion for creating user-friendly and efficient applications. I'm always looking for new challenges and opportunities to grow as a developer."
+          "title": "Building scalable solutions with purpose.",
+          "description": "I love creating efficient and user-friendly applications. I'm always looking for new challenges and opportunities to grow as a developer within my role on the team."
         },
         "second-paragraph": {
-          "title": "Let's collaborate if you're committed to continuous improvement, empowering teams, data-driven decisions, or innovative solutions.",
-          "description": "I'm a passionate and results-driven software engineer who specializes in transforming complex challenges into effective, scalable, and user-friendly applications."
+          "title": "🚀 Let's collaborate if you're committed to innovative solutions and data-driven decisions.",
+          "description": "I consider myself a committed, results-oriented developer, specialized in transforming complex challenges into effective and user-friendly solutions."
         },
         "key-points": [
           {
-            "title": "Data Analysis & Reporting",
-            "description": "I leverage data to inform critical decisions and optimize processes, leading to measurable improvements in efficiency and effectiveness."
+            "title": "🔍 Data Analysis & Reporting",
+            "description": "What isn't measured can't be improved. I use data to inform critical decisions and optimize processes, leading to improvements in efficiency and effectiveness."
           },
           {
-            "title": "Change Management",
-            "description": "I successfully manage the implementation of new technologies and platforms, ensuring seamless transitions and high user adoption."
+            "title": "🔄 Change Management",
+            "description": "Change will always be present in any development, preparing for it is part of our work as software developers, implementing new technologies and ensuring a smooth transition."
           },
           {
-            "title": "Training & Mentorship",
-            "description": "I empower teams by sharing knowledge and providing guidance on new tools and best practices to foster continuous improvement."
+            "title": "📜 Training & Mentorship",
+            "description": "I believe knowledge should be shared, providing guidance on new tools and best practices in the industry, to foster individual and collective improvement."
           },
           {
-            "title": "Growth & Innovation",
-            "description": "I thrive on exploring new technologies and architectural patterns to build scalable and forward-thinking solutions."
+            "title": "💡 Growth & Innovation",
+            "description": "I'm constantly exploring new technologies and tools that improve my workflow or that of my colleagues, increasing efficiency day by day and seeking improvement opportunities."
           }
         ]
       },
@@ -376,13 +368,13 @@
         "about": "Sobre mí"
       },
       "experience": {
-        "title": "Hola, soy Andrés. <br>Software Engineer.",
+        "title": "Hola, soy Andrés. <br>Software Engineer. 🧑🏻‍💻",
         "icon": "",
         "openToWork": {
           "title": "Abierto a trabajar",
           "icon": "<box-icon name='briefcase' type='solid' animation='tada-hover'></box-icon>"
         },
-        "description": "Software Enginieer con experiencia en el diseño e implementación de arquitecturas de microservicios escalables dentro del ecosistema de Azure. Utilizo C#, Python y JS para construir soluciones innovadoras, desde APIs de alto rendimiento hasta bots conversacionales.",
+        "description": "Software Enginieer con experiencia en el diseño e implementación de arquitecturas de microservicios escalables dentro del ecosistema de Azure. He trabajado con C#, Python y JS para construir soluciones innovadoras, desde APIs de alto rendimiento hasta bots conversacionales.",
         "subtitle": "Experiencia Laboral",
         "subtitleLogo": "briefcase",
         "jobs": [
@@ -391,7 +383,7 @@
             "company": "Tienda Pago",
             "startDate": "Jun. 2025",
             "endDate": "Actual",
-            "shortDescription": "Lideré la implementación de arquitecturas robustas y la automatización de flujos de trabajo clave, optimizando la eficiencia operativa de la empresa. Creando soluciones integrales que mejoraron la experiencia del usuario y los procesos internos.",
+            "shortDescription": "Lideré la implementación de arquitecturas para proyectos y la automatización de flujos de trabajo clave, optimizando la eficiencia operativa de la empresa. Creando soluciones integrales que mejoraron la experiencia del usuario y los procesos internos.",
             "longDescription": "",
             "linkedin": {
               "url": "https://www.linkedin.com/company/tienda-pago"
@@ -400,12 +392,12 @@
               "url": "https://tiendapago.com/"
             },
             "bullets": [
-              "Liderazgo y estrategia: Implementé bots conversacionales y WA Flows, lo que posibilitó un aumento del 7% en la obtención de leads a través de la automatización del flujo. Con el objetivo de mejorar y optimizar los procesos de adquisición de la empresa, fui uno de los miembros iniciales del equipo que participó en la incorporación de WA Flows a la plataforma Botmaker.",
-              "Arquitectura de microservicios: He creado y puesto en marcha una arquitectura de microservicios en Microsoft Azure, utilizando Logic Apps y Service Bus Queues.",
-              "Mejora de plataformas y procedimientos: Me encargué de gestionar el movimiento de cada uno de los procesos de llamadas en Genesys Cloud, definiendo la lógica comunicativa entre microservicios que estaban repartidos. Esto provocó que la capacidad de contacto aumentara en un 18% y que la efectividad de los agentes mejorara en un 14%.",
-              "Desarrollo del IVR con MCPs: Desarrollé un sistema de texto a voz (TTS) personalizado utilizando MCP, Claude Code y ElevenLabs en Python. Esto produjo una mejor experiencia de usuario, al disminuir los costos de producción en un 80% y elevar la rapidez de implementación en un 200%.",
-              "Desarrollo Full-Stack: Con el objetivo de crear interfaces de usuario, implemente React, Astro y Angular. Para desarrollar APIs RESTful, utilize C# y .NET Core. Desarrolle pruebas unitarias y de integración para garantizar la calidad del código, optimizando la manera en que se presenta la información al agente del call center y al cliente.",
-              "Colaboración y Calidad: Colaboré con equipos multidisciplinarios para diseñar e implementar aplicaciones de software escalables y optimicé consultas SQL para mejorar el rendimiento de la base de datos que se usan en los procesos de la empresa."
+              "Liderazgo y estrategia: Fui uno de los miembros iniciales del equipo que participó en la incorporación de WA Flows a la plataforma Botmaker, con el objetivo de mejorar y optimizar los procesos de captacion de clientes, lo que posibilitó un aumento del 7% en la obtención de leads.",
+              "Arquitectura de microservicios: He participado en proyectos donde desarrollamos microservicios para los procesos del equipo de Adquisicion, para ello utilizamos Microsoft Azure, integrando Azure Functions, Service Bus Queues, subscriptions y topics. Generando una mejora operativa y automatizacion de flujos de mas del 20%.",
+              "Mejora de plataformas y procedimientos: Me encargué de gestionar requerimientos de los procesos de llamadas en la plataforma de Genesys Cloud, definiendo la comunicacion e integracion entre microservicios que se utilizaban en los flujos. Esto provocó que la capacidad de contacto de los leads/clientes aumentara en un 18% y que la efectividad operativa de los agentes mejorara en un 14%.",
+              "Desarrollo del IVR con MCPs: Desarrollé un flujo automatizado de texto a voz (TTS) personalizado utilizando MCP, Claude Code y ElevenLabs en Python. Esto produjo una mejor experiencia de usuario en el IVR, al disminuir los costos de producción en un 80% y aumentar la velocidad de implementación en un 200%.",
+              "Desarrollo Full-Stack: Del lado del frontend trabaje con React, Astro y Angular y en el backend, con C# y .NET Core (para desarrollo de APIs RESTful). Generando interfaces de usuario eficientes y segun los requerimientos de negocio, de cara al agente del call center se incremento la eficiencia operativa en un 40%. Mientras que la comunicacion con el lead/cliente aumentó en mas de un 120%, generando mas engagement y visibilidad de la marca para la captacion de leads.",
+              "Colaboración y Calidad: Colaboré con equipos de GenesysCloud y Botmaker para diseñar e implementar soluciones de negocio dentro de los procesos establecidos, optimizando y mejorando los flujos en un 60%. Esto abarca desde migraciones, nuevos requeriemientos y hotfixes."
             ]
           },
           {
@@ -422,17 +414,17 @@
               "url": "https://tiendapago.com/"
             },
             "bullets": [
-              "Desarrollo Full-Stack: Desarrollé aplicaciones front-end con Angular para que la experiencia del usuario fuera fluida y creé APIs RESTful usando C# y .NET Core.",
-              "Automatización y Eficiencia: Utilicé Python para automatizar tareas y optimizar los procesos de desarrollo, y al mismo tiempo, Service Bus para facilitar la comunicación asincrónica entre sistemas.",
-              "Soporte y Mantenimiento de Plataformas: Desarrolle soluciones en conjunto con XCally Motion, enfocado en la creación y el mantenimiento de soluciones para el call center"
+              "Desarrollo Full-Stack: Desarrollé aplicaciones front-end con Angular para que la experiencia del usuario fuera fluida e implemente APIs RESTful usando C# y .NET Core para la comunicacion.",
+              "Automatización y Eficiencia: Utilicé Python para automatizar tareas y optimizar los procesos de captacion de clientes en un 15%, en conjunto con las Azure Functions and Service Bus Queues para facilitar la comunicación asincrónica entre sistemas.",
+              "Soporte y Mantenimiento de Plataformas: Desarrolle soluciones en conjunto con XCally Motion, enfocado en la creación y el mantenimiento de soluciones para el call center. Mejorando la operacion diaria de los agentes en un 30%."
             ]
           }
         ]
       },
       "project": {
-        "title": "Proyectos",
+        "title": "Proyectos 🚀",
         "icon": "<box-icon name='briefcase' type='solid' animation='tada-hover'></box-icon>",
-        "description": "¡Me emociona compartir un vistazo de mi viaje profesional! En esta sección, he reunido una colección de proyectos que demuestran mi pasión por construir soluciones robustas y eficientes. Desde la arquitectura de microservicios hasta el desarrollo full-stack y la automatización de procesos, mi objetivo siempre es generar un impacto positivo y duradero.",
+        "description": "¡Me emociona compartir un vistazo de mi viaje profesional! En esta sección, he reunido una colección de proyectos que demuestran mi pasión por construir soluciones robustas y eficientes 🛠️. ",
         "items": [
           {
             "title": "Bill Tracker",
@@ -464,11 +456,11 @@
             "paragraphs": [
               {
                 "title": "",
-                "description": "Funciona a través de un bot de Telegram intuitivo: el usuario simplemente toma una foto de cualquier factura o recibo y la envía. El sistema se encarga de todo el proceso en segundo plano, desde extraer la información clave hasta organizarla en bases de datos accesibles, liberando al usuario de la tarea manual de ingreso de datos y reduciendo los errores.",
+                "description": "Funciona a través de un bot de Telegram intuitivo: el usuario simplemente toma una foto de cualquier factura o recibo y la envía. El sistema se encarga de todo el proceso en segundo plano, desde extraer la información clave hasta organizarla y guardarla en bases de datos, liberando al usuario de la tarea manual de ingreso de datos y reduciendo los errores.",
                 "diagram": {
-                  "name": "Diagram",
-                  "src": "diagram.avif",
-                  "alt": "Diagram",
+                  "name": "Workflow",
+                  "src": "bill-tracker-workflow-es.jpg",
+                  "alt": "Workflow",
                   "position": "top"
                 },
                 "gif": "",
@@ -476,13 +468,13 @@
               },
               {
                 "title": "",
-                "description": "El corazón del sistema es una arquitectura sin servidor que utiliza una función AWS Lambda conectada a un webhook. Cuando el bot recibe una imagen, un agente de GPT la escanea para extraer datos relevantes como el monto, la fecha y el concepto de gasto, devolviendo la información en un formato JSON. La imagen original se archiva en Google Drive y los datos estructurados se guardan en Supabase y Google Sheets, ofreciendo una doble capa de almacenamiento y accesibilidad. Finalmente, el bot notifica al usuario el estado de la operación.",
+                "description": "El corazón del sistema es una arquitectura serverless que utiliza una función AWS Lambda conectada a un webhook. Cuando el bot de Telegram recibe una imagen, un agente de ChatGPT la escanea para extraer datos relevantes como el monto, la fecha y el concepto de gasto, devolviendo la información en un formato JSON. La imagen original se archiva en Google Drive y los datos estructurados se guardan en Supabase y Google Sheets, ofreciendo una doble capa de almacenamiento y accesibilidad. Finalmente, el bot notifica al usuario el estado de la operación.",
                 "diagram": null,
-                "gif": "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExemNkd2NvbXMyeXZobHgxOTBnZWV2MHJuNDllOXM5MmgzNjRzdzBiciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fy8mDHil1yK1l0KmMN/giphy.gif",
-                "img": "https://i.blogs.es/ce1eaa/app-store/1366_2000.webp"
+                "gif": "",
+                "img": "bill_tracker_screenshot_bot.jpeg"
               },
               {
-                "title": "Beneficios y Valor en la Vida Real",
+                "title": "Beneficios",
                 "description": "Bill Tracker elimina la necesidad de ingresar manualmente los datos de las facturas, ahorrando tiempo y minimizando errores. Al centralizar y organizar la información de gastos de forma automática, proporciona un control financiero detallado.",
                 "diagram": null,
                 "gif": "",
@@ -500,10 +492,10 @@
         ]
       },
       "education": {
-        "title": "Education",
+        "title": "Education 📖",
         "icon": "<box-icon name='briefcase' type='solid' animation='tada-hover'></box-icon>",
-        "description": "Mi formación académica me proporcionó una base sólida en el desarrollo de software, la cual sigue impulsando mi crecimiento profesional y mi aprendizaje constante para crear soluciones innovadoras. En esta sección, comparto las tecnologías con las que he trabajado, junto con mis certificaciones profesionales.",
-        "first-subtitle": "Tecnologías y Stacks utilizados",
+        "description": "Siempre estoy buscando nuevas formas de capacitarme y aprender herramientas utiles para mi y mi trabajo. En esta sección, comparto las tecnologías con las que he trabajado, junto con mis certificaciones profesionales.",
+        "first-subtitle": "Tecnologías y Stacks",
         "first-subtitleLogo": "code-alt",
         "tools": [
           {
@@ -655,73 +647,65 @@
         "second-subtitleLogo": "book-open",
         "diplomas": [
           {
+            "name": "Computer Science Career Path",
+            "icon": "<box-icon name='book' type='solid'></box-icon>",
+            "school": "CodeAcademy",
+            "type": "Certification",
+            "dateTime": "2025",
+            "dateTimeUI": "Jul 2025"
+          },
+          {
+            "name": "Arquitectura Backend con C# y .NET",
+            "icon": "<box-icon name='book' type='solid'></box-icon>",
+            "school": "Platzi",
+            "type": "Certification",
+            "dateTime": "2024",
+            "dateTimeUI": "May 2024"
+          },
+          {
+            "name": "Unit Testing con C# y .NET",
+            "icon": "<box-icon name='book' type='solid'></box-icon>",
+            "school": "Platzi",
+            "type": "Certification",
+            "dateTime": "2024",
+            "dateTimeUI": "Feb 2024"
+          },
+          {
             "name": "Bachelor of Technology",
             "icon": "<box-icon name='graduation' type='solid'></box-icon>",
-            "school": "Tech University",
+            "school": "Universidad Nacional Experimental Politécnica 'Antonio José de Sucre'",
             "type": "Degree",
-            "dateTime": "2015-2019",
-            "dateTimeUI": "2015 - 2019"
-          },
-          {
-            "name": "Full Stack Web Development",
-            "icon": "<box-icon name='book' type='solid'></box-icon>",
-            "school": "Online Bootcamp",
-            "type": "Certification",
-            "dateTime": "2020",
-            "dateTimeUI": "2020"
-          },
-          {
-            "name": "Master of Science in Computer Science",
-            "icon": "<box-icon name='book' type='solid'></box-icon>",
-            "school": "National University",
-            "type": "Degree",
-            "dateTime": "2019-2021",
-            "dateTimeUI": "2019 - 2021"
-          },
-          {
-            "name": "UI/UX Design Specialization",
-            "icon": "<box-icon name='palette' type='solid'></box-icon>",
-            "school": "Design Institute",
-            "type": "Certification",
-            "dateTime": "2022",
-            "dateTimeUI": "2022"
-          },
-          {
-            "name": "Cloud Computing Fundamentals",
-            "icon": "<box-icon name='cloud' type='solid'></box-icon>",
-            "school": "Cloud Academy",
-            "type": "Certification",
-            "dateTime": "2023",
-            "dateTimeUI": "2023"
+            "dateTime": "2017-2021",
+            "dateTimeUI": "Aug 2017 - Jun 2021"
           }
         ]
       },
       "about": {
         "title": "Soy Andrés",
         "first-paragraph": {
-          "title": "Software Engineer. Construyendo Soluciones Escalables y Mejorando las Experiencias de Usuario.",
-          "description": "Software engineer apasionado por crear aplicaciones eficientes y fáciles de usar. Siempre estoy buscando nuevos desafíos y oportunidades para crecer como desarrollador."
+          "title": "Construyendo soluciones escalables y con proposito.",
+          "description": "Me encanta crear aplicaciones eficientes y fáciles de usar. Siempre estoy buscando nuevos desafíos y oportunidades para crecer como desarrollador dentro de mi rol en el equipo."
         },
         "second-paragraph": {
-          "title": "Colaboremos si estás comprometido con la mejora continua, el empoderamiento de los equipos, las decisiones basadas en datos o las soluciones innovadoras.",
-          "description": "Orientado a resultados, especializado en transformar desafíos complejos en aplicaciones efectivas, escalables y fáciles de usar."
+          "title": "🚀 Colaboremos si estás comprometido con soluciones innovadores y decisiones basadas en datos.",
+          "description": "Me considero un desarrollador comprometido, orientado a resultados, especializado en transformar desafíos complejos en soluciones efectivas y fáciles de usar."
         },
         "key-points": [
           {
-            "title": "Análisis de Datos e Informes",
-            "description": "Utilizo los datos para informar decisiones críticas y optimizar procesos, lo que lleva a mejoras medibles en la eficiencia y efectividad."
+            "title": "🔍 Análisis de Datos e Informes",
+            "description": "Lo que no se mide no se puede mejorar. Utilizo los datos para informar decisiones críticas y optimizar procesos, lo que lleva a mejoras en la eficiencia y efectividad."
           },
           {
-            "title": "Gestión del Cambio",
-            "description": "Gestiono con éxito la implementación de nuevas tecnologías y plataformas, asegurando transiciones fluidas y una alta adopción por parte de los usuarios."
+            "title": "🔄 Gestión del Cambio",
+            "description": "El cambio siempre va a estar presente en cualquier desarrollo, prepararnos es parte de nuestra labor como desarrolladores de software, implementando nuevas tecnologias y asegurando una transicion fluida."
           },
           {
-            "title": "Formación y Mentoría",
-            "description": "Empodero a los equipos al compartir conocimientos y brindar orientación sobre nuevas herramientas y mejores prácticas para fomentar la mejora continua."
+            "title": "📜 Formación y Mentoría",
+            "description": "Considero que el conocimiento se debe compartir, brindando orientacion sobre nuevas herramientas y las mejores practicas del sector, para fomentar la mejora individual y colectiva."
           },
           {
-            "title": "Crecimiento e Innovación",
-            "description": "Me desarrollo explorando nuevas tecnologías y patrones de arquitectura para construir soluciones escalables y con visión de futuro."
+            "title": "💡 Crecimiento e Innovación",
+            "description": "Estoy constantemente explorando nuevas tecnologias y herramientas que hacen que mi workflow o el de mis compañeros mejore, aumentando la eficiencia dia a dia y buscando puntos de mejora."
           }
         ]
       },
